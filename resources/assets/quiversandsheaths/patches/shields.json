@@ -1,0 +1,70 @@
+﻿[
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "armory" }],
+    "file": "armory:itemtypes/weapons/shield-heavy",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": { "*-meteoriciron": "kite-flat", "*-iron": "kite", "*-tinbronze": "scutum", "*-bismuthbronze": "scutum", "*-blackbronze": "scutum", "*-copper": "aspis", "*-crude": "reed", "*": "reed" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "armory" }],
+    "file": "armory:itemtypes/weapons/shield-heavy",
+    "op": "add",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": {
+      "*-copper": "copper",
+      "*-tinbronze": "tinbronze",
+      "*-bismuthbronze": "bismuthbronze",
+      "*-blackbronze": "blackbronze",
+      "*-iron": "iron",
+      "*-meteoriciron": "meteoriciron",
+      "*-steel": "steel",
+      "*": "iron"
+    }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "armory" }],
+    "file": "armory:itemtypes/weapons/shield-light",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": {
+      "*-steel": "buckler",
+      "*-meteoriciron": "round",
+      "*-iron": "round",
+      "*-tinbronze": "dipylon",
+      "*-bismuthbronze": "dipylon",
+      "*-blackbronze": "dipylon",
+      "*-copper": "full-copper",
+      "*-crude": "hide",
+      "*": "hide"
+    }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "armory" }],
+    "file": "armory:itemtypes/weapons/shield-light",
+    "op": "add",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": {
+      "*-copper": "copper",
+      "*-tinbronze": "tinbronze",
+      "*-bismuthbronze": "bismuthbronze",
+      "*-blackbronze": "blackbronze",
+      "*-iron": "iron",
+      "*-meteoriciron": "meteoriciron",
+      "*-steel": "steel",
+      "*": "iron"
+    }
+  },
+  {
+    "side": "Server",
+    "file": "game:itemtypes/tool/shield",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": { "*-crude": "vanilla-rough", "*-woodmetal": "vanilla-round", "*-woodmetalleather": "vanilla-round", "*-metal": "vanilla-round", "*-blackguard": "vanilla-blackguard", "*": "vanilla-round" }
+  },
+  { "side": "Server", "file": "game:itemtypes/tool/shield", "op": "addMerge", "path": "/tags", "value": ["shield"] }
+]

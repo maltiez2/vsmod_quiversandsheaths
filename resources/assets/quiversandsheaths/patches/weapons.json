@@ -1,0 +1,134 @@
+﻿[
+  {
+    "side": "Server",
+    "file": "game:itemtypes/tool/blade",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": { "*-blackguard-*": "blackguardsword", "*-forlorn-*": "forlornsword", "*-falx-*": "falxsword", "*": "default" }
+  },
+  {
+    "side": "Server",
+    "file": "game:itemtypes/tool/blade",
+    "op": "add",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": {
+      "*-copper": "copper",
+      "*-tinbronze": "tinbronze",
+      "*-bismuthbronze": "bismuthbronze",
+      "*-blackbronze": "blackbronze",
+      "*-gold": "gold",
+      "*-silver": "silver",
+      "*-iron": "iron",
+      "*-meteoriciron": "meteoriciron",
+      "*-steel": "steel",
+      "*": "iron"
+    }
+  },
+  {
+    "side": "Server",
+    "file": "game:itemtypes/combatoverhaul/sword",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": { "*-blackguard-*": "blackguardsword", "*-forlorn-*": "forlornsword", "*-falx-*": "falxsword", "*": "default" }
+  },
+  {
+    "side": "Server",
+    "file": "game:itemtypes/combatoverhaul/sword",
+    "op": "add",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": {
+      "*-copper": "copper",
+      "*-tinbronze": "tinbronze",
+      "*-bismuthbronze": "bismuthbronze",
+      "*-blackbronze": "blackbronze",
+      "*-gold": "gold",
+      "*-silver": "silver",
+      "*-iron": "iron",
+      "*-meteoriciron": "meteoriciron",
+      "*-steel": "steel",
+      "*": "iron"
+    }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "armory" }],
+    "file": "armory:itemtypes/weapons/sabre",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": { "*-*bronze": "sabre_bronze", "*-*iron": "sabre_iron", "*-steel": "sabre_steel", "*": "default" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "armory" }],
+    "file": "armory:itemtypes/weapons/sabre",
+    "op": "add",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": { "*-tinbronze": "tinbronze", "*-bismuthbronze": "bismuthbronze", "*-blackbronze": "blackbronze", "*-iron": "iron", "*-meteoriciron": "meteoriciron", "*-steel": "steel", "*": "iron" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "armory" }],
+    "file": "armory:itemtypes/weapons/sword-short",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": { "*-copper": "shortsword_copper", "*-*bronze": "shortsword_bronze", "*-*iron": "shortsword_iron", "*-steel": "shortsword_steel", "*": "default" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "armory" }],
+    "file": "armory:itemtypes/weapons/sword-short",
+    "op": "add",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": {
+      "*-copper": "copper",
+      "*-tinbronze": "tinbronze",
+      "*-bismuthbronze": "bismuthbronze",
+      "*-blackbronze": "blackbronze",
+      "*-iron": "iron",
+      "*-meteoriciron": "meteoriciron",
+      "*-steel": "steel",
+      "*": "iron"
+    }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "armory" }],
+    "file": "armory:itemtypes/weapons/sword-long",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": { "*-*bronze": "longsword_bronze", "*-*iron": "longsword_iron", "*-steel": "longsword_steel", "*": "default" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "armory" }],
+    "file": "armory:itemtypes/weapons/sword-long",
+    "op": "add",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": { "*-tinbronze": "tinbronze", "*-bismuthbronze": "bismuthbronze", "*-blackbronze": "blackbronze", "*-iron": "iron", "*-meteoriciron": "meteoriciron", "*-steel": "steel", "*": "iron" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "armory" }],
+    "file": "armory:itemtypes/weapons/mace",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": { "*-copper": "mace_copper", "*-*bronze": "mace_bronze", "*-*iron": "mace_iron", "*-steel": "mace_steel", "*": "mace_stone" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "armory" }],
+    "file": "armory:itemtypes/weapons/mace",
+    "op": "add",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": {
+      "*-copper": "copper",
+      "*-tinbronze": "tinbronze",
+      "*-bismuthbronze": "bismuthbronze",
+      "*-blackbronze": "blackbronze",
+      "*-iron": "iron",
+      "*-meteoriciron": "meteoriciron",
+      "*-steel": "steel",
+      "*": "iron"
+    }
+  }
+]

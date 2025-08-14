@@ -1,0 +1,28 @@
+{
+	"editor": {
+		"backDropShape": "",
+		"collapsedPaths": "",
+		"allAngles": true,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"shoulder-sling-plain-material": "game:block/leather/plain",
+		"shoulder-sling-plain-metal": "game:block/metal/plate/brass"
+	},
+	"elements": [
+		{
+			"name": "Shoulder-Sling",
+			"stepParentName": "UpperTorso",
+			"from": [ 0, 0, 0 ],
+			"to": [ 0, 0, 0 ],
+			"rotationOrigin": [ 0, 0, 0 ],
+			"faces": {
+			},
+			"children": []
+		}
+	]
+}

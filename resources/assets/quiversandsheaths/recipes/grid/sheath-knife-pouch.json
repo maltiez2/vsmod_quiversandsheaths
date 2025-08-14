@@ -1,0 +1,37 @@
+[
+	{
+		"enabled": true,
+		"ingredientPattern": "LNL,LKL,LSL",
+		"recipeGroup": 1,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-buckle-iron"},
+			"L": { "type": "item", "code": "game:leather-normal-plain" },
+			"K": { "type": "item", "code": "game:knife-generic-*", "isTool": true, "toolDurabilityCost": 0  },
+			"S": { "type": "item", "code": "game:sewingkit", "isTool": true, "toolDurabilityCost": 0  }
+		},
+		"width": 3,
+		"height": 3,
+		"name": "sheath-general",
+		"requiresTrait": "clothier",
+		"output": { "type": "item", "code": "beltbag-left-sheathpouch-knifes" }
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "LNL,LKL,LSL",
+		"recipeGroup": 2,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-buckle-{metal}"},
+			"L": { "type": "item", "code": "game:leather-normal-{leather}" },
+			"K": { "type": "item", "code": "game:knife-generic-*", "isTool": true, "toolDurabilityCost": 0  },
+			"S": { "type": "item", "code": "game:sewingkit", "isTool": true, "toolDurabilityCost": 0  }
+		},
+		"allowedVariants": {
+			"metal": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"]
+		},
+		"width": 3,
+		"height": 3,
+		"name": "sheath-general",
+		"requiresTrait": "clothier",
+		"output": { "type": "item", "code": "beltbag-left-sheathpouch-knifes",  "attributes": {"types": {"leather": "{leather}", "metal": "{metal}"}} }
+	}
+]

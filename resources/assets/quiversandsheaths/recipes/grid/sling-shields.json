@@ -1,0 +1,64 @@
+[
+	{
+		"enabled": false,
+		"ingredientPattern": "LLL,NFN",
+		"recipeGroup": 1,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-buckle-iron"},
+			"L": { "type": "item", "code": "game:leather-normal-plain", "quantity":  1 },
+			"F": { "type": "item", "code": "armory:shield-*", "isTool": true, "toolDurabilityCost": 0 }
+		},
+		"width": 3,
+		"height": 2,
+		"name": "",
+		"output": { "type": "item", "code": "shoulderbag-left-sling-shields" }
+	},
+	{
+		"enabled": false,
+		"ingredientPattern": "LLL,NFN",
+		"recipeGroup": 2,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-buckle-{metal}"},
+			"L": { "type": "item", "code": "game:leather-normal-{leather}", "quantity":  1 },
+			"F": { "type": "item", "code": "armory:shield-*", "isTool": true, "toolDurabilityCost": 0 }
+		},
+		"allowedVariants": {
+			"metal": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"]
+		},
+		"width": 3,
+		"height": 2,
+		"name": "",
+		"output": { "type": "item", "code": "shoulderbag-left-sling-shields",  "attributes": {"types": {"leather": "{leather}", "metal": "{metal}"}} }
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "LLL,NFN",
+		"recipeGroup": 1,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-buckle-iron"},
+			"L": { "type": "item", "code": "game:leather-normal-plain", "quantity":  1 },
+			"F": { "type": "item", "code": "game:shield-*", "isTool": true, "toolDurabilityCost": 0 }
+		},
+		"width": 3,
+		"height": 2,
+		"name": "",
+		"output": { "type": "item", "code": "shoulderbag-left-sling-shields" }
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "LLL,NFN",
+		"recipeGroup": 2,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-buckle-{metal}"},
+			"L": { "type": "item", "code": "game:leather-normal-{leather}", "quantity":  1 },
+			"F": { "type": "item", "code": "game:shield-*", "isTool": true, "toolDurabilityCost": 0 }
+		},
+		"allowedVariants": {
+			"metal": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"]
+		},
+		"width": 3,
+		"height": 2,
+		"name": "",
+		"output": { "type": "item", "code": "shoulderbag-left-sling-shields",  "attributes": {"types": {"leather": "{leather}", "metal": "{metal}"}} }
+	}
+]

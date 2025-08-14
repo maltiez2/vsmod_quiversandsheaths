@@ -1,0 +1,92 @@
+{
+	"editor": {
+		"collapsedPaths": "Root/Band_second,Root/Carbine/Band_third,Root/Stock,Root/Carbine/Flintlock,Root/Arquebus_origin/Stock,Root/Musket/Band_second,Root/Carbine/Trigger_assembly/Guard,Root/Carbine,Root/FluteCase/flute_case_0/flute,Root/FluteCase/flute,Root/Shoulder-Sling/Weapon_origin,Root/Musket/Flintlock,Root/base,Root/Musket/Stock,Root/origin/Bottom_plate,Root/Musket/Stock/Buttstock/Buttstock_bottom/Buttstock_butt/Buttstock_butt_plate,Root/Musket/Band_third,Root/Carbine/Flintlock/Hammer/Hammer_arm,Root/Carbine/Ramrod_origin,Root/Carbine/Barrel,Root/Carbine/Stock,Root/Trigger_assembly,Root/Carbine/Flintlock/Frizzen,Root/Musket/Stock/Buttstock/Buttstock_butt,Root/Ramrod,Root/Carbine/Trigger_assembly,Root/Musket/Band_first,Root/Band_first,Root/Flintlock,Root/Carbine/Trigger_assembly/Trigger_assemly_base,Root/Barrel,Root/Arquebus_origin/Matchlock,Root/Band_third,Root/Musket/Trigger_assembly,Root/Arquebus_origin/Barrel,Root/Musket/Flintlock/Plate,Root/Carbine/Ramrod_origin/Ramrod,Root/Musket,Root/Carbine/Flask_origin/Flask_origin_inner,Root/Arquebus_origin/Patch,Root/Carbine/Flintlock/Hammer,Root/Carbine/Flintlock/Pan,Root/Arquebus_origin/Lever,Root/Arquebus_origin/Ramdrod_origin,Root/FluteCase/flute_case_0/string_0,Root/flute,Root/FluteCase/flute_case_0/string_3,Root/Carbine/Band_second,Root/Musket/Barrel",
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"flutecase-cloth": "game:block/cloth/linen/plain",
+		"flutecase-metal": "game:block/metal/plate/brass"
+	},
+	"elements": [
+		{
+			"name": "FluteCase",
+			"from": [ 0.0, 0.0, 0.0 ],
+			"to": [ 0.0, 0.0, 0.0 ],
+			"rotationOrigin": [ 0.0, 0.0, 0.0 ],
+			"rotationY": 135.0,
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "flute_case_0",
+					"from": [ -1.2, -0.1, -0.1 ],
+					"to": [ 0.0, 0.4, 1.1 ],
+					"rotationOrigin": [ -1.2, -0.1, -0.1 ],
+					"rotationZ": 72.0,
+					"faces": {
+						"north": { "texture": "#flutecase-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+						"east": { "texture": "#flutecase-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+						"south": { "texture": "#flutecase-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+						"west": { "texture": "#flutecase-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+						"up": { "texture": "#flutecase-metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+						"down": { "texture": "#flutecase-metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ] }
+					},
+					"children": [
+						{
+							"name": "flute_case_1",
+							"from": [ 0.1, 0.0, -0.9 ],
+							"to": [ 0.6, 3.5, 0.1 ],
+							"rotationOrigin": [ 0.1, 0.0, 0.1 ],
+							"rotationX": 175.0,
+							"rotationZ": -17.0,
+							"faces": {
+								"north": { "texture": "#flutecase-cloth", "uv": [ 0.0, 0.0, 0.5, 3.5 ] },
+								"east": { "texture": "#flutecase-cloth", "uv": [ 0.0, 0.0, 1.0, 3.5 ] },
+								"south": { "texture": "#flutecase-cloth", "uv": [ 0.0, 0.0, 0.5, 3.5 ] },
+								"west": { "texture": "#flutecase-cloth", "uv": [ 0.0, 0.0, 1.0, 3.5 ] },
+								"up": { "texture": "#flutecase-cloth", "uv": [ 0.0, 0.0, 0.5, 1.0 ] },
+								"down": { "texture": "#flutecase-cloth", "uv": [ 0.0, 0.0, 0.5, 1.0 ] }
+							}
+						},
+						{
+							"name": "flute_case_2",
+							"from": [ 0.1, 0.0, 1.1 ],
+							"to": [ 0.6, 3.5, 2.1 ],
+							"rotationOrigin": [ 0.1, 0.0, 1.1 ],
+							"rotationX": -175.0,
+							"rotationZ": -16.0,
+							"faces": {
+								"north": { "texture": "#flutecase-cloth", "uv": [ 0.0, 0.0, 0.5, 3.5 ] },
+								"east": { "texture": "#flutecase-cloth", "uv": [ 0.0, 0.0, 1.0, 3.5 ] },
+								"south": { "texture": "#flutecase-cloth", "uv": [ 0.0, 0.0, 0.5, 3.5 ] },
+								"west": { "texture": "#flutecase-cloth", "uv": [ 0.0, 0.0, 1.0, 3.5 ] },
+								"up": { "texture": "#flutecase-cloth", "uv": [ 0.0, 0.0, 0.5, 1.0 ] },
+								"down": { "texture": "#flutecase-cloth", "uv": [ 0.0, 0.0, 0.5, 1.0 ] }
+							}
+						},
+						{
+							"name": "flute_case_3",
+							"from": [ 0.7, 0.0, 1.1 ],
+							"to": [ 1.2, 3.5, 2.1 ],
+							"rotationOrigin": [ 1.2, 0.0, 1.1 ],
+							"rotationX": -180.0,
+							"rotationZ": -7.0,
+							"faces": {
+								"north": { "texture": "#flutecase-cloth", "uv": [ 0.0, 0.0, 0.5, 3.5 ] },
+								"east": { "texture": "#flutecase-cloth", "uv": [ 0.0, 0.0, 1.0, 3.5 ] },
+								"south": { "texture": "#flutecase-cloth", "uv": [ 0.0, 0.0, 0.5, 3.5 ] },
+								"west": { "texture": "#flutecase-cloth", "uv": [ 0.0, 0.0, 1.0, 3.5 ] },
+								"up": { "texture": "#flutecase-cloth", "uv": [ 0.0, 0.0, 0.5, 1.0 ] },
+								"down": { "texture": "#flutecase-cloth", "uv": [ 0.0, 0.0, 0.5, 1.0 ] }
+							}
+						}
+					]
+				}
+			]
+		}
+	]}

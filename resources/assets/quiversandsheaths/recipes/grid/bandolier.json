@@ -1,0 +1,37 @@
+[
+	{
+		"enabled": false,
+		"ingredientPattern": "LLL,NFN,LSL",
+		"recipeGroup": 1,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-buckle-iron", "quantity":  2},
+			"L": { "type": "item", "code": "game:leather-normal-plain", "quantity":  2 },
+			"F": { "type": "item", "code": "maltiezfirearms:firearm-*", "isTool": true, "toolDurabilityCost": 0 },
+			"S": {"type": "item", "code": "game:sewingkit"}
+		},
+		"width": 3,
+		"height": 3,
+		"requiresTrait": "clothier",
+		"name": "",
+		"output": { "type": "item", "code": "frontbag-front-bandolier-firearms" }
+	},
+	{
+		"enabled": false,
+		"ingredientPattern": "LLL,NFN,LSL",
+		"recipeGroup": 2,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-buckle-{metal}", "quantity":  2},
+			"L": { "type": "item", "code": "game:leather-normal-{leather}", "quantity":  2 },
+			"F": { "type": "item", "code": "maltiezfirearms:firearm-*", "isTool": true, "toolDurabilityCost": 0 },
+			"S": {"type": "item", "code": "game:sewingkit"}
+		},
+		"allowedVariants": {
+			"metal": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"]
+		},
+		"width": 3,
+		"height": 3,
+		"requiresTrait": "clothier",
+		"name": "",
+		"output": { "type": "item", "code": "frontbag-front-bandolier-firearms",  "attributes": {"types": {"leather": "{leather}", "metal": "{metal}"}} }
+	}
+]

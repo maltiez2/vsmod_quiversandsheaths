@@ -1,0 +1,35 @@
+[
+	{
+		"enabled": false,
+		"ingredientPattern": "LNL,LFL,LNL",
+		"recipeGroup": 1,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-buckle-iron", "quantity":  2},
+			"L": { "type": "item", "code": "game:leather-normal-plain", "quantity":  2 },
+			"F": { "type": "item", "code": "maltiezfirearms:firearm-pistol-*", "isTool": true, "toolDurabilityCost": 0 }
+		},
+		"width": 3,
+		"height": 3,
+		"name": "sheath-pistol",
+		"requiresTrait": "clothier",
+		"output": { "type": "item", "code": "frontbag-front-sheath-pistols" }
+	},
+	{
+		"enabled": false,
+		"ingredientPattern": "LNL,LFL,LNL",
+		"recipeGroup": 2,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-buckle-{metal}", "quantity":  2},
+			"L": { "type": "item", "code": "game:leather-normal-{leather}", "quantity":  2 },
+			"F": { "type": "item", "code": "maltiezfirearms:firearm-pistol-*", "isTool": true, "toolDurabilityCost": 0 }
+		},
+		"allowedVariants": {
+			"metal": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"]
+		},
+		"width": 3,
+		"height": 3,
+		"name": "sheath-pistol",
+		"requiresTrait": "clothier",
+		"output": { "type": "item", "code": "frontbag-front-sheath-pistols",  "attributes": {"types": {"leather": "{leather}", "metal": "{metal}"}} }
+	}
+]

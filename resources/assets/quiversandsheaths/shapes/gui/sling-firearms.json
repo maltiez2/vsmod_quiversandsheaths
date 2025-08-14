@@ -1,0 +1,134 @@
+{
+	"editor": {
+		"collapsedPaths": "",
+		"allAngles": true,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"shoulder-sling-plain-material": "game:block/leather/plain",
+		"shoulder-sling-plain-metal": "game:block/metal/plate/brass"
+	},
+	"elements": [
+		{
+			"name": "Shoulder-Sling",
+			"from": [ -1.0, 0.0, -1.0 ],
+			"to": [ -1.0, 0.0, -1.0 ],
+			"rotationOrigin": [ -1.0, 0.0, -1.0 ],
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "sling_0",
+					"from": [ 0.0, 0.0, 0.0 ],
+					"to": [ 2.0, 0.4, 2.0 ],
+					"faces": {
+						"north": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 2.0, 0.5 ] },
+						"east": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 2.0, 0.5 ] },
+						"south": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 2.0, 0.5 ] },
+						"west": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 2.0, 0.5 ] },
+						"up": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+						"down": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 2.0, 2.0 ] }
+					},
+					"children": [
+						{
+							"name": "sling_3",
+							"from": [ 0.0, 0.4, 0.0 ],
+							"to": [ 2.0, 0.8, 2.0 ],
+							"rotationOrigin": [ 1.0, 0.4, 1.0 ],
+							"rotationY": -105.0,
+							"faces": {
+								"north": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 2.0, 0.5 ] },
+								"east": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 2.0, 0.5 ] },
+								"south": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 2.0, 0.5 ] },
+								"west": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 2.0, 0.5 ] },
+								"up": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+								"down": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 2.0, 2.0 ] }
+							}
+						},
+						{
+							"name": "sling_4",
+							"from": [ 0.0, 0.7, 0.0 ],
+							"to": [ 2.0, 1.1, 2.0 ],
+							"rotationOrigin": [ 1.0, 0.7, 1.0 ],
+							"rotationY": 102.0,
+							"rotationZ": 6.0,
+							"faces": {
+								"north": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 2.0, 0.5 ] },
+								"east": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 2.0, 0.5 ] },
+								"south": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 2.0, 0.5 ] },
+								"west": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 2.0, 0.5 ] },
+								"up": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+								"down": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 2.0, 2.0 ] }
+							}
+						}
+					]
+				},
+				{
+					"name": "sling_1",
+					"from": [ 0.0, 0.0, 2.0 ],
+					"to": [ 1.0, 0.3, 5.0 ],
+					"rotationOrigin": [ 0.0, 0.0, 2.0 ],
+					"faces": {
+						"north": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+						"east": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 3.0, 0.5 ] },
+						"south": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+						"west": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 3.0, 0.5 ] },
+						"up": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 1.0, 3.0 ] },
+						"down": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 1.0, 3.0 ] }
+					},
+					"children": [
+						{
+							"name": "sling_5",
+							"from": [ 0.0, -0.1, 3.0 ],
+							"to": [ 1.0, 0.4, 4.0 ],
+							"rotationOrigin": [ 0.0, -0.1, 3.0 ],
+							"rotationY": 0.0,
+							"faces": {
+								"north": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"east": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"south": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"west": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"up": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+								"down": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ] }
+							}
+						}
+					]
+				},
+				{
+					"name": "sling_2",
+					"from": [ 1.0, 0.0, 1.0 ],
+					"to": [ 2.0, 0.3, 5.0 ],
+					"rotationOrigin": [ 1.0, 0.0, 1.0 ],
+					"rotationY": 28.0,
+					"faces": {
+						"north": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+						"east": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 4.0, 0.5 ] },
+						"south": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+						"west": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 4.0, 0.5 ] },
+						"up": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 1.0, 4.0 ] },
+						"down": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 1.0, 4.0 ] }
+					},
+					"children": [
+						{
+							"name": "sling_6",
+							"from": [ 0.0, -0.1, 4.0 ],
+							"to": [ 1.0, 0.4, 5.0 ],
+							"rotationOrigin": [ 0.0, -0.1, 4.0 ],
+							"faces": {
+								"north": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"east": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"south": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"west": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"up": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+								"down": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ] }
+							}
+						}
+					]
+				}
+			]
+		}
+	]}

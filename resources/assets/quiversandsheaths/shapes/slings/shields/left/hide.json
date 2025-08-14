@@ -1,0 +1,1055 @@
+{
+	"editor": {
+		"backDropShape": "E:/Programs/VSModelCreator/seraph-faceless",
+		"collapsedPaths": "Root/Shoulder-Sling/Weapon_origin/Shield,Root/Shield/Body/body_top,Root/Shield/shield_1/shield_part_0,Root/Shield/shield_1/shield_part_1,Root/Shield/shield_1/shield_part_2,Root/Shield/shield_1/shield_part_3,Root/Shield/Body/body_0,Root/Shield/Body/body_4,Root/Shield/Body/body_bottom,Root/Shield/Body/body_top/body_8,Root/Shield/Body/body_bottom/body_0,Root/Shield/Body/body_bottom2,Root/Shield/shield_1/shield_5",
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"shoulder-sling-plain-weapon-rawhide": "game:block/cloth/rawhide",
+		"shoulder-sling-plain-weapon-reedrope": "game:block/cloth/reedrope",
+		"shoulder-sling-plain-material": "game:block/leather/plain",
+		"shoulder-sling-plain-metal": "game:block/metal/plate/brass",
+		"shoulder-sling-plain-weapon-metal": "game:block/metal/plate/steel",
+		"shoulder-sling-plain-weapon-wood": "game:block/wood/bark/oak"
+	},
+	"elements": [
+		{
+			"name": "Shoulder-Sling",
+			"stepParentName": "UpperTorso",
+			"from": [ 0.0, 0.0, 5.6 ],
+			"to": [ 0.0, 0.0, 5.6 ],
+			"rotationOrigin": [ 0.0, 0.0, 5.6 ],
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "Weapon_origin",
+					"from": [ 6.9, -2.4, 1.0 ],
+					"to": [ 6.9, -2.4, 1.0 ],
+					"rotationOrigin": [ 6.9, -2.4, 1.0 ],
+					"rotationX": 85.0,
+					"rotationY": 3.0,
+					"rotationZ": -68.0,
+					"faces": {
+					},
+					"children": [
+						{
+							"name": "Shield",
+							"from": [ 0.0, 0.0, 0.0 ],
+							"to": [ 0.0, 0.0, 0.0 ],
+							"faces": {
+								"north": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"east": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"south": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"west": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"up": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"down": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+							},
+							"children": [
+								{
+									"name": "Body",
+									"from": [ 0.0, 0.0, 0.0 ],
+									"to": [ 0.0, 0.0, 0.0 ],
+									"faces": {
+										"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+									},
+									"children": [
+										{
+											"name": "body_bottom",
+											"from": [ 0.0, 0.0, 0.0 ],
+											"to": [ 0.0, 0.0, 0.0 ],
+											"faces": {
+												"north": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"south": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+											},
+											"children": [
+												{
+													"name": "body_2",
+													"from": [ -0.2768, -0.49, 10.0801 ],
+													"to": [ 0.0732, 1.12, 11.8301 ],
+													"rotationOrigin": [ -0.28, 0.21, 10.78 ],
+													"rotationY": 89.98,
+													"faces": {
+														"north": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 2.5, 2.0 ], "autoUv": false },
+														"south": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 2.5, 2.0 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.5 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.5 ], "autoUv": false }
+													}
+												},
+												{
+													"name": "body_1",
+													"from": [ -0.28, -0.42, 9.94 ],
+													"to": [ 0.07, 0.98, 11.34 ],
+													"rotationOrigin": [ -0.28, 0.28, 10.64 ],
+													"rotationY": 22.5,
+													"faces": {
+														"north": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 2.0, 2.0 ], "autoUv": false },
+														"south": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 2.0, 2.0 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "autoUv": false }
+													}
+												},
+												{
+													"name": "body_0",
+													"from": [ -0.35, -0.35, 9.66 ],
+													"to": [ 0.0, 1.05, 11.06 ],
+													"rotationOrigin": [ -0.35, 0.35, 10.36 ],
+													"rotationY": -30.0,
+													"faces": {
+														"north": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 2.0, 2.0 ], "autoUv": false },
+														"south": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 2.0, 2.0 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "autoUv": false }
+													}
+												},
+												{
+													"name": "body_bottom_1",
+													"from": [ 0.0, 0.0, 0.0 ],
+													"to": [ 0.0, 0.0, 0.0 ],
+													"rotationOrigin": [ 0.0, 0.525, 0.0 ],
+													"rotationZ": -180.0,
+													"faces": {
+														"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+													},
+													"children": [
+														{
+															"name": "body_17",
+															"from": [ -1.4, 0.35, 0.0 ],
+															"to": [ 0.0, 0.7, 9.45 ],
+															"rotationOrigin": [ 0.0, 0.35, 0.0 ],
+															"rotationZ": -3.0,
+															"faces": {
+																"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 6.0, 0.0, 8.0, 13.5 ], "autoUv": false },
+																"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 6.0, 13.5, 8.0 ], "rotation": 90, "autoUv": false }
+															},
+															"children": [
+																{
+																	"name": "body_18",
+																	"from": [ -1.4, 0.0, 0.0 ],
+																	"to": [ 0.0, 0.35, 7.7 ],
+																	"rotationOrigin": [ 0.0, 0.0, 0.0 ],
+																	"rotationZ": -6.0,
+																	"faces": {
+																		"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 4.0, 0.0, 6.0, 11.0 ], "autoUv": false },
+																		"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 4.0, 11.0, 6.0 ], "rotation": 90, "autoUv": false }
+																	},
+																	"children": [
+																		{
+																			"name": "body_19",
+																			"from": [ -1.4, 0.0, 0.0 ],
+																			"to": [ 0.0, 0.35, 5.6 ],
+																			"rotationOrigin": [ 0.0, 0.0, 0.0 ],
+																			"rotationZ": -6.0,
+																			"faces": {
+																				"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 2.0, 0.0, 4.0, 8.0 ], "autoUv": false },
+																				"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 2.0, 8.0, 4.0 ], "rotation": 90, "autoUv": false }
+																			},
+																			"children": [
+																				{
+																					"name": "body_20",
+																					"from": [ -1.05, 0.0, 0.0 ],
+																					"to": [ 0.0, 0.35, 4.2 ],
+																					"rotationOrigin": [ 0.35, 0.0, 0.0 ],
+																					"rotationZ": -6.0,
+																					"faces": {
+																						"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.5, 6.0 ], "autoUv": false },
+																						"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 6.0, 1.5 ], "rotation": 90, "autoUv": false }
+																					},
+																					"children": [
+																						{
+																							"name": "body_21",
+																							"from": [ -0.7, -0.21, 0.0 ],
+																							"to": [ 0.0, 0.49, 4.9 ],
+																							"rotationOrigin": [ -0.7, -0.21, 0.0 ],
+																							"rotationY": 10.0,
+																							"faces": {
+																								"north": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																								"east": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 7.0, 1.0 ], "autoUv": false },
+																								"south": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																								"west": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 7.0, 1.0 ], "autoUv": false },
+																								"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.5, 0.0, 8.5, 7.0 ], "autoUv": false },
+																								"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.0, 0.0, 8.0, 7.0 ], "autoUv": false }
+																							},
+																							"children": [
+																								{
+																									"name": "body_22",
+																									"from": [ 0.0, 0.0, 4.9 ],
+																									"to": [ 0.7, 0.7, 9.1 ],
+																									"rotationOrigin": [ 0.0, 0.0, 4.9 ],
+																									"rotationX": -5.0,
+																									"rotationY": 25.0,
+																									"faces": {
+																										"north": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																										"east": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 6.0, 1.0 ], "autoUv": false },
+																										"south": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																										"west": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 6.0, 1.0 ], "autoUv": false },
+																										"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.5, 0.0, 8.5, 6.0 ], "autoUv": false },
+																										"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.0, 0.0, 8.0, 6.0 ], "autoUv": false }
+																									},
+																									"children": [
+																										{
+																											"name": "body_23",
+																											"from": [ 0.0, 0.0, 4.2 ],
+																											"to": [ 0.7, 0.7, 8.05 ],
+																											"rotationOrigin": [ 0.0, 0.0, 4.2 ],
+																											"rotationX": -5.0,
+																											"rotationY": 4.0,
+																											"faces": {
+																												"north": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																												"east": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 5.5, 1.0 ], "autoUv": false },
+																												"south": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																												"west": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 5.5, 1.0 ], "autoUv": false },
+																												"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.5, 0.0, 8.5, 5.5 ], "autoUv": false },
+																												"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.0, 0.0, 8.0, 5.5 ], "autoUv": false }
+																											}
+																										}
+																									]
+																								}
+																							]
+																						},
+																						{
+																							"name": "body_24",
+																							"from": [ 0.7, 0.0, 4.2 ],
+																							"to": [ 1.05, 0.35, 4.9 ],
+																							"rotationOrigin": [ 2.1, 0.35, 4.2 ],
+																							"faces": {
+																								"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
+																								"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "rotation": 90, "autoUv": false }
+																							}
+																						}
+																					]
+																				},
+																				{
+																					"name": "body_25",
+																					"from": [ 0.7, 0.0, 5.6 ],
+																					"to": [ 1.4, 0.35, 7.0 ],
+																					"rotationOrigin": [ 2.1, 0.35, 5.6 ],
+																					"faces": {
+																						"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 2.0, 0.0, 3.0, 2.0 ], "autoUv": false },
+																						"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 2.0, 2.0, 3.0 ], "rotation": 90, "autoUv": false }
+																					}
+																				},
+																				{
+																					"name": "body_26",
+																					"from": [ 0.0, 0.0, 5.6 ],
+																					"to": [ 0.7, 0.35, 5.95 ],
+																					"rotationOrigin": [ 1.4, 0.35, 5.6 ],
+																					"faces": {
+																						"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 2.0, 0.0, 3.0, 0.5 ], "autoUv": false },
+																						"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 2.0, 0.5, 3.0 ], "rotation": 90, "autoUv": false }
+																					}
+																				}
+																			]
+																		},
+																		{
+																			"name": "body_27",
+																			"from": [ 0.7035, 0.0, 7.7 ],
+																			"to": [ 1.4035, 0.35, 8.75 ],
+																			"rotationOrigin": [ 2.1035, 0.35, 7.7 ],
+																			"faces": {
+																				"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 4.0, 0.0, 5.0, 1.5 ], "autoUv": false },
+																				"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 4.0, 1.5, 5.0 ], "rotation": 90, "autoUv": false }
+																			}
+																		},
+																		{
+																			"name": "body_28",
+																			"from": [ 0.35, 0.0, 7.7 ],
+																			"to": [ 0.7, 0.35, 8.05 ],
+																			"rotationOrigin": [ 1.7535, 0.35, 7.7 ],
+																			"faces": {
+																				"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 4.0, 0.0, 4.5, 0.5 ], "autoUv": false },
+																				"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 4.0, 0.5, 4.5 ], "rotation": 90, "autoUv": false }
+																			}
+																		}
+																	]
+																},
+																{
+																	"name": "body_29",
+																	"from": [ 0.6973, 0.0, 9.45 ],
+																	"to": [ 1.3973, 0.35, 10.5 ],
+																	"rotationOrigin": [ 0.6973, 0.28, 9.45 ],
+																	"faces": {
+																		"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 6.0, 0.0, 7.0, 1.5 ], "autoUv": false },
+																		"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 6.0, 1.5, 7.0 ], "rotation": 90, "autoUv": false }
+																	}
+																}
+															]
+														}
+													]
+												},
+												{
+													"name": "body_bottom_0",
+													"from": [ 0.0, 0.0, 0.0 ],
+													"to": [ 0.0, 0.0, 0.0 ],
+													"rotationOrigin": [ 0.0, 0.525, 0.0 ],
+													"faces": {
+														"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+													},
+													"children": [
+														{
+															"name": "body_4",
+															"from": [ -1.4, 0.35, 0.0 ],
+															"to": [ 0.0, 0.7, 9.45 ],
+															"rotationOrigin": [ 0.0, 0.7, 0.0 ],
+															"rotationZ": 3.0,
+															"faces": {
+																"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 6.0, 0.0, 8.0, 13.5 ], "autoUv": false },
+																"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 6.0, 13.5, 8.0 ], "rotation": 90, "autoUv": false, "windMode": [-1,-1,-1,-1] }
+															},
+															"children": [
+																{
+																	"name": "body_5",
+																	"from": [ -1.4, 0.0, 0.0 ],
+																	"to": [ 0.0, 0.35, 7.7 ],
+																	"rotationOrigin": [ 0.0, 0.35, 0.0 ],
+																	"rotationZ": 6.0,
+																	"faces": {
+																		"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 4.0, 0.0, 6.0, 11.0 ], "autoUv": false },
+																		"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 4.0, 11.0, 6.0 ], "rotation": 90, "autoUv": false, "windMode": [-1,-1,-1,-1] }
+																	},
+																	"children": [
+																		{
+																			"name": "body_6",
+																			"from": [ -1.4, 0.0, 0.0 ],
+																			"to": [ 0.0, 0.35, 5.6 ],
+																			"rotationOrigin": [ 0.0, 0.35, 0.0 ],
+																			"rotationZ": 6.0,
+																			"faces": {
+																				"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 2.0, 0.0, 4.0, 8.0 ], "autoUv": false },
+																				"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 2.0, 8.0, 4.0 ], "rotation": 90, "autoUv": false, "windMode": [-1,-1,-1,-1] }
+																			},
+																			"children": [
+																				{
+																					"name": "body_7",
+																					"from": [ -1.05, 0.0, 0.0 ],
+																					"to": [ 0.0, 0.35, 4.2 ],
+																					"rotationOrigin": [ 0.35, 0.35, 0.0 ],
+																					"rotationZ": 6.0,
+																					"faces": {
+																						"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.5, 6.0 ], "autoUv": false },
+																						"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 6.0, 1.5 ], "rotation": 90, "autoUv": false, "windMode": [-1,-1,-1,-1] }
+																					},
+																					"children": [
+																						{
+																							"name": "body_8",
+																							"from": [ -0.7, -0.14, 0.0 ],
+																							"to": [ 0.0, 0.56, 4.9 ],
+																							"rotationOrigin": [ -0.7, -0.14, 0.0 ],
+																							"rotationY": 10.0,
+																							"faces": {
+																								"north": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																								"east": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 7.0, 1.0 ], "autoUv": false },
+																								"south": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																								"west": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 7.0, 1.0 ], "autoUv": false },
+																								"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.5, 0.0, 8.5, 7.0 ], "autoUv": false },
+																								"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.0, 0.0, 8.0, 7.0 ], "autoUv": false }
+																							},
+																							"children": [
+																								{
+																									"name": "body_9",
+																									"from": [ 0.0, 0.0, 4.9 ],
+																									"to": [ 0.7, 0.7, 9.1 ],
+																									"rotationOrigin": [ 0.0, 0.7, 4.9 ],
+																									"rotationX": 5.0,
+																									"rotationY": 25.0,
+																									"faces": {
+																										"north": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																										"east": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 6.0, 1.0 ], "autoUv": false },
+																										"south": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																										"west": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 6.0, 1.0 ], "autoUv": false },
+																										"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.5, 0.0, 8.5, 6.0 ], "autoUv": false },
+																										"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.0, 0.0, 8.0, 6.0 ], "autoUv": false }
+																									},
+																									"children": [
+																										{
+																											"name": "body_10",
+																											"from": [ 0.0, 0.0, 4.2 ],
+																											"to": [ 0.7, 0.7, 8.05 ],
+																											"rotationOrigin": [ 0.0, 0.7, 4.2 ],
+																											"rotationX": 5.0,
+																											"rotationY": 4.0,
+																											"faces": {
+																												"north": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																												"east": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 5.5, 1.0 ], "autoUv": false },
+																												"south": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																												"west": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 5.5, 1.0 ], "autoUv": false },
+																												"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.5, 0.0, 8.5, 5.5 ], "autoUv": false },
+																												"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.0, 0.0, 8.0, 5.5 ], "autoUv": false }
+																											}
+																										}
+																									]
+																								}
+																							]
+																						},
+																						{
+																							"name": "body_16",
+																							"from": [ 0.7, 0.0, 4.2 ],
+																							"to": [ 1.05, 0.35, 4.9 ],
+																							"rotationOrigin": [ 2.1, 0.35, 4.2 ],
+																							"faces": {
+																								"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
+																								"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "rotation": 90, "autoUv": false }
+																							}
+																						}
+																					]
+																				},
+																				{
+																					"name": "body_14",
+																					"from": [ 0.7, 0.0, 5.6 ],
+																					"to": [ 1.4, 0.35, 7.0 ],
+																					"rotationOrigin": [ 2.1, 0.35, 5.6 ],
+																					"faces": {
+																						"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 2.0, 0.0, 3.0, 2.0 ], "autoUv": false },
+																						"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 2.0, 2.0, 3.0 ], "rotation": 90, "autoUv": false }
+																					}
+																				},
+																				{
+																					"name": "body_15",
+																					"from": [ 0.0, 0.0, 5.6 ],
+																					"to": [ 0.7, 0.35, 5.95 ],
+																					"rotationOrigin": [ 1.4, 0.35, 5.6 ],
+																					"faces": {
+																						"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 2.0, 0.0, 3.0, 0.5 ], "autoUv": false },
+																						"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 2.0, 0.5, 3.0 ], "rotation": 90, "autoUv": false }
+																					}
+																				}
+																			]
+																		},
+																		{
+																			"name": "body_12",
+																			"from": [ 0.7035, 0.0, 7.7 ],
+																			"to": [ 1.4035, 0.35, 8.75 ],
+																			"rotationOrigin": [ 2.1035, 0.35, 7.7 ],
+																			"faces": {
+																				"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 4.0, 0.0, 5.0, 1.5 ], "autoUv": false },
+																				"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 4.0, 1.5, 5.0 ], "rotation": 90, "autoUv": false }
+																			}
+																		},
+																		{
+																			"name": "body_13",
+																			"from": [ 0.35, 0.0, 7.7 ],
+																			"to": [ 0.7, 0.35, 8.05 ],
+																			"rotationOrigin": [ 1.7535, 0.35, 7.7 ],
+																			"faces": {
+																				"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 4.0, 0.0, 4.5, 0.5 ], "autoUv": false },
+																				"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 4.0, 0.5, 4.5 ], "rotation": 90, "autoUv": false }
+																			}
+																		}
+																	]
+																},
+																{
+																	"name": "body_11",
+																	"from": [ 0.6973, 0.0, 9.45 ],
+																	"to": [ 1.3973, 0.35, 10.5 ],
+																	"rotationOrigin": [ 0.6973, 0.28, 9.45 ],
+																	"faces": {
+																		"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 6.0, 0.0, 7.0, 1.5 ], "autoUv": false },
+																		"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 6.0, 1.5, 7.0 ], "rotation": 90, "autoUv": false }
+																	}
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"name": "body_top",
+											"from": [ 0.0, 0.0, 0.0 ],
+											"to": [ 0.0, 0.0, 0.0 ],
+											"rotationOrigin": [ 0.0, 0.0, 0.0 ],
+											"rotationY": 180.0,
+											"faces": {
+												"north": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"south": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+											},
+											"children": [
+												{
+													"name": "body_3",
+													"from": [ -0.2768, -0.49, 10.0801 ],
+													"to": [ 0.0732, 1.12, 11.8301 ],
+													"rotationOrigin": [ -0.28, 0.21, 10.78 ],
+													"rotationY": 89.98,
+													"faces": {
+														"north": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 2.5, 2.0 ], "autoUv": false },
+														"south": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 2.5, 2.0 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.5 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.5 ], "autoUv": false }
+													}
+												},
+												{
+													"name": "body_30",
+													"from": [ -0.28, -0.42, 9.94 ],
+													"to": [ 0.07, 0.98, 11.34 ],
+													"rotationOrigin": [ -0.28, 0.28, 10.64 ],
+													"rotationY": 22.5,
+													"faces": {
+														"north": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 2.0, 2.0 ], "autoUv": false },
+														"south": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 2.0, 2.0 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "autoUv": false }
+													}
+												},
+												{
+													"name": "body_31",
+													"from": [ -0.35, -0.35, 9.66 ],
+													"to": [ 0.0, 1.05, 11.06 ],
+													"rotationOrigin": [ -0.35, 0.35, 10.36 ],
+													"rotationY": -30.0,
+													"faces": {
+														"north": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 2.0, 2.0 ], "autoUv": false },
+														"south": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 2.0, 2.0 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 0.5, 2.0 ], "autoUv": false }
+													}
+												},
+												{
+													"name": "body_bottom_2",
+													"from": [ 0.0, 0.0, 0.0 ],
+													"to": [ 0.0, 0.0, 0.0 ],
+													"rotationOrigin": [ 0.0, 0.525, 0.0 ],
+													"rotationZ": -180.0,
+													"faces": {
+														"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+													},
+													"children": [
+														{
+															"name": "body_32",
+															"from": [ -1.4, 0.35, 0.0 ],
+															"to": [ 0.0, 0.7, 9.45 ],
+															"rotationOrigin": [ 0.0, 0.35, 0.0 ],
+															"rotationZ": -3.0,
+															"faces": {
+																"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 6.0, 0.0, 8.0, 13.5 ], "autoUv": false },
+																"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 6.0, 13.5, 8.0 ], "rotation": 90, "autoUv": false }
+															},
+															"children": [
+																{
+																	"name": "body_33",
+																	"from": [ -1.4, 0.0, 0.0 ],
+																	"to": [ 0.0, 0.35, 7.7 ],
+																	"rotationOrigin": [ 0.0, 0.0, 0.0 ],
+																	"rotationZ": -6.0,
+																	"faces": {
+																		"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 4.0, 0.0, 6.0, 11.0 ], "autoUv": false },
+																		"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 4.0, 11.0, 6.0 ], "rotation": 90, "autoUv": false }
+																	},
+																	"children": [
+																		{
+																			"name": "body_34",
+																			"from": [ -1.4, 0.0, 0.0 ],
+																			"to": [ 0.0, 0.35, 5.6 ],
+																			"rotationOrigin": [ 0.0, 0.0, 0.0 ],
+																			"rotationZ": -6.0,
+																			"faces": {
+																				"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 2.0, 0.0, 4.0, 8.0 ], "autoUv": false },
+																				"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 2.0, 8.0, 4.0 ], "rotation": 90, "autoUv": false }
+																			},
+																			"children": [
+																				{
+																					"name": "body_35",
+																					"from": [ -1.05, 0.0, 0.0 ],
+																					"to": [ 0.0, 0.35, 4.2 ],
+																					"rotationOrigin": [ 0.35, 0.0, 0.0 ],
+																					"rotationZ": -6.0,
+																					"faces": {
+																						"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.5, 6.0 ], "autoUv": false },
+																						"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 6.0, 1.5 ], "rotation": 90, "autoUv": false }
+																					},
+																					"children": [
+																						{
+																							"name": "body_36",
+																							"from": [ -0.7, -0.21, 0.0 ],
+																							"to": [ 0.0, 0.49, 4.9 ],
+																							"rotationOrigin": [ -0.7, -0.21, 0.0 ],
+																							"rotationY": 10.0,
+																							"faces": {
+																								"north": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																								"east": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 7.0, 1.0 ], "autoUv": false },
+																								"south": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																								"west": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 7.0, 1.0 ], "autoUv": false },
+																								"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.5, 0.0, 8.5, 7.0 ], "autoUv": false },
+																								"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.0, 0.0, 8.0, 7.0 ], "autoUv": false }
+																							},
+																							"children": [
+																								{
+																									"name": "body_37",
+																									"from": [ 0.0, 0.0, 4.9 ],
+																									"to": [ 0.7, 0.7, 9.1 ],
+																									"rotationOrigin": [ 0.0, 0.0, 4.9 ],
+																									"rotationX": -5.0,
+																									"rotationY": 25.0,
+																									"faces": {
+																										"north": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																										"east": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 6.0, 1.0 ], "autoUv": false },
+																										"south": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																										"west": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 6.0, 1.0 ], "autoUv": false },
+																										"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.5, 0.0, 8.5, 6.0 ], "autoUv": false },
+																										"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.0, 0.0, 8.0, 6.0 ], "autoUv": false }
+																									},
+																									"children": [
+																										{
+																											"name": "body_38",
+																											"from": [ 0.0, 0.0, 4.2 ],
+																											"to": [ 0.7, 0.7, 8.05 ],
+																											"rotationOrigin": [ 0.0, 0.0, 4.2 ],
+																											"rotationX": -5.0,
+																											"rotationY": 4.0,
+																											"faces": {
+																												"north": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																												"east": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 5.5, 1.0 ], "autoUv": false },
+																												"south": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																												"west": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 5.5, 1.0 ], "autoUv": false },
+																												"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.5, 0.0, 8.5, 5.5 ], "autoUv": false },
+																												"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.0, 0.0, 8.0, 5.5 ], "autoUv": false }
+																											}
+																										}
+																									]
+																								}
+																							]
+																						},
+																						{
+																							"name": "body_39",
+																							"from": [ 0.7, 0.0, 4.2 ],
+																							"to": [ 1.05, 0.35, 4.9 ],
+																							"rotationOrigin": [ 2.1, 0.35, 4.2 ],
+																							"faces": {
+																								"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
+																								"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "rotation": 90, "autoUv": false }
+																							}
+																						}
+																					]
+																				},
+																				{
+																					"name": "body_40",
+																					"from": [ 0.7, 0.0, 5.6 ],
+																					"to": [ 1.4, 0.35, 7.0 ],
+																					"rotationOrigin": [ 2.1, 0.35, 5.6 ],
+																					"faces": {
+																						"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 2.0, 0.0, 3.0, 2.0 ], "autoUv": false },
+																						"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 2.0, 2.0, 3.0 ], "rotation": 90, "autoUv": false }
+																					}
+																				},
+																				{
+																					"name": "body_41",
+																					"from": [ 0.0, 0.0, 5.6 ],
+																					"to": [ 0.7, 0.35, 5.95 ],
+																					"rotationOrigin": [ 1.4, 0.35, 5.6 ],
+																					"faces": {
+																						"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 2.0, 0.0, 3.0, 0.5 ], "autoUv": false },
+																						"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 2.0, 0.5, 3.0 ], "rotation": 90, "autoUv": false }
+																					}
+																				}
+																			]
+																		},
+																		{
+																			"name": "body_42",
+																			"from": [ 0.7035, 0.0, 7.7 ],
+																			"to": [ 1.4035, 0.35, 8.75 ],
+																			"rotationOrigin": [ 2.1035, 0.35, 7.7 ],
+																			"faces": {
+																				"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 4.0, 0.0, 5.0, 1.5 ], "autoUv": false },
+																				"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 4.0, 1.5, 5.0 ], "rotation": 90, "autoUv": false }
+																			}
+																		},
+																		{
+																			"name": "body_43",
+																			"from": [ 0.35, 0.0, 7.7 ],
+																			"to": [ 0.7, 0.35, 8.05 ],
+																			"rotationOrigin": [ 1.7535, 0.35, 7.7 ],
+																			"faces": {
+																				"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 4.0, 0.0, 4.5, 0.5 ], "autoUv": false },
+																				"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 4.0, 0.5, 4.5 ], "rotation": 90, "autoUv": false }
+																			}
+																		}
+																	]
+																},
+																{
+																	"name": "body_44",
+																	"from": [ 0.6973, 0.0, 9.45 ],
+																	"to": [ 1.3973, 0.35, 10.5 ],
+																	"rotationOrigin": [ 0.6973, 0.28, 9.45 ],
+																	"faces": {
+																		"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 6.0, 0.0, 7.0, 1.5 ], "autoUv": false },
+																		"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 6.0, 1.5, 7.0 ], "rotation": 90, "autoUv": false }
+																	}
+																}
+															]
+														}
+													]
+												},
+												{
+													"name": "body_bottom_3",
+													"from": [ 0.0, 0.0, 0.0 ],
+													"to": [ 0.0, 0.0, 0.0 ],
+													"rotationOrigin": [ 0.0, 0.525, 0.0 ],
+													"faces": {
+														"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+													},
+													"children": [
+														{
+															"name": "body_45",
+															"from": [ -1.4, 0.35, 0.0 ],
+															"to": [ 0.0, 0.7, 9.45 ],
+															"rotationOrigin": [ 0.0, 0.7, 0.0 ],
+															"rotationZ": 3.0,
+															"faces": {
+																"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 6.0, 0.0, 8.0, 13.5 ], "autoUv": false },
+																"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 6.0, 13.5, 8.0 ], "rotation": 90, "autoUv": false }
+															},
+															"children": [
+																{
+																	"name": "body_46",
+																	"from": [ -1.4, 0.0, 0.0 ],
+																	"to": [ 0.0, 0.35, 7.7 ],
+																	"rotationOrigin": [ 0.0, 0.35, 0.0 ],
+																	"rotationZ": 6.0,
+																	"faces": {
+																		"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 4.0, 0.0, 6.0, 11.0 ], "autoUv": false },
+																		"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 4.0, 11.0, 6.0 ], "rotation": 90, "autoUv": false }
+																	},
+																	"children": [
+																		{
+																			"name": "body_47",
+																			"from": [ -1.4, 0.0, 0.0 ],
+																			"to": [ 0.0, 0.35, 5.6 ],
+																			"rotationOrigin": [ 0.0, 0.35, 0.0 ],
+																			"rotationZ": 6.0,
+																			"faces": {
+																				"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 2.0, 0.0, 4.0, 8.0 ], "autoUv": false },
+																				"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 2.0, 8.0, 4.0 ], "rotation": 90, "autoUv": false }
+																			},
+																			"children": [
+																				{
+																					"name": "body_48",
+																					"from": [ -1.05, 0.0, 0.0 ],
+																					"to": [ 0.0, 0.35, 4.2 ],
+																					"rotationOrigin": [ 0.35, 0.35, 0.0 ],
+																					"rotationZ": 6.0,
+																					"faces": {
+																						"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.5, 6.0 ], "autoUv": false },
+																						"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 6.0, 1.5 ], "rotation": 90, "autoUv": false }
+																					},
+																					"children": [
+																						{
+																							"name": "body_49",
+																							"from": [ -0.7, -0.14, 0.0 ],
+																							"to": [ 0.0, 0.56, 4.9 ],
+																							"rotationOrigin": [ -0.7, -0.14, 0.0 ],
+																							"rotationY": 10.0,
+																							"faces": {
+																								"north": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																								"east": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 7.0, 1.0 ], "autoUv": false },
+																								"south": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																								"west": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 7.0, 1.0 ], "autoUv": false },
+																								"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.5, 0.0, 8.5, 7.0 ], "autoUv": false },
+																								"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.0, 0.0, 8.0, 7.0 ], "autoUv": false }
+																							},
+																							"children": [
+																								{
+																									"name": "body_50",
+																									"from": [ 0.0, 0.0, 4.9 ],
+																									"to": [ 0.7, 0.7, 9.1 ],
+																									"rotationOrigin": [ 0.0, 0.7, 4.9 ],
+																									"rotationX": 5.0,
+																									"rotationY": 25.0,
+																									"faces": {
+																										"north": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																										"east": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 6.0, 1.0 ], "autoUv": false },
+																										"south": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																										"west": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 6.0, 1.0 ], "autoUv": false },
+																										"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.5, 0.0, 8.5, 6.0 ], "autoUv": false },
+																										"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.0, 0.0, 8.0, 6.0 ], "autoUv": false }
+																									},
+																									"children": [
+																										{
+																											"name": "body_51",
+																											"from": [ 0.0, 0.0, 4.2 ],
+																											"to": [ 0.7, 0.7, 8.05 ],
+																											"rotationOrigin": [ 0.0, 0.7, 4.2 ],
+																											"rotationX": 5.0,
+																											"rotationY": 4.0,
+																											"faces": {
+																												"north": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																												"east": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 5.5, 1.0 ], "autoUv": false },
+																												"south": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+																												"west": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 5.5, 1.0 ], "autoUv": false },
+																												"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.5, 0.0, 8.5, 5.5 ], "autoUv": false },
+																												"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 7.0, 0.0, 8.0, 5.5 ], "autoUv": false }
+																											}
+																										}
+																									]
+																								}
+																							]
+																						},
+																						{
+																							"name": "body_52",
+																							"from": [ 0.7, 0.0, 4.2 ],
+																							"to": [ 1.05, 0.35, 4.9 ],
+																							"rotationOrigin": [ 2.1, 0.35, 4.2 ],
+																							"faces": {
+																								"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
+																								"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "rotation": 90, "autoUv": false }
+																							}
+																						}
+																					]
+																				},
+																				{
+																					"name": "body_53",
+																					"from": [ 0.7, 0.0, 5.6 ],
+																					"to": [ 1.4, 0.35, 7.0 ],
+																					"rotationOrigin": [ 2.1, 0.35, 5.6 ],
+																					"faces": {
+																						"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 2.0, 0.0, 3.0, 2.0 ], "autoUv": false },
+																						"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 2.0, 2.0, 3.0 ], "rotation": 90, "autoUv": false }
+																					}
+																				},
+																				{
+																					"name": "body_54",
+																					"from": [ 0.0, 0.0, 5.6 ],
+																					"to": [ 0.7, 0.35, 5.95 ],
+																					"rotationOrigin": [ 1.4, 0.35, 5.6 ],
+																					"faces": {
+																						"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 2.0, 0.0, 3.0, 0.5 ], "autoUv": false },
+																						"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 2.0, 0.5, 3.0 ], "rotation": 90, "autoUv": false }
+																					}
+																				}
+																			]
+																		},
+																		{
+																			"name": "body_55",
+																			"from": [ 0.7035, 0.0, 7.7 ],
+																			"to": [ 1.4035, 0.35, 8.75 ],
+																			"rotationOrigin": [ 2.1035, 0.35, 7.7 ],
+																			"faces": {
+																				"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 4.0, 0.0, 5.0, 1.5 ], "autoUv": false },
+																				"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 4.0, 1.5, 5.0 ], "rotation": 90, "autoUv": false }
+																			}
+																		},
+																		{
+																			"name": "body_56",
+																			"from": [ 0.35, 0.0, 7.7 ],
+																			"to": [ 0.7, 0.35, 8.05 ],
+																			"rotationOrigin": [ 1.7535, 0.35, 7.7 ],
+																			"faces": {
+																				"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 4.0, 0.0, 4.5, 0.5 ], "autoUv": false },
+																				"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 4.0, 0.5, 4.5 ], "rotation": 90, "autoUv": false }
+																			}
+																		}
+																	]
+																},
+																{
+																	"name": "body_57",
+																	"from": [ 0.6973, 0.0, 9.45 ],
+																	"to": [ 1.3973, 0.35, 10.5 ],
+																	"rotationOrigin": [ 0.6973, 0.28, 9.45 ],
+																	"faces": {
+																		"up": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 6.0, 0.0, 7.0, 1.5 ], "autoUv": false },
+																		"down": { "texture": "#shoulder-sling-plain-weapon-rawhide", "uv": [ 0.0, 6.0, 1.5, 7.0 ], "rotation": 90, "autoUv": false }
+																	}
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "Handle",
+									"from": [ -0.42, -1.33, -1.61 ],
+									"to": [ 0.42, -0.49, 1.54 ],
+									"rotationOrigin": [ -0.42, -1.33, -1.61 ],
+									"faces": {
+										"north": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+										"east": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 4.5, 1.0 ], "autoUv": false },
+										"south": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+										"west": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 0.0, 0.0, 4.5, 1.0 ], "autoUv": false },
+										"up": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 6.5, 0.0, 7.5, 4.5 ], "autoUv": false },
+										"down": { "texture": "#shoulder-sling-plain-weapon-reedrope", "uv": [ 6.5, 0.0, 7.5, 4.5 ], "autoUv": false }
+									},
+									"children": [
+										{
+											"name": "Cube3",
+											"from": [ 0.07, 1.33, -10.99 ],
+											"to": [ 0.77, 2.03, 0.21 ],
+											"rotationOrigin": [ 0.07, 1.33, -8.89 ],
+											"rotationX": 8.0,
+											"faces": {
+												"north": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 16.0, 1.0 ], "autoUv": false },
+												"south": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 16.0, 1.0 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 6.5, 0.0, 7.5, 16.0 ], "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 6.5, 0.0, 7.5, 16.0 ], "autoUv": false }
+											}
+										},
+										{
+											"name": "Cube2",
+											"from": [ 0.07, 1.33, 3.01 ],
+											"to": [ 0.77, 2.03, 14.21 ],
+											"rotationOrigin": [ 0.07, 1.33, 12.11 ],
+											"rotationX": -8.0,
+											"faces": {
+												"north": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 16.0, 1.0 ], "autoUv": false },
+												"south": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 16.0, 1.0 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 6.5, 0.0, 7.5, 16.0 ], "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 6.5, 0.0, 7.5, 16.0 ], "autoUv": false }
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Sling_origin",
+					"from": [ 4.0, 5.0, 0.0 ],
+					"to": [ 4.0, 5.0, 0.0 ],
+					"rotationOrigin": [ 4.0, 5.0, 0.0 ],
+					"faces": {
+						"north": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+						"east": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+						"south": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+						"west": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+						"up": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+						"down": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+					},
+					"children": [
+						{
+							"name": "sling_0",
+							"from": [ -4.6, 0.0, 0.1 ],
+							"to": [ 1.4, 0.6, 0.6 ],
+							"rotationOrigin": [ -4.6, 0.0, 0.1 ],
+							"faces": {
+								"north": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 6.0, 0.5 ] },
+								"east": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+								"south": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 6.0, 0.5 ] },
+								"west": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+								"up": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 6.0, 0.5 ] },
+								"down": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 6.0, 0.5 ] }
+							},
+							"children": [
+								{
+									"name": "sling_2",
+									"from": [ 0.0, 0.0, 0.0 ],
+									"to": [ 5.0, 0.6, 0.5 ],
+									"rotationOrigin": [ 0.0, 0.0, 0.0 ],
+									"rotationX": -5.0,
+									"rotationZ": -90.0,
+									"faces": {
+										"north": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 5.0, 0.5 ] },
+										"east": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"south": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 5.0, 0.5 ] },
+										"west": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"up": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 5.0, 0.5 ] },
+										"down": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 5.0, 0.5 ] }
+									},
+									"children": [
+										{
+											"name": "sling_4",
+											"from": [ 5.0, 0.0, 0.0 ],
+											"to": [ 17.0, 0.6, 0.5 ],
+											"rotationOrigin": [ 5.0, 0.0, 0.0 ],
+											"rotationY": 1.0,
+											"rotationZ": 35.0,
+											"faces": {
+												"north": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 12.0, 0.5 ] },
+												"east": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+												"south": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 12.0, 0.5 ] },
+												"west": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+												"up": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 12.0, 0.5 ] },
+												"down": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 12.0, 0.5 ] }
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "sling_1",
+							"from": [ 1.2, 0.1, -0.2 ],
+							"to": [ 2.2, 0.4, 0.9 ],
+							"rotationOrigin": [ 1.2, 0.1, -0.2 ],
+							"faces": {
+								"north": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"east": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"south": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"west": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"up": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+								"down": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ] }
+							}
+						},
+						{
+							"name": "sling_3",
+							"from": [ 2.3, -14.6, 0.9 ],
+							"to": [ 3.3, -14.3, 2.0 ],
+							"rotationOrigin": [ 2.3, -14.6, 0.9 ],
+							"faces": {
+								"north": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"east": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"south": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"west": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"up": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+								"down": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ] }
+							}
+						}
+					]
+				}
+			]
+		}
+	]}

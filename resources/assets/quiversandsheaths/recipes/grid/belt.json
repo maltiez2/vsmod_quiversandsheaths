@@ -1,0 +1,47 @@
+[
+  {
+		"enabled": true,
+		"ingredientPattern": "LNL,L_L,LLL",
+		"recipeGroup": 1,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-buckle-iron"},
+			"L": { "type": "item", "code": "game:leather-normal-plain" }
+		},
+		"width": 3,
+		"height": 3,
+		"name": "belt-general",
+		"output": { "type": "item", "code": "belt-waist-plain-general" }
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "LNL,LLL",
+		"recipeGroup": 2,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-buckle-{metal}"},
+			"L": { "type": "item", "code": "game:leather-normal-{leather}" }
+		},
+		"allowedVariants": {
+			"metal": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"]
+		},
+		"width": 3,
+		"height": 2,
+		"name": "belt-general",
+		"output": { "type": "item", "code": "belt-waist-plain-general",  "attributes": {"types": {"belt": "thin", "leather": "{leather}", "metal": "{metal}"}} }
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "LNL,L_L,LLL",
+		"recipeGroup": 2,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-buckle-{metal}"},
+			"L": { "type": "item", "code": "game:leather-normal-{leather}" }
+		},
+		"allowedVariants": {
+			"metal": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"]
+		},
+		"width": 3,
+		"height": 3,
+		"name": "belt-general",
+		"output": { "type": "item", "code": "belt-waist-plain-general",  "attributes": {"types": {"belt": "thick", "leather": "{leather}", "metal": "{metal}"}} }
+	}
+]

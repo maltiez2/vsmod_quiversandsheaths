@@ -1,0 +1,37 @@
+[
+  {
+		"enabled": true,
+		"ingredientPattern": "NLN,LFL,LSL",
+		"recipeGroup": 1,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-buckle-iron"},
+			"L": { "type": "item", "code": "game:leather-normal-plain", "quantity":  3 },
+			"F": { "type": "item", "code": "game:bow-*", "isTool": true, "toolDurabilityCost": 0 },
+			"S": {"type": "item", "code": "game:sewingkit"}
+		},
+		"width": 3,
+		"height": 3,
+		"name": "saydak",
+		"requiresTrait": "clothier",
+		"output": { "type": "item", "code": "shoulderbag-rightshoulder-sheath-bows" }
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "NLN,LFL,LSL",
+		"recipeGroup": 2,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-buckle-{metal}"},
+			"L": { "type": "item", "code": "game:leather-normal-{leather}", "quantity":  3 },
+			"F": { "type": "item", "code": "game:bow-*", "isTool": true, "toolDurabilityCost": 0 },
+			"S": {"type": "item", "code": "game:sewingkit"}
+		},
+		"allowedVariants": {
+			"metal": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"]
+		},
+		"width": 3,
+		"height": 3,
+		"name": "saydak",
+		"requiresTrait": "clothier",
+		"output": { "type": "item", "code": "shoulderbag-rightshoulder-sheath-bows",  "attributes": {"types": {"leather": "{leather}", "metal": "{metal}"}} }
+	}
+]

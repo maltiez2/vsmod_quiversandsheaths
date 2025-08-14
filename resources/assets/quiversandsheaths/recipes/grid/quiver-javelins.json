@@ -1,0 +1,33 @@
+[
+	{
+		"enabled": false,
+		"ingredientPattern": "LNL,LFL,LLL",
+		"recipeGroup": 1,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-buckle-iron"},
+			"L": { "type": "item", "code": "game:leather-normal-plain", "quantity":  1 },
+			"F": { "type": "item", "code": "armory:javelin-*", "isTool": true, "toolDurabilityCost": 0 }
+		},
+		"width": 3,
+		"height": 3,
+		"name": "quiver-javelin",
+		"output": { "type": "item", "code": "beltbag-back-quiver-javelins" }
+	},
+	{
+		"enabled": false,
+		"ingredientPattern": "LNL,LFL,LLL",
+		"recipeGroup": 2,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-buckle-{metal}"},
+			"L": { "type": "item", "code": "game:leather-normal-{leather}", "quantity":  1 },
+			"F": { "type": "item", "code": "armory:javelin-*", "isTool": true, "toolDurabilityCost": 0 }
+		},
+		"allowedVariants": {
+			"metal": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"]
+		},
+		"width": 3,
+		"height": 3,
+		"name": "quiver-javelin",
+		"output": { "type": "item", "code": "beltbag-back-quiver-javelins",  "attributes": {"types": {"leather": "{leather}", "metal": "{metal}"}} }
+	}
+]

@@ -1,0 +1,35 @@
+[
+	{
+		"enabled": true,
+		"ingredientPattern": "LNL,LFL,LSL",
+		"recipeGroup": 1,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-buckle-iron"},
+			"L": { "type": "item", "code": "game:leather-normal-plain", "quantity":  2 },
+			"F": { "type": "item", "code": "game:bow-*", "isTool": true, "toolDurabilityCost": 0 },
+			"S": {"type": "item", "code": "game:sewingkit"}
+		},
+		"width": 3,
+		"height": 3,
+		"name": "saydak",
+		"output": { "type": "item", "code": "beltbag-right-sheath-bows" }
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "LNL,LFL,LSL",
+		"recipeGroup": 2,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-buckle-{metal}"},
+			"L": { "type": "item", "code": "game:leather-normal-{leather}", "quantity":  2 },
+			"F": { "type": "item", "code": "game:bow-*", "isTool": true, "toolDurabilityCost": 0 },
+			"S": {"type": "item", "code": "game:sewingkit"}
+		},
+		"allowedVariants": {
+			"metal": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"]
+		},
+		"width": 3,
+		"height": 3,
+		"name": "saydak",
+		"output": { "type": "item", "code": "beltbag-right-sheath-bows",  "attributes": {"types": {"leather": "{leather}", "metal": "{metal}"}} }
+	}
+]

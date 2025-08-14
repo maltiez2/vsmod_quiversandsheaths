@@ -1,0 +1,153 @@
+{
+	"editor": {
+		"collapsedPaths": "Root/Waist-Quiver/Sheath_0,Root/Waist-Quiver/Belt,Root/Bow,Root/Waist-Quiver/Quiver,Root/Sowrd/Handle,Root/Waist-Quiver/Saydak,Root/Waist-Quiver/Sheath/sheath_0,Root/Waist-Quiver/Sheath/sheath_0/Sowrd/Handle2,Root/Waist-Quiver/Quiver/arrow_3,Root/Waist-Quiver/Quiver/arrow_2,Root/Waist-Quiver/Quiver/arrow_1,Root/Waist-Quiver/Bow,Root/Waist/buckle-bottom,Root/Waist-Quiver/Quiver/arrow_0,Root/Waist-Quiver/Pouch_1,Root/Waist-Quiver/Sheath/sheath_0/Handle2/Guard_2,Root/Waist-Quiver/Pouch_0,Root/Sowrd/Metal,Root/Waist-Belt/Sheath",
+		"allAngles": true,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"belt-waist-plain-material": "game:block/leather/plain",
+		"belt-waist-plain-metal": "game:block/metal/plate/brass"
+	},
+	"elements": [
+		{
+			"name": "root",
+			"from": [ 0.0, 0.0, 0.0 ],
+			"to": [ 0.0, 0.0, 0.0 ],
+			"rotationOrigin": [ 0.0, 0.0, 0.0 ],
+			"rotationX": 90.0,
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "Pouch_0",
+					"from": [ -1.7, 0.0, -0.8 ],
+					"to": [ 1.3, 2.0, 0.7 ],
+					"rotationOrigin": [ -0.7, 2.0, 0.2 ],
+					"rotationX": -180.0,
+					"rotationY": 66.0,
+					"rotationZ": -180.0,
+					"faces": {
+						"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 2.0 ] },
+						"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.5, 2.0 ] },
+						"south": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 2.0 ] },
+						"west": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.5, 2.0 ] },
+						"up": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 1.5 ] },
+						"down": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 1.5 ] }
+					},
+					"children": [
+						{
+							"name": "quiver_4",
+							"from": [ -0.2, 2.0, 0.0 ],
+							"to": [ 3.2, 2.2, 1.5 ],
+							"rotationOrigin": [ 0.8, 8.0, 2.0 ],
+							"faces": {
+								"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 0.5 ] },
+								"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+								"south": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 0.5 ] },
+								"west": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+								"up": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 1.5 ] },
+								"down": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 1.5 ] }
+							}
+						},
+						{
+							"name": "quiver_5",
+							"from": [ -0.2, 2.0, -1.0 ],
+							"to": [ 3.2, 2.2, 0.0 ],
+							"rotationOrigin": [ -0.2, 2.2, 0.0 ],
+							"rotationX": -80.0,
+							"faces": {
+								"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 0.5 ] },
+								"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"south": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 0.5 ] },
+								"west": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"up": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 1.0 ] },
+								"down": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 1.0 ] }
+							},
+							"children": [
+								{
+									"name": "Cube2",
+									"from": [ 1.4, 0.1, -0.1 ],
+									"to": [ 2.0, 0.3, 0.4 ],
+									"rotationOrigin": [ 1.4, 0.1, -0.1 ],
+									"faces": {
+										"north": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"east": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"south": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"west": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"up": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"down": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Pouch_1",
+					"from": [ -0.7, 0.0, -1.9 ],
+					"to": [ 2.3, 2.0, -0.4 ],
+					"rotationOrigin": [ 0.3, 2.8, 0.1 ],
+					"rotationY": -116.0,
+					"faces": {
+						"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 2.0 ] },
+						"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.5, 2.0 ] },
+						"south": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 2.0 ] },
+						"west": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.5, 2.0 ] },
+						"up": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 1.5 ] },
+						"down": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 1.5 ] }
+					},
+					"children": [
+						{
+							"name": "quiver_7",
+							"from": [ -0.2, 2.0, 0.0 ],
+							"to": [ 3.2, 2.2, 1.5 ],
+							"rotationOrigin": [ 0.8, 8.0, 2.0 ],
+							"faces": {
+								"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 0.5 ] },
+								"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+								"south": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 0.5 ] },
+								"west": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+								"up": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 1.5 ] },
+								"down": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 1.5 ] }
+							}
+						},
+						{
+							"name": "quiver_8",
+							"from": [ -0.2, 2.0, -1.0 ],
+							"to": [ 3.2, 2.2, 0.0 ],
+							"rotationOrigin": [ -0.2, 2.2, 0.0 ],
+							"rotationX": -80.0,
+							"faces": {
+								"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 0.5 ] },
+								"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"south": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 0.5 ] },
+								"west": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"up": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 1.0 ] },
+								"down": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.0, 1.0 ] }
+							},
+							"children": [
+								{
+									"name": "Cube3",
+									"from": [ 1.4, 0.1, -0.1 ],
+									"to": [ 2.0, 0.3, 0.4 ],
+									"rotationOrigin": [ 1.4, 0.1, -0.1 ],
+									"faces": {
+										"north": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"east": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"south": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"west": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"up": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"down": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]}

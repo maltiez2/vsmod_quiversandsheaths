@@ -1,0 +1,191 @@
+﻿{
+  "code": "shoulderbag",
+  "class": "Item",
+  "tags": ["belt-bag"],
+  "variantgroups": [{ "code": "category", "states": ["rightshoulder"] }, { "code": "subtype", "states": ["sheath"] }, { "code": "type", "states": ["bows"] }],
+  "shape": {
+    "base": "quiversandsheaths:saydak-shoulder/belt",
+    "overlays": [{ "base": "quiversandsheaths:saydak-shoulder/empty/quiver_arrows" }, { "base": "quiversandsheaths:saydak-shoulder/empty/quiver_default" }]
+  },
+  "texturesByType": { "*": { "seraph": { "base": "game:block/transparent" } } },
+  "storageFlags": 128,
+  "behaviors": [
+    {
+      "name": "QuiversAndSheaths:Sheath",
+      "properties": {
+        "toolSlot": { "slotColor": "#fc9803", "canHoldWildcards": ["*:bow-*"], "canHoldItemTags": ["bow"], "slotsIcon": "quiversandsheaths:bow", "SlotBackpackCategory": "weapon-tool", "HandleHotkey": true },
+        "slots": [
+          {
+            "canHoldWildcards": ["*arrow-*"],
+            "canHoldItemTags": ["arrow"],
+            "slotColor": "#84b054",
+            "slotsNumber": 3,
+            "slotsIcon": "quiversandsheaths:arrows",
+            "SetVariants": true,
+            "SlotVariant": "arrow_slot",
+            "SlotStateVariant": "arrow_slot_state",
+            "SlotBackpackCategory": "ammunition"
+          }
+        ],
+        "takeOutColor": "#999999",
+        "hotkey": { "hotkeyCode": "combatoverhaul-swap-weapon-right-ranged", "hotkeyName": "Swap ranged weapon (main hand)", "hotkeyKey": "R" },
+        "takeOutSlotIcon": "quiversandsheaths:takeout"
+      }
+    },
+    {
+      "name": "QuiversAndSheaths:ShapeTexturesFromAttributes",
+      "properties": {
+        "addOverlayPrefix": false,
+        "shape": {
+          "arrow_slot_state-*::right_slot-*::right_slot_state-*": {
+            "base": "quiversandsheaths:saydak-shoulder/belt",
+            "overlays": [{ "base": "quiversandsheaths:saydak-shoulder/{arrow_slot_state}/quiver_arrows" }, { "base": "quiversandsheaths:saydak-shoulder/{right_slot_state}/quiver_{right_slot}_bow" }]
+          },
+          "right_slot-*::right_slot_state-*": {
+            "base": "quiversandsheaths:saydak-shoulder/belt",
+            "overlays": [{ "base": "quiversandsheaths:saydak-shoulder/empty/quiver_arrows" }, { "base": "quiversandsheaths:saydak-shoulder/{right_slot_state}/quiver_{right_slot}_bow" }]
+          },
+          "*": {
+            "base": "quiversandsheaths:saydak-shoulder/belt",
+            "overlays": [{ "base": "quiversandsheaths:saydak-shoulder/empty/quiver_arrows" }, { "base": "quiversandsheaths:saydak-shoulder/empty/quiver_default" }]
+          }
+        },
+        "textures": { "metal-*::leather-*": { "shoulderbag-right-material": { "base": "game:block/leather/{leather}" }, "shoulderbag-right-metal": { "base": "game:block/metal/plate/{metal}" } } }
+      }
+    },
+    {
+      "name": "QuiversAndSheaths:ShapeReplacement",
+      "properties": {
+        "addOverlayPrefix": false,
+        "renderTargets": ["Gui", "HandTp", "HandTpOff", "Ground"],
+        "shape": { "*": { "base": "quiversandsheaths:gui/saydak-shoulder" } },
+        "textures": { "metal-*::leather-*": { "shoulderbag-right-material": { "base": "game:block/leather/{leather}" }, "shoulderbag-right-metal": { "base": "game:block/metal/plate/{metal}" } } }
+      }
+    },
+    { "name": "CombatOverhaul:GoesIntoSlotsInfo" }
+  ],
+  "attributes": { "wearableAttachment": true, "clothescategory": "rightshouldergear", "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["shoulderbag-{category}-{subtype}-{type}"] } },
+  "creativeinventory": { "general": ["*"], "quiversandsheaths": ["*"] },
+  "creativeinventoryStacks": [
+    {
+      "tabs": ["general", "quiversandsheaths-colors"],
+      "stacks": [
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}" },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "plain", "metal": "brass" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "orange", "metal": "brass" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "black", "metal": "brass" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "red", "metal": "brass" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "blue", "metal": "brass" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "purple", "metal": "brass" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "pink", "metal": "brass" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "white", "metal": "brass" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "yellow", "metal": "brass" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "gray", "metal": "brass" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "green", "metal": "brass" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "plain", "metal": "copper" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "orange", "metal": "copper" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "black", "metal": "copper" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "red", "metal": "copper" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "blue", "metal": "copper" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "purple", "metal": "copper" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "pink", "metal": "copper" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "white", "metal": "copper" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "yellow", "metal": "copper" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "gray", "metal": "copper" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "green", "metal": "copper" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "plain", "metal": "tinbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "orange", "metal": "tinbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "black", "metal": "tinbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "red", "metal": "tinbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "blue", "metal": "tinbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "purple", "metal": "tinbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "pink", "metal": "tinbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "white", "metal": "tinbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "yellow", "metal": "tinbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "gray", "metal": "tinbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "green", "metal": "tinbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "plain", "metal": "bismuthbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "orange", "metal": "bismuthbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "black", "metal": "bismuthbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "red", "metal": "bismuthbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "blue", "metal": "bismuthbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "purple", "metal": "bismuthbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "pink", "metal": "bismuthbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "white", "metal": "bismuthbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "yellow", "metal": "bismuthbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "gray", "metal": "bismuthbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "green", "metal": "bismuthbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "plain", "metal": "blackbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "orange", "metal": "blackbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "black", "metal": "blackbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "red", "metal": "blackbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "blue", "metal": "blackbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "purple", "metal": "blackbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "pink", "metal": "blackbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "white", "metal": "blackbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "yellow", "metal": "blackbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "gray", "metal": "blackbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "green", "metal": "blackbronze" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "plain", "metal": "gold" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "orange", "metal": "gold" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "black", "metal": "gold" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "red", "metal": "gold" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "blue", "metal": "gold" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "purple", "metal": "gold" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "pink", "metal": "gold" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "white", "metal": "gold" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "yellow", "metal": "gold" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "gray", "metal": "gold" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "green", "metal": "gold" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "plain", "metal": "silver" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "orange", "metal": "silver" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "black", "metal": "silver" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "red", "metal": "silver" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "blue", "metal": "silver" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "purple", "metal": "silver" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "pink", "metal": "silver" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "white", "metal": "silver" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "yellow", "metal": "silver" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "gray", "metal": "silver" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "green", "metal": "silver" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "plain", "metal": "iron" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "orange", "metal": "iron" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "black", "metal": "iron" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "red", "metal": "iron" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "blue", "metal": "iron" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "purple", "metal": "iron" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "pink", "metal": "iron" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "white", "metal": "iron" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "yellow", "metal": "iron" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "gray", "metal": "iron" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "green", "metal": "iron" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "plain", "metal": "meteoriciron" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "orange", "metal": "meteoriciron" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "black", "metal": "meteoriciron" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "red", "metal": "meteoriciron" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "blue", "metal": "meteoriciron" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "purple", "metal": "meteoriciron" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "pink", "metal": "meteoriciron" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "white", "metal": "meteoriciron" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "yellow", "metal": "meteoriciron" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "gray", "metal": "meteoriciron" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "green", "metal": "meteoriciron" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "plain", "metal": "steel" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "orange", "metal": "steel" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "black", "metal": "steel" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "red", "metal": "steel" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "blue", "metal": "steel" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "purple", "metal": "steel" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "pink", "metal": "steel" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "white", "metal": "steel" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "yellow", "metal": "steel" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "gray", "metal": "steel" } } },
+        { "type": "item", "code": "shoulderbag-{category}-{subtype}-{type}", "attributes": { "types": { "leather": "green", "metal": "steel" } } }
+      ]
+    }
+  ],
+  "renderAlphaTest": "0.25",
+  "tpHandTransform": { "translation": { "x": 0, "y": "-0.05", "z": 0 }, "rotation": { "x": 0, "y": 180, "z": 48 }, "origin": { "x": 0, "y": 0, "z": 0 }, "scale": 1 },
+  "guiTransform": { "translation": { "x": 0, "y": 0, "z": 0 }, "rotation": { "x": 55, "y": -1, "z": 36 }, "origin": { "x": "-0.11", "y": "-0.15", "z": 0 }, "scaleXyz": { "x": "-2.77", "y": "2.77", "z": "2.77" } },
+  "groundTransform": { "translation": { "x": 0, "y": 0, "z": 0 }, "rotation": { "x": 90, "y": 0, "z": 0 }, "origin": { "x": 0, "y": 0, "z": "0.1" }, "scale": 4 }
+}

@@ -1,0 +1,319 @@
+﻿using AttributeRenderingLibrary;
+using CombatOverhaul.Armor;
+using CombatOverhaul.Utils;
+using System.Diagnostics;
+using Vintagestory.API.Common;
+using Vintagestory.API.Common.Entities;
+using Vintagestory.API.Config;
+using Vintagestory.API.Datastructures;
+using Vintagestory.API.Server;
+using Vintagestory.Common;
+using Vintagestory.GameContent;
+
+namespace QuiversAndSheaths;
+
+public class SheathStats
+{
+    public string RightHandVariant { get; set; } = "right_slot";
+    public string LeftHandVariant { get; set; } = "left_slot";
+    public string RightHandStateVariant { get; set; } = "right_slot_state";
+    public string LeftHandStateVariant { get; set; } = "left_slot_state";
+    public string EmptyStateCode { get; set; } = "empty";
+    public string FullStateCode { get; set; } = "full";
+    public string RightWeaponMetalVariant { get; set; } = "right_metal";
+    public string RightWeaponLeatherVariant { get; set; } = "right_leather";
+    public string RightWeaponWoodVariant { get; set; } = "right_wood";
+    public string LeftWeaponMetalVariant { get; set; } = "left_metal";
+    public string LeftWeaponLeatherVariant { get; set; } = "left_leather";
+    public string LeftWeaponWoodVariant { get; set; } = "left_wood";
+}
+
+public class SheathableStats
+{
+    public string InSheathVariantCode { get; set; } = "default";
+    public string MetalVariantCode { get; set; } = "copper";
+    public string LeatherVariantCode { get; set; } = "plain";
+    public string WoodVariantCode { get; set; } = "oak";
+}
+
+public class SheathBehavior : ToolBag
+{
+    public SheathBehavior(CollectibleObject collObj) : base(collObj)
+    {
+    }
+
+    public override void Initialize(JsonObject properties)
+    {
+        base.Initialize(properties);
+
+        Stats = properties.AsObject<SheathStats>();
+    }
+
+    public override List<ItemSlotBagContent?> GetOrCreateSlots(ItemStack bagstack, InventoryBase parentinv, int bagIndex, IWorldAccessor world)
+    {
+        Debug.WriteLine($"GetOrCreateSlots: {bagIndex}");
+
+        if (parentinv is InventoryBasePlayer playerInventory && playerInventory.Player?.Entity != null && world.Api is ICoreServerAPI)
+        {
+            EntityPlayer player = playerInventory.Player.Entity;
+
+            if (!ProcessedPlayers.Contains(player.EntityId))
+            {
+                playerInventory.SlotModified += slotIndex => OnSlotModified(playerInventory, player, slotIndex);
+                ProcessedPlayers.Add(player.EntityId);
+            }
+        }
+
+        return base.GetOrCreateSlots(bagstack, parentinv, bagIndex, world);
+    }
+
+    protected readonly List<long> ProcessedPlayers = [];
+    protected SheathStats Stats = new();
+
+    protected static InventoryBase? GetGearInventory(Entity entity)
+    {
+        return entity.GetBehavior<EntityBehaviorPlayerInventory>()?.Inventory;
+    }
+    protected InventoryPlayerBackPacks? GetBackpackInventory(EntityPlayer entity)
+    {
+        return entity.Player.InventoryManager.GetOwnInventory(GlobalConstants.backpackInvClassName) as InventoryPlayerBackPacks;
+    }
+
+    protected virtual int GetBagIndex(InventoryBasePlayer backpackInventory, EntityPlayer player, int slotIndex)
+    {
+        try
+        {
+            ItemSlot slot = backpackInventory[slotIndex];
+            if (slot is ItemSlotBagContentWithWildcardMatch mainSlot)
+            {
+                return mainSlot.BagIndex;
+            }
+
+            if (slot is ItemSlotTakeOutOnly takeOutSlot)
+            {
+                return takeOutSlot.BagIndex;
+            }
+        }
+        catch (Exception exception)
+        {
+            LoggerUtil.Error(player.Api, this, $"Error on getting bag index: {exception}");
+        }
+
+        return 0;
+    }
+
+    protected virtual void OnSlotModified(InventoryBasePlayer backpackInventory, EntityPlayer player, int slotIndex)
+    {
+        int bagIndex = GetBagIndex(backpackInventory, player, slotIndex);
+
+        OnSlotModifiedOtherSlots(backpackInventory, player, slotIndex, bagIndex);
+
+        InventoryBase? gearInventory = GetGearInventory(player);
+        if (gearInventory == null) return;
+
+        ItemSlot? sheathSlot = gearInventory[bagIndex];
+
+        if (sheathSlot?.Itemstack == null) return;
+
+        ItemSlotBagContentWithWildcardMatch? weaponSlot = backpackInventory[slotIndex] as ItemSlotBagContentWithWildcardMatch;
+
+        if (weaponSlot == null || weaponSlot.SourceBag?.Item?.Id != collObj.Id || !weaponSlot.Config.HandleHotkey) return;
+
+        if (weaponSlot.Empty)
+        {
+            string variantCode = weaponSlot.MainHand ? Stats.RightHandStateVariant : Stats.LeftHandStateVariant;
+            Variants variants = Variants.FromStack(sheathSlot.Itemstack);
+            if (variants.Get(variantCode) != Stats.EmptyStateCode)
+            {
+                variants.Set(variantCode, Stats.EmptyStateCode);
+                variants.ToStack(sheathSlot.Itemstack);
+                sheathSlot.MarkDirty();
+            }
+            return;
+        }
+        else
+        {
+            string variantCode = weaponSlot.MainHand ? Stats.RightHandStateVariant : Stats.LeftHandStateVariant;
+            Variants variants = Variants.FromStack(sheathSlot.Itemstack);
+            if (variants.Get(variantCode) != Stats.FullStateCode)
+            {
+                variants.Set(variantCode, Stats.FullStateCode);
+                variants.ToStack(sheathSlot.Itemstack);
+                sheathSlot.MarkDirty();
+            }
+        }
+
+        if (weaponSlot.Itemstack?.Collectible?.Attributes != null)
+        {
+            SheathableStats stats = weaponSlot.Itemstack.Collectible.Attributes.AsObject<SheathableStats>();
+            
+            string variantCode = weaponSlot.MainHand ? Stats.RightHandVariant : Stats.LeftHandVariant;
+            string metalVariantCode = weaponSlot.MainHand ? Stats.RightWeaponMetalVariant : Stats.LeftWeaponMetalVariant;
+            string leatherVariantCode = weaponSlot.MainHand ? Stats.RightWeaponLeatherVariant : Stats.LeftWeaponLeatherVariant;
+            string woodVariantCode = weaponSlot.MainHand ? Stats.RightWeaponWoodVariant : Stats.LeftWeaponWoodVariant;
+            
+            Variants variants = Variants.FromStack(sheathSlot.Itemstack);
+            if (variants.Get(variantCode) != stats.InSheathVariantCode)
+            {
+                variants.Set(variantCode, stats.InSheathVariantCode);
+                variants.ToStack(sheathSlot.Itemstack);
+                sheathSlot.MarkDirty();
+            }
+
+            Variants weaponVariants = Variants.FromStack(weaponSlot.Itemstack);
+            
+            if (weaponVariants.Get(metalVariantCode) != null)
+            {
+                if (variants.Get(metalVariantCode) != weaponVariants.Get(metalVariantCode))
+                {
+                    variants.Set(metalVariantCode, weaponVariants.Get(metalVariantCode));
+                    variants.ToStack(sheathSlot.Itemstack);
+                    sheathSlot.MarkDirty();
+                }
+            }
+            else
+            {
+                if (variants.Get(metalVariantCode) != stats.MetalVariantCode)
+                {
+                    variants.Set(metalVariantCode, stats.MetalVariantCode);
+                    variants.ToStack(sheathSlot.Itemstack);
+                    sheathSlot.MarkDirty();
+                }
+            }
+
+            if (weaponVariants.Get(leatherVariantCode) != null)
+            {
+                if (variants.Get(leatherVariantCode) != weaponVariants.Get(leatherVariantCode))
+                {
+                    variants.Set(leatherVariantCode, weaponVariants.Get(leatherVariantCode));
+                    variants.ToStack(sheathSlot.Itemstack);
+                    sheathSlot.MarkDirty();
+                }
+            }
+            else
+            {
+                if (variants.Get(leatherVariantCode) != stats.LeatherVariantCode)
+                {
+                    variants.Set(leatherVariantCode, stats.LeatherVariantCode);
+                    variants.ToStack(sheathSlot.Itemstack);
+                    sheathSlot.MarkDirty();
+                }
+            }
+
+            if (weaponVariants.Get(woodVariantCode) != null)
+            {
+                if (variants.Get(woodVariantCode) != weaponVariants.Get(woodVariantCode))
+                {
+                    variants.Set(woodVariantCode, weaponVariants.Get(woodVariantCode));
+                    variants.ToStack(sheathSlot.Itemstack);
+                    sheathSlot.MarkDirty();
+                }
+            }
+            else
+            {
+                if (variants.Get(woodVariantCode) != stats.WoodVariantCode)
+                {
+                    variants.Set(woodVariantCode, stats.WoodVariantCode);
+                    variants.ToStack(sheathSlot.Itemstack);
+                    sheathSlot.MarkDirty();
+                }
+            }
+        }
+    }
+
+    protected virtual void OnSlotModifiedOtherSlots(InventoryBasePlayer backpackInventory, EntityPlayer player, int slotIndex, int bagIndex)
+    {
+        InventoryBase? gearInventory = GetGearInventory(player);
+        if (gearInventory == null) return;
+
+        ItemSlot? sheathSlot = gearInventory
+            .Where(slot => slot?.Itemstack?.Collectible?.Id == collObj.Id)
+            .FirstOrDefault((ItemSlot?)null);
+        if (sheathSlot?.Itemstack == null) return;
+
+        IEnumerable<string> variantCodes = backpackInventory
+            .OfType<ItemSlotBagContentWithWildcardMatch>()
+            .Where(slot => !slot.Config.HandleHotkey)
+            .Where(slot => slot.Config.SetVariants && slot.SourceBag?.Item?.Id == collObj.Id)
+            .Select(slot => slot.Config.SlotVariant)
+            .Distinct();
+
+        foreach (string variantCode in variantCodes)
+        {
+            ItemSlotBagContentWithWildcardMatch quiverSlot = backpackInventory
+                .OfType<ItemSlotBagContentWithWildcardMatch>()
+                .First(slot => slot.Config.SlotVariant == variantCode);
+
+            ItemSlotBagContentWithWildcardMatch? quiverNotEmptySlot = backpackInventory
+                .OfType<ItemSlotBagContentWithWildcardMatch>()
+                .Where(slot => !slot.Empty && slot.Config.SlotVariant == variantCode)
+                .FirstOrDefault((ItemSlotBagContentWithWildcardMatch?)null);
+
+            string stateVariantCode = quiverSlot.Config.SlotStateVariant;
+
+            bool hasAttributes = sheathSlot.Itemstack?.Collectible?.Attributes != null;
+
+            Variants variants = hasAttributes ? Variants.FromStack(sheathSlot.Itemstack) : new();
+
+            if (quiverNotEmptySlot == null)
+            {
+                SetVariant(variants, sheathSlot, stateVariantCode, quiverSlot.Config.EmptyStateCode);
+            }
+            else
+            {
+                SetVariant(variants, sheathSlot, stateVariantCode, quiverSlot.Config.FullStateCode);
+            }
+
+            string metalVariantCode = quiverSlot.Config.SlotMetalVariant;
+            string leatherVariantCode = quiverSlot.Config.SlotLeatherVariant;
+            string woodVariantCode = quiverSlot.Config.SlotWoodVariant;
+
+            SheathableStats stats = quiverNotEmptySlot?.Itemstack?.Collectible?.Attributes?.AsObject<SheathableStats>() ?? new();
+
+            hasAttributes = quiverNotEmptySlot?.Itemstack?.Collectible?.Attributes?.AsObject<SheathableStats>() != null;
+
+            if (hasAttributes || variants.Get(variantCode) == null)
+            {
+                SetVariant(variants, sheathSlot, variantCode, stats.InSheathVariantCode);
+            }
+
+            Variants inQuiverVariants = quiverSlot.Itemstack?.Attributes != null ? Variants.FromStack(quiverSlot.Itemstack) : new();
+
+            TrySetVariant(variants, sheathSlot, leatherVariantCode, stats.LeatherVariantCode, inQuiverVariants);
+            TrySetVariant(variants, sheathSlot, metalVariantCode, stats.MetalVariantCode, inQuiverVariants);
+            TrySetVariant(variants, sheathSlot, woodVariantCode, stats.WoodVariantCode, inQuiverVariants);
+        }
+    }
+
+    protected virtual void TrySetVariant(Variants variants, ItemSlot slot, string variantCode, string defaultVariantValue, Variants variantValueHolder)
+    {
+        if (variantValueHolder.Get(variantCode) != null)
+        {
+            SetVariant(variants, slot, variantCode, variantValueHolder);
+        }
+        else
+        {
+            SetVariant(variants, slot, variantCode, defaultVariantValue);
+        }
+    }
+
+    protected virtual void SetVariant(Variants variants, ItemSlot slot, string variantCode, string variantValue)
+    {
+        if (variants.Get(variantCode) != variantValue)
+        {
+            variants.Set(variantCode, variantValue);
+            variants.ToStack(slot.Itemstack);
+            slot.MarkDirty();
+        }
+    }
+
+    protected virtual void SetVariant(Variants variants, ItemSlot slot, string variantCode, Variants variantValueHolder)
+    {
+        if (variants.Get(variantCode) != variantValueHolder.Get(variantCode))
+        {
+            variants.Set(variantCode, variantValueHolder.Get(variantCode));
+            variants.ToStack(slot.Itemstack);
+            slot.MarkDirty();
+        }
+    }
+}

@@ -1,0 +1,566 @@
+{
+	"editor": {
+		"backDropShape": "E:/Programs/VSModelCreator/thin",
+		"collapsedPaths": "Root/Waist-Quiver/Belt,Root/Bow,Root/Waist-Quiver/Quiver,Root/Sowrd/Handle,Root/Waist-Quiver/Saydak,Root/Waist-Quiver/Sheath/sheath_0,Root/Waist-Quiver/Sheath/sheath_0/Sowrd/Handle2,Root/Waist-Quiver/Quiver/arrow_3,Root/Waist-Quiver/Quiver/arrow_2,Root/Waist-Quiver/Quiver/arrow_1,Root/Waist-Quiver/Bow,Root/Waist/buckle-bottom,Root/Waist-Quiver/Quiver/arrow_0,Root/Waist-Quiver/Sheath/sheath_0/Handle2/Guard_2,Root/Sowrd/Metal",
+		"allAngles": true,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"blackguardsword-black": "game:block/cloth/linen/black",
+		"belt-waist-plain-material": "game:block/leather/plain",
+		"blackguardsword-blade": "game:block/metal/plate/iron",
+		"belt-waist-plain-metal": "game:block/metal/plate/iron",
+		"blackguardsword-handle": "game:block/wood/debarked/ebony"
+	},
+	"elements": [
+		{
+			"name": "Waist-Belt",
+			"stepParentName": "LowerTorso",
+			"from": [ -0.5, 1.0, -0.5 ],
+			"to": [ 5.6, 2.1, 6.7 ],
+			"rotationOrigin": [ 2.5, 1.0, 2.7 ],
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "Sheath",
+					"from": [ 0.0, -0.2, 6.9 ],
+					"to": [ 0.0, -0.2, 6.9 ],
+					"rotationOrigin": [ 0.0, -0.2, 6.9 ],
+					"faces": {
+						"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+						"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+						"south": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+						"west": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+						"up": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+						"down": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+					},
+					"children": [
+						{
+							"name": "sheath_0",
+							"from": [ -1.2, -1.2, 1.2 ],
+							"to": [ -1.2, -1.2, 1.2 ],
+							"rotationOrigin": [ -1.2, -1.2, 1.2 ],
+							"rotationX": -13.0,
+							"rotationY": 4.0,
+							"rotationZ": 43.0,
+							"faces": {
+								"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"south": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"west": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"up": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"down": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+							},
+							"children": [
+								{
+									"name": "sheath_1",
+									"from": [ 0.0, -14.4, -0.36 ],
+									"to": [ 1.2, 0.0, 0.36 ],
+									"rotationOrigin": [ 0.0, -14.4, -0.36 ],
+									"faces": {
+										"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.0, 12.0 ], "autoUv": false },
+										"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 12.0 ], "autoUv": false },
+										"south": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.0, 12.0 ], "autoUv": false },
+										"west": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 12.0 ], "autoUv": false },
+										"up": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+										"down": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false }
+									}
+								},
+								{
+									"name": "Sowrd",
+									"from": [ 0.6, 1.56, 0.0 ],
+									"to": [ 0.6, 1.56, 0.0 ],
+									"rotationOrigin": [ 0.6, 1.56, 0.0 ],
+									"rotationX": -90.0,
+									"faces": {
+										"north": { "texture": "#blackguardsword-blade", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"east": { "texture": "#blackguardsword-blade", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"south": { "texture": "#blackguardsword-blade", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"west": { "texture": "#blackguardsword-blade", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"up": { "texture": "#blackguardsword-blade", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"down": { "texture": "#blackguardsword-blade", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+									},
+									"children": [
+										{
+											"name": "Handle",
+											"from": [ 0.0, 0.0, 0.0 ],
+											"to": [ 0.0, 0.0, 0.6 ],
+											"faces": {
+												"north": { "texture": "#blackguardsword-blade", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"east": { "texture": "#blackguardsword-blade", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+												"south": { "texture": "#blackguardsword-blade", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"west": { "texture": "#blackguardsword-blade", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+												"up": { "texture": "#blackguardsword-blade", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
+												"down": { "texture": "#blackguardsword-blade", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false }
+											},
+											"children": [
+												{
+													"name": "handle_0",
+													"from": [ -0.54, -0.3, -0.6 ],
+													"to": [ 0.54, 0.3, 2.4 ],
+													"rotationOrigin": [ -0.54, -0.3, -0.6 ],
+													"faces": {
+														"north": { "texture": "#blackguardsword-black", "uv": [ 0.0, 0.0, 1.5, 1.0 ], "autoUv": false },
+														"east": { "texture": "#blackguardsword-black", "uv": [ 8.5, 9.0, 13.5, 10.0 ], "autoUv": false },
+														"south": { "texture": "#blackguardsword-black", "uv": [ 0.0, 0.0, 1.5, 1.0 ], "autoUv": false },
+														"west": { "texture": "#blackguardsword-black", "uv": [ 6.0, 9.0, 11.0, 10.0 ], "autoUv": false },
+														"up": { "texture": "#blackguardsword-black", "uv": [ 10.0, 9.0, 15.0, 10.5 ], "rotation": 90, "autoUv": false },
+														"down": { "texture": "#blackguardsword-black", "uv": [ 9.5, 9.0, 14.5, 10.5 ], "rotation": 90, "autoUv": false }
+													}
+												},
+												{
+													"name": "Guard_0",
+													"from": [ -0.6, -0.48, -1.2 ],
+													"to": [ 0.6, 0.48, -0.588 ],
+													"rotationOrigin": [ -0.6, -0.48, -1.2 ],
+													"faces": {
+														"north": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 6.0, 15.5, 7.5 ], "autoUv": false },
+														"east": { "texture": "#blackguardsword-handle", "uv": [ 15.0, 5.5, 16.0, 7.0 ], "autoUv": false },
+														"south": { "texture": "#blackguardsword-handle", "uv": [ 13.0, 5.5, 15.0, 7.0 ], "autoUv": false },
+														"west": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 5.5, 15.0, 7.0 ], "autoUv": false },
+														"up": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 5.5, 15.5, 6.5 ], "autoUv": false },
+														"down": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 6.0, 15.5, 7.0 ], "autoUv": false }
+													},
+													"children": [
+														{
+															"name": "guard_2",
+															"from": [ 1.2, 0.3, 0.0 ],
+															"to": [ 1.8, 0.66, 0.612 ],
+															"rotationOrigin": [ 1.2, 0.42, 0.0 ],
+															"faces": {
+																"north": { "texture": "#blackguardsword-handle", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+																"east": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 6.5, 14.5, 7.0 ], "autoUv": false },
+																"south": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 7.5, 14.5, 8.0 ], "autoUv": false },
+																"west": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 5.5, 15.0, 6.0 ], "autoUv": false },
+																"up": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 5.0, 15.0, 6.0 ], "autoUv": false },
+																"down": { "texture": "#blackguardsword-handle", "uv": [ 14.5, 6.0, 15.5, 7.0 ], "autoUv": false }
+															},
+															"children": [
+																{
+																	"name": "guard_1",
+																	"from": [ 0.0, 0.36, 0.006 ],
+																	"to": [ 0.66, 0.66, 0.606 ],
+																	"rotationOrigin": [ 0.0, 0.66, 0.0 ],
+																	"rotationZ": -27.0,
+																	"faces": {
+																		"north": { "texture": "#blackguardsword-handle", "uv": [ 14.5, 6.5, 15.5, 7.0 ], "autoUv": false },
+																		"east": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 7.0, 15.0, 7.5 ], "autoUv": false },
+																		"south": { "texture": "#blackguardsword-handle", "uv": [ 14.5, 6.5, 15.5, 7.0 ], "autoUv": false },
+																		"west": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 7.0, 14.5, 7.5 ], "autoUv": false },
+																		"up": { "texture": "#blackguardsword-handle", "uv": [ 13.0, 5.5, 14.0, 6.5 ], "autoUv": false },
+																		"down": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 5.5, 14.5, 6.5 ], "autoUv": false }
+																	}
+																},
+																{
+																	"name": "guard_0",
+																	"from": [ 0.0, -0.3, 0.006 ],
+																	"to": [ 0.66, 0.0, 0.606 ],
+																	"rotationOrigin": [ 0.0, -0.3, 0.0 ],
+																	"rotationZ": 27.0,
+																	"faces": {
+																		"north": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 6.5, 14.5, 7.0 ], "autoUv": false },
+																		"east": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 6.5, 15.0, 7.0 ], "autoUv": false },
+																		"south": { "texture": "#blackguardsword-handle", "uv": [ 13.0, 7.0, 14.0, 7.5 ], "autoUv": false },
+																		"west": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 6.0, 15.0, 6.5 ], "autoUv": false },
+																		"up": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 5.5, 15.0, 6.5 ], "autoUv": false },
+																		"down": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 6.0, 15.0, 7.0 ], "autoUv": false }
+																	}
+																}
+															]
+														},
+														{
+															"name": "guard_3",
+															"from": [ 0.0, 0.42, 0.0 ],
+															"to": [ 0.6, 0.78, 0.612 ],
+															"rotationOrigin": [ 0.0, 0.54, 0.0 ],
+															"rotationZ": 180.0,
+															"faces": {
+																"north": { "texture": "#blackguardsword-handle", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+																"east": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 6.5, 14.5, 7.0 ], "autoUv": false },
+																"south": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 7.5, 14.5, 8.0 ], "autoUv": false },
+																"west": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 5.5, 15.0, 6.0 ], "autoUv": false },
+																"up": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 5.0, 15.0, 6.0 ], "autoUv": false },
+																"down": { "texture": "#blackguardsword-handle", "uv": [ 14.5, 6.0, 15.5, 7.0 ], "autoUv": false }
+															},
+															"children": [
+																{
+																	"name": "guard_4",
+																	"from": [ 0.0, 0.36, 0.006 ],
+																	"to": [ 0.66, 0.66, 0.606 ],
+																	"rotationOrigin": [ 0.0, 0.66, 0.0 ],
+																	"rotationZ": -27.0,
+																	"faces": {
+																		"north": { "texture": "#blackguardsword-handle", "uv": [ 14.5, 6.5, 15.5, 7.0 ], "autoUv": false },
+																		"east": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 7.0, 15.0, 7.5 ], "autoUv": false },
+																		"south": { "texture": "#blackguardsword-handle", "uv": [ 14.5, 6.5, 15.5, 7.0 ], "autoUv": false },
+																		"west": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 7.0, 14.5, 7.5 ], "autoUv": false },
+																		"up": { "texture": "#blackguardsword-handle", "uv": [ 13.0, 5.5, 14.0, 6.5 ], "autoUv": false },
+																		"down": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 5.5, 14.5, 6.5 ], "autoUv": false }
+																	}
+																},
+																{
+																	"name": "guard_5",
+																	"from": [ 0.0, -0.3, 0.006 ],
+																	"to": [ 0.66, 0.0, 0.606 ],
+																	"rotationOrigin": [ 0.0, -0.3, 0.0 ],
+																	"rotationZ": 27.0,
+																	"faces": {
+																		"north": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 6.5, 14.5, 7.0 ], "autoUv": false },
+																		"east": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 6.5, 15.0, 7.0 ], "autoUv": false },
+																		"south": { "texture": "#blackguardsword-handle", "uv": [ 13.0, 7.0, 14.0, 7.5 ], "autoUv": false },
+																		"west": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 6.0, 15.0, 6.5 ], "autoUv": false },
+																		"up": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 5.5, 15.0, 6.5 ], "autoUv": false },
+																		"down": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 6.0, 15.0, 7.0 ], "autoUv": false }
+																	}
+																}
+															]
+														}
+													]
+												},
+												{
+													"name": "Guard_1",
+													"from": [ -0.6, -0.48, 2.4 ],
+													"to": [ 0.6, 0.48, 3.012 ],
+													"rotationOrigin": [ -0.6, -0.48, 2.4 ],
+													"faces": {
+														"north": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 6.0, 15.5, 7.5 ], "autoUv": false },
+														"east": { "texture": "#blackguardsword-handle", "uv": [ 15.0, 5.5, 16.0, 7.0 ], "autoUv": false },
+														"south": { "texture": "#blackguardsword-handle", "uv": [ 13.0, 5.5, 15.0, 7.0 ], "autoUv": false },
+														"west": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 5.5, 15.0, 7.0 ], "autoUv": false },
+														"up": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 5.5, 15.5, 6.5 ], "autoUv": false },
+														"down": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 6.0, 15.5, 7.0 ], "autoUv": false }
+													},
+													"children": [
+														{
+															"name": "guard_6",
+															"from": [ 1.2, 0.3, 0.0 ],
+															"to": [ 1.8, 0.66, 0.612 ],
+															"rotationOrigin": [ 1.2, 0.42, 0.0 ],
+															"faces": {
+																"north": { "texture": "#blackguardsword-handle", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+																"east": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 6.5, 14.5, 7.0 ], "autoUv": false },
+																"south": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 7.5, 14.5, 8.0 ], "autoUv": false },
+																"west": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 5.5, 15.0, 6.0 ], "autoUv": false },
+																"up": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 5.0, 15.0, 6.0 ], "autoUv": false },
+																"down": { "texture": "#blackguardsword-handle", "uv": [ 14.5, 6.0, 15.5, 7.0 ], "autoUv": false }
+															},
+															"children": [
+																{
+																	"name": "guard_7",
+																	"from": [ 0.0, 0.36, 0.006 ],
+																	"to": [ 0.66, 0.66, 0.606 ],
+																	"rotationOrigin": [ 0.0, 0.66, 0.0 ],
+																	"rotationZ": -27.0,
+																	"faces": {
+																		"north": { "texture": "#blackguardsword-handle", "uv": [ 14.5, 6.5, 15.5, 7.0 ], "autoUv": false },
+																		"east": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 7.0, 15.0, 7.5 ], "autoUv": false },
+																		"south": { "texture": "#blackguardsword-handle", "uv": [ 14.5, 6.5, 15.5, 7.0 ], "autoUv": false },
+																		"west": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 7.0, 14.5, 7.5 ], "autoUv": false },
+																		"up": { "texture": "#blackguardsword-handle", "uv": [ 13.0, 5.5, 14.0, 6.5 ], "autoUv": false },
+																		"down": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 5.5, 14.5, 6.5 ], "autoUv": false }
+																	}
+																},
+																{
+																	"name": "guard_8",
+																	"from": [ 0.0, -0.3, 0.006 ],
+																	"to": [ 0.66, 0.0, 0.606 ],
+																	"rotationOrigin": [ 0.0, -0.3, 0.0 ],
+																	"rotationZ": 27.0,
+																	"faces": {
+																		"north": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 6.5, 14.5, 7.0 ], "autoUv": false },
+																		"east": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 6.5, 15.0, 7.0 ], "autoUv": false },
+																		"south": { "texture": "#blackguardsword-handle", "uv": [ 13.0, 7.0, 14.0, 7.5 ], "autoUv": false },
+																		"west": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 6.0, 15.0, 6.5 ], "autoUv": false },
+																		"up": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 5.5, 15.0, 6.5 ], "autoUv": false },
+																		"down": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 6.0, 15.0, 7.0 ], "autoUv": false }
+																	}
+																}
+															]
+														},
+														{
+															"name": "guard_9",
+															"from": [ 0.0, 0.42, 0.0 ],
+															"to": [ 0.6, 0.78, 0.612 ],
+															"rotationOrigin": [ 0.0, 0.54, 0.0 ],
+															"rotationZ": -180.0,
+															"faces": {
+																"north": { "texture": "#blackguardsword-handle", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+																"east": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 6.5, 14.5, 7.0 ], "autoUv": false },
+																"south": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 7.5, 14.5, 8.0 ], "autoUv": false },
+																"west": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 5.5, 15.0, 6.0 ], "autoUv": false },
+																"up": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 5.0, 15.0, 6.0 ], "autoUv": false },
+																"down": { "texture": "#blackguardsword-handle", "uv": [ 14.5, 6.0, 15.5, 7.0 ], "autoUv": false }
+															},
+															"children": [
+																{
+																	"name": "guard_10",
+																	"from": [ 0.0, 0.36, 0.006 ],
+																	"to": [ 0.66, 0.66, 0.606 ],
+																	"rotationOrigin": [ 0.0, 0.66, 0.0 ],
+																	"rotationZ": -27.0,
+																	"faces": {
+																		"north": { "texture": "#blackguardsword-handle", "uv": [ 14.5, 6.5, 15.5, 7.0 ], "autoUv": false },
+																		"east": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 7.0, 15.0, 7.5 ], "autoUv": false },
+																		"south": { "texture": "#blackguardsword-handle", "uv": [ 14.5, 6.5, 15.5, 7.0 ], "autoUv": false },
+																		"west": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 7.0, 14.5, 7.5 ], "autoUv": false },
+																		"up": { "texture": "#blackguardsword-handle", "uv": [ 13.0, 5.5, 14.0, 6.5 ], "autoUv": false },
+																		"down": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 5.5, 14.5, 6.5 ], "autoUv": false }
+																	}
+																},
+																{
+																	"name": "guard_11",
+																	"from": [ 0.0, -0.3, 0.006 ],
+																	"to": [ 0.66, 0.0, 0.606 ],
+																	"rotationOrigin": [ 0.0, -0.3, 0.0 ],
+																	"rotationZ": 27.0,
+																	"faces": {
+																		"north": { "texture": "#blackguardsword-handle", "uv": [ 13.5, 6.5, 14.5, 7.0 ], "autoUv": false },
+																		"east": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 6.5, 15.0, 7.0 ], "autoUv": false },
+																		"south": { "texture": "#blackguardsword-handle", "uv": [ 13.0, 7.0, 14.0, 7.5 ], "autoUv": false },
+																		"west": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 6.0, 15.0, 6.5 ], "autoUv": false },
+																		"up": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 5.5, 15.0, 6.5 ], "autoUv": false },
+																		"down": { "texture": "#blackguardsword-handle", "uv": [ 14.0, 6.0, 15.0, 7.0 ], "autoUv": false }
+																	}
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "sheath_2",
+									"from": [ 0.0, -14.4, -0.24 ],
+									"to": [ 1.2, 0.0, 0.24 ],
+									"rotationOrigin": [ 0.0, -14.4, -0.24 ],
+									"rotationZ": 2.0,
+									"faces": {
+										"north": { "texture": "#belt-waist-plain-material", "uv": [ 6.0, 0.0, 7.0, 12.0 ], "autoUv": false },
+										"east": { "texture": "#belt-waist-plain-material", "uv": [ 3.5, 0.0, 4.0, 12.0 ], "autoUv": false },
+										"south": { "texture": "#belt-waist-plain-material", "uv": [ 4.0, 0.0, 5.0, 12.0 ], "autoUv": false },
+										"west": { "texture": "#belt-waist-plain-material", "uv": [ 4.0, 0.0, 4.5, 12.0 ], "autoUv": false },
+										"up": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+										"down": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false }
+									}
+								},
+								{
+									"name": "sheath_3",
+									"from": [ 0.0, -14.4, -0.24 ],
+									"to": [ 1.2, 0.0, 0.24 ],
+									"rotationOrigin": [ 1.2, -14.4, -0.24 ],
+									"rotationZ": -2.0,
+									"faces": {
+										"north": { "texture": "#belt-waist-plain-material", "uv": [ 5.5, 0.0, 6.5, 12.0 ], "autoUv": false },
+										"east": { "texture": "#belt-waist-plain-material", "uv": [ 7.0, 0.0, 7.5, 12.0 ], "autoUv": false },
+										"south": { "texture": "#belt-waist-plain-material", "uv": [ 7.0, 0.0, 8.0, 12.0 ], "autoUv": false },
+										"west": { "texture": "#belt-waist-plain-material", "uv": [ 5.5, 0.0, 6.0, 12.0 ], "autoUv": false },
+										"up": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+										"down": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false }
+									}
+								},
+								{
+									"name": "Handle2",
+									"from": [ 0.6, 1.2, 0.0 ],
+									"to": [ 0.6, 1.2, 0.6 ],
+									"rotationOrigin": [ 0.6, 1.2, 0.0 ],
+									"rotationX": -90.0,
+									"faces": {
+										"north": { "texture": "#blackguardsword-blade", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"east": { "texture": "#blackguardsword-blade", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+										"south": { "texture": "#blackguardsword-blade", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"west": { "texture": "#blackguardsword-blade", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+										"up": { "texture": "#blackguardsword-blade", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
+										"down": { "texture": "#blackguardsword-blade", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false }
+									},
+									"children": [
+										{
+											"name": "Guard_2",
+											"from": [ -0.6, -0.48, -1.2 ],
+											"to": [ 0.6, 0.48, -0.828 ],
+											"rotationOrigin": [ -0.6, -0.48, -1.2 ],
+											"faces": {
+												"north": { "texture": "#belt-waist-plain-metal", "uv": [ 13.5, 6.0, 15.5, 7.5 ], "autoUv": false },
+												"east": { "texture": "#belt-waist-plain-metal", "uv": [ 15.0, 5.5, 16.0, 7.0 ], "autoUv": false },
+												"south": { "texture": "#belt-waist-plain-metal", "uv": [ 13.0, 5.5, 15.0, 7.0 ], "autoUv": false },
+												"west": { "texture": "#belt-waist-plain-metal", "uv": [ 14.0, 5.5, 15.0, 7.0 ], "autoUv": false },
+												"up": { "texture": "#belt-waist-plain-metal", "uv": [ 13.5, 5.5, 15.5, 6.5 ], "autoUv": false },
+												"down": { "texture": "#belt-waist-plain-metal", "uv": [ 13.5, 6.0, 15.5, 7.0 ], "autoUv": false }
+											},
+											"children": [
+												{
+													"name": "guard_12",
+													"from": [ 1.2, 0.3, 0.0 ],
+													"to": [ 1.8, 0.66, 0.372 ],
+													"rotationOrigin": [ 1.2, 0.42, 0.0 ],
+													"faces": {
+														"north": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+														"east": { "texture": "#belt-waist-plain-metal", "uv": [ 13.5, 6.5, 14.5, 7.0 ], "autoUv": false },
+														"south": { "texture": "#belt-waist-plain-metal", "uv": [ 13.5, 7.5, 14.5, 8.0 ], "autoUv": false },
+														"west": { "texture": "#belt-waist-plain-metal", "uv": [ 14.0, 5.5, 15.0, 6.0 ], "autoUv": false },
+														"up": { "texture": "#belt-waist-plain-metal", "uv": [ 14.0, 5.0, 15.0, 6.0 ], "autoUv": false },
+														"down": { "texture": "#belt-waist-plain-metal", "uv": [ 14.5, 6.0, 15.5, 7.0 ], "autoUv": false }
+													},
+													"children": [
+														{
+															"name": "guard_13",
+															"from": [ 0.0, 0.36, 0.006 ],
+															"to": [ 0.66, 0.66, 0.366 ],
+															"rotationOrigin": [ 0.0, 0.66, 0.0 ],
+															"rotationZ": -27.0,
+															"faces": {
+																"north": { "texture": "#belt-waist-plain-metal", "uv": [ 14.5, 6.5, 15.5, 7.0 ], "autoUv": false },
+																"east": { "texture": "#belt-waist-plain-metal", "uv": [ 14.0, 7.0, 15.0, 7.5 ], "autoUv": false },
+																"south": { "texture": "#belt-waist-plain-metal", "uv": [ 14.5, 6.5, 15.5, 7.0 ], "autoUv": false },
+																"west": { "texture": "#belt-waist-plain-metal", "uv": [ 13.5, 7.0, 14.5, 7.5 ], "autoUv": false },
+																"up": { "texture": "#belt-waist-plain-metal", "uv": [ 13.0, 5.5, 14.0, 6.5 ], "autoUv": false },
+																"down": { "texture": "#belt-waist-plain-metal", "uv": [ 13.5, 5.5, 14.5, 6.5 ], "autoUv": false }
+															}
+														},
+														{
+															"name": "guard_14",
+															"from": [ 0.0, -0.3, 0.006 ],
+															"to": [ 0.66, 0.0, 0.366 ],
+															"rotationOrigin": [ 0.0, -0.3, 0.0 ],
+															"rotationZ": 27.0,
+															"faces": {
+																"north": { "texture": "#belt-waist-plain-metal", "uv": [ 13.5, 6.5, 14.5, 7.0 ], "autoUv": false },
+																"east": { "texture": "#belt-waist-plain-metal", "uv": [ 14.0, 6.5, 15.0, 7.0 ], "autoUv": false },
+																"south": { "texture": "#belt-waist-plain-metal", "uv": [ 13.0, 7.0, 14.0, 7.5 ], "autoUv": false },
+																"west": { "texture": "#belt-waist-plain-metal", "uv": [ 14.0, 6.0, 15.0, 6.5 ], "autoUv": false },
+																"up": { "texture": "#belt-waist-plain-metal", "uv": [ 14.0, 5.5, 15.0, 6.5 ], "autoUv": false },
+																"down": { "texture": "#belt-waist-plain-metal", "uv": [ 14.0, 6.0, 15.0, 7.0 ], "autoUv": false }
+															}
+														}
+													]
+												},
+												{
+													"name": "guard_15",
+													"from": [ 0.0, 0.42, 0.0 ],
+													"to": [ 0.6, 0.78, 0.372 ],
+													"rotationOrigin": [ 0.0, 0.54, 0.0 ],
+													"rotationZ": 180.0,
+													"faces": {
+														"north": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+														"east": { "texture": "#belt-waist-plain-metal", "uv": [ 13.5, 6.5, 14.5, 7.0 ], "autoUv": false },
+														"south": { "texture": "#belt-waist-plain-metal", "uv": [ 13.5, 7.5, 14.5, 8.0 ], "autoUv": false },
+														"west": { "texture": "#belt-waist-plain-metal", "uv": [ 14.0, 5.5, 15.0, 6.0 ], "autoUv": false },
+														"up": { "texture": "#belt-waist-plain-metal", "uv": [ 14.0, 5.0, 15.0, 6.0 ], "autoUv": false },
+														"down": { "texture": "#belt-waist-plain-metal", "uv": [ 14.5, 6.0, 15.5, 7.0 ], "autoUv": false }
+													},
+													"children": [
+														{
+															"name": "guard_16",
+															"from": [ 0.0, 0.36, 0.006 ],
+															"to": [ 0.66, 0.66, 0.366 ],
+															"rotationOrigin": [ 0.0, 0.66, 0.0 ],
+															"rotationZ": -27.0,
+															"faces": {
+																"north": { "texture": "#belt-waist-plain-metal", "uv": [ 14.5, 6.5, 15.5, 7.0 ], "autoUv": false },
+																"east": { "texture": "#belt-waist-plain-metal", "uv": [ 14.0, 7.0, 15.0, 7.5 ], "autoUv": false },
+																"south": { "texture": "#belt-waist-plain-metal", "uv": [ 14.5, 6.5, 15.5, 7.0 ], "autoUv": false },
+																"west": { "texture": "#belt-waist-plain-metal", "uv": [ 13.5, 7.0, 14.5, 7.5 ], "autoUv": false },
+																"up": { "texture": "#belt-waist-plain-metal", "uv": [ 13.0, 5.5, 14.0, 6.5 ], "autoUv": false },
+																"down": { "texture": "#belt-waist-plain-metal", "uv": [ 13.5, 5.5, 14.5, 6.5 ], "autoUv": false }
+															}
+														},
+														{
+															"name": "guard_17",
+															"from": [ 0.0, -0.3, 0.006 ],
+															"to": [ 0.66, 0.0, 0.366 ],
+															"rotationOrigin": [ 0.0, -0.3, 0.0 ],
+															"rotationZ": 27.0,
+															"faces": {
+																"north": { "texture": "#belt-waist-plain-metal", "uv": [ 13.5, 6.5, 14.5, 7.0 ], "autoUv": false },
+																"east": { "texture": "#belt-waist-plain-metal", "uv": [ 14.0, 6.5, 15.0, 7.0 ], "autoUv": false },
+																"south": { "texture": "#belt-waist-plain-metal", "uv": [ 13.0, 7.0, 14.0, 7.5 ], "autoUv": false },
+																"west": { "texture": "#belt-waist-plain-metal", "uv": [ 14.0, 6.0, 15.0, 6.5 ], "autoUv": false },
+																"up": { "texture": "#belt-waist-plain-metal", "uv": [ 14.0, 5.5, 15.0, 6.5 ], "autoUv": false },
+																"down": { "texture": "#belt-waist-plain-metal", "uv": [ 14.0, 6.0, 15.0, 7.0 ], "autoUv": false }
+															}
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "sheath_4",
+									"from": [ 1.2, -2.4, -0.36 ],
+									"to": [ 2.04, -1.8, 0.36 ],
+									"rotationOrigin": [ 2.4, -2.4, -0.36 ],
+									"rotationZ": -2.0,
+									"faces": {
+										"north": { "texture": "#belt-waist-plain-metal", "uv": [ 5.5, 0.0, 6.0, 0.5 ], "autoUv": false },
+										"east": { "texture": "#belt-waist-plain-metal", "uv": [ 7.0, 0.0, 7.5, 0.5 ], "autoUv": false },
+										"south": { "texture": "#belt-waist-plain-metal", "uv": [ 7.0, 0.0, 7.5, 0.5 ], "autoUv": false },
+										"west": { "texture": "#belt-waist-plain-metal", "uv": [ 5.5, 0.0, 6.0, 0.5 ], "autoUv": false },
+										"up": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"down": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+									},
+									"children": [
+										{
+											"name": "sheath_6",
+											"from": [ 0.84, 0.0, 0.24 ],
+											"to": [ 4.72, 0.6, 0.6 ],
+											"rotationOrigin": [ 0.84, 0.0, 0.6 ],
+											"rotationY": 12.0,
+											"rotationZ": 27.0,
+											"faces": {
+												"north": { "texture": "#belt-waist-plain-material", "uv": [ 5.5, 0.0, 7.5, 0.5 ], "autoUv": false },
+												"east": { "texture": "#belt-waist-plain-material", "uv": [ 7.0, 0.0, 7.5, 0.5 ], "autoUv": false },
+												"south": { "texture": "#belt-waist-plain-material", "uv": [ 7.0, 0.0, 9.0, 0.5 ], "autoUv": false },
+												"west": { "texture": "#belt-waist-plain-material", "uv": [ 5.5, 0.0, 6.0, 0.5 ], "autoUv": false },
+												"up": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 2.0, 0.5 ], "autoUv": false },
+												"down": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 2.0, 0.5 ], "autoUv": false }
+											}
+										}
+									]
+								},
+								{
+									"name": "sheath_5",
+									"from": [ 1.2, -7.2, -0.36 ],
+									"to": [ 1.8, -6.6, 0.36 ],
+									"rotationOrigin": [ 2.4, -7.2, -0.36 ],
+									"rotationZ": -2.0,
+									"faces": {
+										"north": { "texture": "#belt-waist-plain-metal", "uv": [ 5.5, 0.0, 6.0, 0.5 ], "autoUv": false },
+										"east": { "texture": "#belt-waist-plain-metal", "uv": [ 7.0, 0.0, 7.5, 0.5 ], "autoUv": false },
+										"south": { "texture": "#belt-waist-plain-metal", "uv": [ 7.0, 0.0, 7.5, 0.5 ], "autoUv": false },
+										"west": { "texture": "#belt-waist-plain-metal", "uv": [ 5.5, 0.0, 6.0, 0.5 ], "autoUv": false },
+										"up": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"down": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+									},
+									"children": [
+										{
+											"name": "sheath_7",
+											"from": [ 0.6, 0.0, 0.12 ],
+											"to": [ 8.08, 0.6, 0.48 ],
+											"rotationOrigin": [ 0.6, -0.0029, 0.48 ],
+											"rotationY": 5.0,
+											"rotationZ": 46.0,
+											"faces": {
+												"north": { "texture": "#belt-waist-plain-material", "uv": [ 5.5, 0.0, 10.5, 0.5 ], "autoUv": false },
+												"east": { "texture": "#belt-waist-plain-material", "uv": [ 7.0, 0.0, 7.5, 0.5 ], "autoUv": false },
+												"south": { "texture": "#belt-waist-plain-material", "uv": [ 7.0, 0.0, 12.0, 0.5 ], "autoUv": false },
+												"west": { "texture": "#belt-waist-plain-material", "uv": [ 5.5, 0.0, 6.0, 0.5 ], "autoUv": false },
+												"up": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 5.0, 0.5 ], "autoUv": false },
+												"down": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 5.0, 0.5 ], "autoUv": false }
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]}

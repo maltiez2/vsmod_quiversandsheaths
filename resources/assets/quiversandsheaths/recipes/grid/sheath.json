@@ -1,0 +1,28 @@
+[
+	{
+		"ingredientPattern": "LNL,LBL",
+		"recipeGroup": 1,
+		"ingredients": {
+			"N": {"type": "item", "code": "game:metalnailsandstrips-*"},
+			"L": { "type": "item", "code": "game:leather-normal-plain" },
+			"B": { "type": "item", "code": "game:blade-blackguard-*", "isTool": true, "toolDurabilityCost": 0 }
+		},
+		"width": 3,
+		"height": 2,
+		"name": "pouch",
+		"output": { "type": "item", "code": "sheath-waist-plain-blackguardsword" }
+	},
+	{
+		"ingredientPattern": "LNL,LBL",
+		"recipeGroup": 1,
+		"ingredients": {
+			"N": {"type": "item", "code": "game:metalnailsandstrips-*"},
+			"L": { "type": "item", "code": "game:leather-normal-plain" },
+			"B": { "type": "item", "code": "game:blade-forlorn-*", "isTool": true, "toolDurabilityCost": 0 }
+		},
+		"width": 3,
+		"height": 2,
+		"name": "pouch",
+		"output": { "type": "item", "code": "sheath-waist-plain-forlornsword" }
+	}
+]

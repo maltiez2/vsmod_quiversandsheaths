@@ -1,0 +1,28 @@
+[
+	{
+		"ingredientPattern": "LNL,LBL",
+		"recipeGroup": 1,
+		"ingredients": {
+			"N": {"type": "item", "code": "game:metalnailsandstrips-{tada}"},
+			"L": { "type": "item", "code": "game:leather-normal-plain" },
+			"B": { "type": "item", "code": "game:sling", "isTool": true, "toolDurabilityCost": 0 }
+		},
+		"width": 3,
+		"height": 2,
+		"name": "pouch",
+		"output": { "type": "item", "code": "slingpouch-waist-plain"  }
+	},
+	{
+		"ingredientPattern": "LNL,LBL",
+		"recipeGroup": 1,
+		"ingredients": {
+			"N": {"type": "item", "code": "game:metalnailsandstrips-{tada}"},
+			"L": { "type": "item", "code": "game:leather-normal-plain" },
+			"B": { "type": "item", "code": "combatoverhaul:sling-*", "isTool": true, "toolDurabilityCost": 0 }
+		},
+		"width": 3,
+		"height": 2,
+		"name": "pouch",
+		"output": { "type": "item", "code": "slingpouch-waist-plain"  }
+	}
+]

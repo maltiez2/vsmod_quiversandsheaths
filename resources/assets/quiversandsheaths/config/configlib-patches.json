@@ -1,0 +1,22 @@
+{
+  "version": 0,
+  "patches": {
+    "string": {
+
+    },
+    "other":  {
+
+    },
+    "boolean": {
+
+    },
+    "number": {
+
+    }
+  },
+  "constants": {
+
+  },
+  "settings": [
+  ]
+}

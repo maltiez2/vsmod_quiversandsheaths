@@ -1,0 +1,15 @@
+[
+	{
+		"ingredientPattern": "LSQ",
+		"recipeGroup": 1,
+		"ingredients": {
+			"Q": {"type": "item", "code": "quiver-waist-plain"},
+			"L": { "type": "item", "code": "game:leather-normal-plain", "quantity":  2 },
+			"S": {"type": "item", "code": "game:sewingkit"}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "pouch",
+		"output": { "type": "item", "code": "saydak-waist-plain" }
+	}
+]

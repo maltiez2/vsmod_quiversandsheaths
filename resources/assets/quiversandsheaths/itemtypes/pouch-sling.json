@@ -1,28 +1,27 @@
 ﻿{
-  "code": "saydak",
+  "code": "pouch",
   "class": "ItemWearable",
-  "variantgroups": [{"code": "category", "states": ["waist"]}, {"code": "subtype", "states": ["plain"]}],
-  "shape": {"base": "saydak-{category}-{subtype}"},
+  "variantgroups": [{"code": "category", "states": ["waist"]}, {"code": "subtype", "states": ["plain"]}, {"code": "type", "states": ["sling"]}],
+  "shape": {"base": "pouch-{category}-{subtype}-{type}"},
   "texturesByType": {"*": {"seraph": {"base": "game:block/transparent"}}},
   "storageFlags": 128,
   "behaviors": [
     {
       "name": "CombatOverhaul:ToolBag",
       "properties": {
-        "canHoldWildcards": ["*arrow-*"],
-        "canHoldItemTags": ["arrow"],
-        "color": "#84b054",
+        "canHoldWildcards": ["*slingbullet-*", "*sling-*", "*sling"],
+        "color": "#bb7020",
         "slotsNumber": 2,
-        "slotsIcon": "quiversandsheaths:arrows",
+        "slotsIcon": "quiversandsheaths:bullets",
         "takeOutColor": "#999999",
         "toolSlotColor": "#fc9803",
-        "toolWildcards": ["*bow-*"],
-        "toolItemTags": ["bow"],
+        "toolWildcards": ["*sling-*"],
+        "toolItemTags": ["sling"],
         "hotkeyCode": "combatoverhaul-swap-tool",
         "hotkeyName": "Swap tool from tool bag",
         "hotkeyKey": "R",
         "putIntoMainHand": true,
-        "toolSlotIcon": "quiversandsheaths:bow",
+        "toolSlotIcon": "quiversandsheaths:sling",
         "takeOutSlotIcon": "quiversandsheaths:takeout"
       }
     }
@@ -31,6 +30,6 @@
   "creativeinventory": {"general": ["*"], "quiversandsheaths": ["*"]},
   "renderAlphaTest": 0.25,
   "tpHandTransform": {"translation": {"x": -0.78, "y": -0.93, "z": -1.23}, "rotation": {"x": 35, "y": -90, "z": 49}, "scale": 0.67},
-  "guiTransform": {"translation": {"x": 0, "y": 0, "z": 36}, "rotation": {"x": 174, "y": -29, "z": 13}, "origin": {"x": 0.9, "y": 0.75, "z": 1.1}, "scale": 1.89},
-  "groundTransform": {"translation": {"x": 0, "y": 0, "z": 0}, "rotation": {"x": 0, "y": 0, "z": 44}, "origin": {"x": 0.5, "y": 0.8, "z": 0.4299}, "scale": 2.72}
+  "guiTransform": {"translation": {"x": 0, "y": 0, "z": 0}, "rotation": {"x": 169, "y": 150, "z": -4}, "origin": {"x": -1.05, "y": 0.28, "z": -2.38}, "scale": 2.49},
+  "groundTransform": {"translation": {"x": 0.05, "y": -0.21, "z": 0}, "rotation": {"x": 0, "y": 0, "z": 0}, "origin": {"x": 0.5, "y": 0.5, "z": 0.5299}, "scale": 2.72}
 }

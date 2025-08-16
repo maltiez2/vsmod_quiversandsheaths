@@ -1,15 +1,16 @@
 [
 	{
+		"enabled": true,
 		"ingredientPattern": "LSQ",
 		"recipeGroup": 1,
 		"ingredients": {
-			"Q": {"type": "item", "code": "quiver-waist-plain"},
+			"Q": {"type": "item", "code": "quiver-waist-plain-arrow"},
 			"L": { "type": "item", "code": "game:leather-normal-plain", "quantity":  2 },
 			"S": {"type": "item", "code": "game:sewingkit"}
 		},
 		"width": 3,
 		"height": 1,
-		"name": "pouch",
+		"name": "saydak",
 		"output": { "type": "item", "code": "saydak-waist-plain" }
 	}
 ]

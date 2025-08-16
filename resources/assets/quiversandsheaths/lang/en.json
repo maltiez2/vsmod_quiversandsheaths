@@ -2,15 +2,23 @@
   "game:tabname-quiversandsheaths": "Quivers And Sheaths",
   "game:tabname-combatovherual-colors": "Quivers And Sheaths (Colored)",
 
-  "item-quiver-*": "Quiver",
-  "item-slingpouch-*": "Sling pouch",
+  "item-quiver-*-arrow": "Arrows quiver",
+  "item-quiver-*-javelin": "Javelins quiver",
+  "item-quiver-*-bolt": "Bolts quiver",
+  "item-pouch-*-sling": "Sling pouch",
+  "item-pouch-*-bullet": "Ammo pouch",
   "item-saydak-*": "Quiver with bow case",
   "item-sheath-*-blackguardsword": "Black guard sword sheath",
   "item-sheath-*-forlornsword": "Forlorn sword sheath",
+  "item-sheath-*-pistol": "Pistol sheath with ammo pouch",
 
-  "itemdesc-quiver-waist-*": "Can hold arrows",
-  "itemdesc-slingpouch-waist-*": "Can hold sling bullets and sling. Press 'R' to select sling from pouch.",
-  "itemdesc-saydak-waist-*": "Can hold arrows and bow. Press 'R' to select bow from case.",
+  "itemdesc-quiver-*-arrow": "Can hold arrows",
+  "itemdesc-quiver-*-javelin": "Can hold javelins. Press 'R' to select javelin from quiver.",
+  "itemdesc-quiver-*-bolt": "Can hold crossbow bolts",
+  "itemdesc-pouch-*-sling": "Can hold sling bullets and sling. Press 'R' to select sling from pouch.",
+  "itemdesc-pouch-*-bullet": "Can hold firearms ammunition and equipment.",
+  "itemdesc-saydak-*": "Can hold arrows and bow. Press 'R' to select bow from case.",
   "itemdesc-sheath-*-blackguardsword": "Can store black guard sword. Press 'R' to select sword from sheath.",
-  "itemdesc-sheath-*-forlornsword": "Can store forlorn sword. Press 'R' to select sword from sheath."
+  "itemdesc-sheath-*-forlornsword": "Can store forlorn sword. Press 'R' to select sword from sheath.",
+  "itemdesc-sheath-*-pistol": "Can store pistol and firearms ammunition and equipment. Press 'R' to select pistol from sheath."
 }

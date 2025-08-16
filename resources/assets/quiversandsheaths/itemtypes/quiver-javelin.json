@@ -1,25 +1,29 @@
 ﻿{
-  "code": "slingpouch",
+  "code": "quiver",
   "class": "ItemWearable",
-  "variantgroups": [{"code": "category", "states": ["waist"]}, {"code": "subtype", "states": ["plain"]}],
-  "shape": {"base": "pouch-{category}-{subtype}"},
+  "variantgroups": [{"code": "category", "states": ["waist"]}, {"code": "subtype", "states": ["plain"]}, {"code": "type", "states": ["javelin"]}],
+  "shape": {"base": "quiver-{category}-{subtype}-{type}"},
   "texturesByType": {"*": {"seraph": {"base": "game:block/transparent"}}},
   "storageFlags": 128,
   "behaviors": [
     {
       "name": "CombatOverhaul:ToolBag",
       "properties": {
-        "canHoldWildcards": ["*slingbullet-*", "*sling-*", "*sling"],
-        "color": "#bb7020",
-        "slotsNumber": 2,
+        "canHoldWildcards": ["*javelin-*"],
+        "canHoldItemTags": ["javelin"],
+        "color": "#969350",
+        "slotsNumber": 4,
+        "slotsIcon": "quiversandsheaths:javelin",
         "takeOutColor": "#999999",
         "toolSlotColor": "#fc9803",
-        "toolWildcards": ["*sling-*"],
-        "toolItemTags": ["sling"],
+        "toolWildcards": ["*javelin-*"],
+        "toolItemTags": ["javelin"],
         "hotkeyCode": "combatoverhaul-swap-tool",
         "hotkeyName": "Swap tool from tool bag",
         "hotkeyKey": "R",
-        "putIntoMainHand": true
+        "putIntoMainHand": true,
+        "toolSlotIcon": "quiversandsheaths:javelin",
+        "takeOutSlotIcon": "quiversandsheaths:takeout"
       }
     }
   ],
@@ -27,6 +31,6 @@
   "creativeinventory": {"general": ["*"], "quiversandsheaths": ["*"]},
   "renderAlphaTest": 0.25,
   "tpHandTransform": {"translation": {"x": -0.78, "y": -0.93, "z": -1.23}, "rotation": {"x": 35, "y": -90, "z": 49}, "scale": 0.67},
-  "guiTransform": {"translation": {"x": 0, "y": 0, "z": 0}, "rotation": {"x": 169, "y": 150, "z": -4}, "origin": {"x": -1.05, "y": 0.28, "z": -2.38}, "scale": 2.49},
+  "guiTransform": {"translation": {"x": 0, "y": 0, "z": 36}, "rotation": {"x": 174, "y": -29, "z": 13}, "origin": {"x": 0.9, "y": 0.75, "z": 1.1}, "scale": 1.89},
   "groundTransform": {"translation": {"x": 0.05, "y": -0.21, "z": 0}, "rotation": {"x": 0, "y": 0, "z": 0}, "origin": {"x": 0.5, "y": 0.5, "z": 0.5299}, "scale": 2.72}
 }

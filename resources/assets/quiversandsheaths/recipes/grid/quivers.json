@@ -1,0 +1,44 @@
+[
+	{
+		"enabled": true,
+		"ingredientPattern": "LNL,LBL",
+		"recipeGroup": 1,
+		"ingredients": {
+			"N": {"type": "item", "code": "game:metalnailsandstrips-*"},
+			"L": { "type": "item", "code": "game:leather-normal-plain" },
+			"B": { "type": "item", "code": "game:bow-*", "isTool": true, "toolDurabilityCost": 0 }
+		},
+		"width": 3,
+		"height": 2,
+		"name": "quiver-arrow",
+		"output": { "type": "item", "code": "quiver-waist-plain-arrow" }
+	},
+	{
+		"enabled": false,
+		"ingredientPattern": "LNL,LBL",
+		"recipeGroup": 1,
+		"ingredients": {
+			"N": {"type": "item", "code": "game:metalnailsandstrips-*"},
+			"L": { "type": "item", "code": "game:leather-normal-plain" },
+			"B": { "type": "item", "code": "armory:javelin-*", "isTool": true, "toolDurabilityCost": 0 }
+		},
+		"width": 3,
+		"height": 2,
+		"name": "quiver-javelin",
+		"output": { "type": "item", "code": "quiver-waist-plain-javelin" }
+	},
+	{
+		"enabled": false,
+		"ingredientPattern": "LNL,LBL",
+		"recipeGroup": 1,
+		"ingredients": {
+			"N": {"type": "item", "code": "game:metalnailsandstrips-*"},
+			"L": { "type": "item", "code": "game:leather-normal-plain" },
+			"B": { "type": "item", "code": "maltiezcrossbows:crossbow-*", "isTool": true, "toolDurabilityCost": 0 }
+		},
+		"width": 3,
+		"height": 2,
+		"name": "quiver-bolt",
+		"output": { "type": "item", "code": "quiver-waist-plain-bolt" }
+	}
+]

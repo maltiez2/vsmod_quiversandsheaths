@@ -1,14 +1,21 @@
 ﻿{
   "code": "quiver",
   "class": "ItemWearable",
-  "variantgroups": [{"code": "category", "states": ["waist"]}, {"code": "subtype", "states": ["plain"]}],
-  "shape": {"base": "quiver-{category}-{subtype}"},
+  "variantgroups": [{"code": "category", "states": ["waist"]}, {"code": "subtype", "states": ["plain"]}, {"code": "type", "states": ["arrow"]}],
+  "shape": {"base": "quiver-{category}-{subtype}-{type}"},
   "texturesByType": {"*": {"seraph": {"base": "game:block/transparent"}}},
   "storageFlags": 128,
   "behaviors": [
     {
       "name": "CombatOverhaul:GearEquipableBag",
-      "properties": {"canHoldWildcards": ["*arrow-*"], "canHoldItemTags": ["arrow"], "color": "#84b054", "slotsNumber": 2, "putIntoMainHand": true}
+      "properties": {
+        "canHoldWildcards": ["*arrow-*"],
+        "canHoldItemTags": ["arrow"],
+        "color": "#84b054",
+        "slotsNumber": 2,
+        "putIntoMainHand": true,
+        "slotsIcon": "quiversandsheaths:arrows"
+      }
     }
   ],
   "attributes": {"wearableAttachment": true, "clothescategory": "waist", "warmthByType": {"*": 0}},

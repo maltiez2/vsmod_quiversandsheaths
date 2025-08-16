@@ -1,0 +1,7 @@
+﻿[
+  {"side": "Server", "dependsOn": [{"modid": "armory"}], "file": "quiversandsheaths:recipes/grid/quivers", "op": "replace", "path": "/1/enabled", "value": true},
+  {"side": "Server", "dependsOn": [{"modid": "maltiezcrossbows"}], "file": "quiversandsheaths:recipes/grid/quivers", "op": "replace", "path": "/2/enabled", "value": true},
+  {"side": "Server", "dependsOn": [{"modid": "maltiezfirearms"}], "file": "quiversandsheaths:recipes/grid/pouch", "op": "replace", "path": "/2/enabled", "value": true},
+  {"side": "Server", "dependsOn": [{"modid": "maltiezfirearms"}], "file": "quiversandsheaths:recipes/grid/sheath", "op": "replace", "path": "/2/enabled", "value": true},
+  {"side": "Server", "dependsOn": [{"modid": "combatoverhaul"}], "file": "quiversandsheaths:recipes/grid/pouch", "op": "replace", "path": "/1/enabled", "value": true}
+]

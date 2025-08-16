@@ -9,11 +9,16 @@
     {
       "name": "CombatOverhaul:GearEquipableBag",
       "properties": {
-        "canHoldWildcards": ["*bolt-*", "*spanningtool-*"],
-        "canHoldItemTags": ["bolt", "crossbow-equipment"],
-        "color": "#cfbd59",
-        "slotsNumber": 3,
-        "slotsIcon": "quiversandsheaths:bolts"
+        "slots": [
+          {"canHoldWildcards": ["*bolt-*"], "canHoldItemTags": ["bolt"], "slotColor": "#cfbd59", "slotsNumber": 3, "slotsIcon": "quiversandsheaths:bolts"},
+          {
+            "canHoldWildcards": ["*spanningtool-*"],
+            "canHoldItemTags": ["crossbow-equipment"],
+            "slotColor": "#d68140",
+            "slotsNumber": 1,
+            "slotsIcon": "quiversandsheaths:spanningtool"
+          }
+        ]
       }
     }
   ],

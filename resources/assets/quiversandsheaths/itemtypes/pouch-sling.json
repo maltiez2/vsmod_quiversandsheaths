@@ -9,19 +9,15 @@
     {
       "name": "CombatOverhaul:ToolBag",
       "properties": {
+        "toolSlot": {"slotColor": "#fc9803", "canHoldWildcards": ["*sling-*"], "canHoldItemTags": ["sling"], "slotsIcon": "quiversandsheaths:sling"},
         "canHoldWildcards": ["*slingbullet-*", "*sling-*", "*sling"],
-        "color": "#bb7020",
+        "slotColor": "#bb7020",
         "slotsNumber": 2,
         "slotsIcon": "quiversandsheaths:bullets",
         "takeOutColor": "#999999",
-        "toolSlotColor": "#fc9803",
-        "toolWildcards": ["*sling-*"],
-        "toolItemTags": ["sling"],
         "hotkeyCode": "combatoverhaul-swap-tool",
         "hotkeyName": "Swap tool from tool bag",
         "hotkeyKey": "R",
-        "putIntoMainHand": true,
-        "toolSlotIcon": "quiversandsheaths:sling",
         "takeOutSlotIcon": "quiversandsheaths:takeout"
       }
     }

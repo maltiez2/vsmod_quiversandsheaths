@@ -10,7 +10,7 @@
       "name": "CombatOverhaul:GearEquipableBag",
       "properties": {
         "canHoldWildcards": ["*bullet-*", "*pellet-*", "*slug-*", "*match-*", "*linenpatch", "*powderflask-*", "*cockinglever-*"],
-        "color": "#cf9059",
+        "slotColor": "#cf9059",
         "slotsNumber": 4,
         "slotsIcon": "quiversandsheaths:bullets"
       }

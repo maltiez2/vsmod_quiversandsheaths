@@ -11,7 +11,7 @@
       "properties": {
         "canHoldWildcards": ["*arrow-*"],
         "canHoldItemTags": ["arrow"],
-        "color": "#84b054",
+        "slotColor": "#84b054",
         "slotsNumber": 2,
         "putIntoMainHand": true,
         "slotsIcon": "quiversandsheaths:arrows"

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ModName>Quivers And Sheaths</ModName>
     <ModType>code</ModType>
-    <ModVersion>0.0.3</ModVersion>
+    <ModVersion>0.0.4</ModVersion>
     <ModId>quiversandsheaths</ModId>
     <Description></Description>
     <Side>universal</Side>

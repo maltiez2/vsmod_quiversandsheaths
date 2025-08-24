@@ -1,0 +1,20 @@
+[
+  {
+    "ingredient": {"type": "item", "code": "game:ingot-*", "name": "metal", "allowedVariants": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"]},
+    "pattern": [
+      [
+        "#####",
+        "#___#",
+        "#_#_#",
+        "#_#_#",
+        "#####",
+        "__#__",
+        "_____",
+        "#####",
+        "#####"
+      ]
+    ],
+    "name": "buckle",
+    "output": {"type": "item", "code": "part-buckle-{metal}"}
+  }
+]

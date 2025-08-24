@@ -1,6 +1,6 @@
 {
   "game:tabname-quiversandsheaths": "Quivers And Sheaths",
-  "game:tabname-combatovherual-colors": "Quivers And Sheaths (Colored)",
+  "game:tabname-quiversandsheaths-colors": "Quivers And Sheaths (Colored)",
 
   "item-quiver-*-arrow": "Arrows quiver",
   "item-quiver-*-javelin": "Javelins quiver",
@@ -11,6 +11,9 @@
   "item-sheath-*-blackguardsword": "Black guard sword sheath",
   "item-sheath-*-forlornsword": "Forlorn sword sheath",
   "item-sheath-*-pistol": "Pistol sheath with ammo pouch",
+  "item-sheath-*-pistolsabre": "Pistol and sabre sheaths with ammo pouch",
+  "item-sheath-*-general": "Sheath",
+  "item-part-buckle-*": "Buckle",
 
   "itemdesc-quiver-*-arrow": "Can hold arrows",
   "itemdesc-quiver-*-javelin": "Can hold javelins. Press 'R' to select javelin from quiver.",
@@ -20,5 +23,7 @@
   "itemdesc-saydak-*": "Can hold arrows and bow. Press 'R' to select bow from case.",
   "itemdesc-sheath-*-blackguardsword": "Can store black guard sword. Press 'R' to select sword from sheath.",
   "itemdesc-sheath-*-forlornsword": "Can store forlorn sword. Press 'R' to select sword from sheath.",
-  "itemdesc-sheath-*-pistol": "Can store pistol and firearms ammunition and equipment. Press 'R' to select pistol from sheath."
+  "itemdesc-sheath-*-pistol": "Can store pistol and firearms ammunition and equipment. Press 'R' to select pistol from sheath.",
+  "itemdesc-sheath-*-pistolsabre": "Can store pistol and sabre, and firearms ammunition and equipment. Press 'R' to select pistol and sabre from sheaths.",
+  "itemdesc-sheath-*-general": "Can store one-handed swords and maces. Press 'R' to select weapom from sheath or put it back."
 }

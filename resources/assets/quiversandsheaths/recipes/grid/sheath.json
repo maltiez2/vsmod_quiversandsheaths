@@ -40,5 +40,19 @@
 		"height": 1,
 		"name": "sheath-pistol",
 		"output": { "type": "item", "code": "sheath-waist-plain-pistol" }
+	},
+	{
+		"enabled": false,
+		"ingredientPattern": "LSQ",
+		"recipeGroup": 1,
+		"ingredients": {
+			"Q": {"type": "item", "code": "sheath-waist-plain-pistol"},
+			"L": { "type": "item", "code": "game:leather-normal-plain", "quantity":  2 },
+			"S": { "type": "item", "code": "armory:sabre-*" }
+		},
+		"width": 3,
+		"height": 1,
+		"name": "sheath-pistol",
+		"output": { "type": "item", "code": "sheath-waist-plain-pistolsabre" }
 	}
 ]

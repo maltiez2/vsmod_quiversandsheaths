@@ -14,7 +14,7 @@
             "canHoldWildcards": ["*bolt-*"],
             "canHoldItemTags": ["bolt"],
             "slotColor": "#cfbd59",
-            "slotsNumber": 3,
+            "slotsNumber": 2,
             "slotsIcon": "quiversandsheaths:bolts",
             "SetVariants": true,
             "SlotVariant": "bolt_slot",

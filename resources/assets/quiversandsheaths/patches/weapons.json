@@ -121,5 +121,37 @@
       "*-steel": "steel",
       "*": "iron"
     }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{"modid": "maltiezfirearms"}],
+    "file": "maltiezfirearms:itemtypes/firearms/pistol",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": {"*-*bronze": "pistol_bronze", "*": "pistol_bronze"}
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{"modid": "maltiezfirearms"}],
+    "file": "maltiezfirearms:itemtypes/firearms/pistol",
+    "op": "add",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": {"*-tinbronze": "tinbronze", "*-bismuthbronze": "bismuthbronze", "*-blackbronze": "blackbronze", "*": "tinbronze"}
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{"modid": "maltiezfirearms"}],
+    "file": "maltiezfirearms:itemtypes/firearms/pistol-flintlock",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": {"*-steel": "pistol_steel", "*": "pistol_steel"}
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{"modid": "maltiezfirearms"}],
+    "file": "maltiezfirearms:itemtypes/firearms/pistol-flintlock",
+    "op": "add",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": {"*-steel": "steel", "*": "steel"}
   }
 ]

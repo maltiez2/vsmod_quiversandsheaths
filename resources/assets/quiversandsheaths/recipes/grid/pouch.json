@@ -26,19 +26,5 @@
 		"height": 2,
 		"name": "pouch-sling",
 		"output": { "type": "item", "code": "pouch-waist-plain-sling"  }
-	},
-	{
-		"enabled": false,
-		"ingredientPattern": "LNL,LBL",
-		"recipeGroup": 1,
-		"ingredients": {
-			"N": {"type": "item", "code": "game:metalnailsandstrips-*"},
-			"L": { "type": "item", "code": "game:leather-normal-plain" },
-			"B": { "type": "item", "code": "maltiezfirearms:firearm-*", "isTool": true, "toolDurabilityCost": 0 }
-		},
-		"width": 3,
-		"height": 2,
-		"name": "pouch-bullet",
-		"output": { "type": "item", "code": "pouch-waist-plain-bullet" }
 	}
 ]

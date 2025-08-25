@@ -1,15 +1,23 @@
 ﻿{
   "code": "sheath",
   "class": "Item",
-  "variantgroups": [{"code": "category", "states": ["waist"]}, {"code": "subtype", "states": ["plain"]}, {"code": "type", "states": ["general"]}],
-  "shape": {"base": "sheaths/belts/default", "overlays": [{"base": "sheaths/empty/default"}]},
+  "variantgroups": [{"code": "category", "states": ["waist"]}, {"code": "subtype", "states": ["plain"]}, {"code": "type", "states": ["pistolsword"]}],
+  "shape": {
+    "base": "sheaths/belts/default",
+    "overlays": [{"base": "sheaths/empty/default"}, {"base": "sheaths/empty/pistol_bronze"}, {"base": "sheaths/accessories/pouch_firearms"}]
+  },
   "texturesByType": {"*": {"seraph": {"base": "game:block/transparent"}}},
   "storageFlags": 128,
   "behaviors": [
     {
       "name": "QuiversAndSheaths:Sheath",
       "properties": {
+        "offhandToolSlot": {"slotColor": "#fc9803", "canHoldWildcards": ["*pistol-*"], "canHoldItemTags": ["pistol"], "slotsIcon": "quiversandsheaths:pistol"},
         "toolSlot": {"slotColor": "#fc9803", "canHoldItemTagsCondition": [["sword", "onehanded"], ["mace", "onehanded"]], "slotsIcon": "quiversandsheaths:sword"},
+        "canHoldWildcards": ["*bullet-*", "*pellet-*", "*slug-*", "*match-*", "*linenpatch", "*powderflask-*", "*cockinglever-*"],
+        "slotColor": "#bb7020",
+        "slotsNumber": 4,
+        "slotsIcon": "quiversandsheaths:bullets",
         "takeOutColor": "#999999",
         "hotkeyCode": "combatoverhaul-swap-tool",
         "hotkeyName": "Swap tool from tool bag",
@@ -22,29 +30,57 @@
       "properties": {
         "addOverlayPrefix": false,
         "shape": {
-          "belt-*::right_slot-*::right_slot_state-*": {
+          "belt-*::right_slot-*::right_slot_state-*::left_slot-*::left_slot_state-*": {
             "base": "quiversandsheaths:sheaths/belts/{belt}",
-            "overlays": [{"base": "quiversandsheaths:sheaths/{right_slot_state}/{right_slot}"}]
+            "overlays": [
+              {"base": "quiversandsheaths:sheaths/{right_slot_state}/{right_slot}"},
+              {"base": "quiversandsheaths:sheaths/{left_slot_state}/{left_slot}"},
+              {"base": "quiversandsheaths:sheaths/accessories/pouch_firearms"}
+            ]
           },
-          "right_slot-*::right_slot_state-*": {
+          "right_slot-*::right_slot_state-*::left_slot-*::left_slot_state-*": {
             "base": "quiversandsheaths:sheaths/belts/default",
-            "overlays": [{"base": "quiversandsheaths:sheaths/{right_slot_state}/{right_slot}"}]
+            "overlays": [
+              {"base": "quiversandsheaths:sheaths/{right_slot_state}/{right_slot}"},
+              {"base": "quiversandsheaths:sheaths/{left_slot_state}/{left_slot}"},
+              {"base": "quiversandsheaths:sheaths/accessories/pouch_firearms"}
+            ]
           },
-          "belt-*": {"base": "quiversandsheaths:sheaths/belts/{belt}", "overlays": [{"base": "quiversandsheaths:sheaths/empty/default"}]},
-          "*": {"base": "quiversandsheaths:sheaths/belts/default", "overlays": [{"base": "quiversandsheaths:sheaths/empty/default"}]}
+          "belt-*": {
+            "base": "quiversandsheaths:sheaths/belts/{belt}",
+            "overlays": [
+              {"base": "quiversandsheaths:sheaths/empty/default"},
+              {"base": "quiversandsheaths:sheaths/empty/pistol_bronze"},
+              {"base": "quiversandsheaths:sheaths/accessories/pouch_firearms"}
+            ]
+          },
+          "*": {
+            "base": "quiversandsheaths:sheaths/belts/default",
+            "overlays": [
+              {"base": "quiversandsheaths:sheaths/empty/default"},
+              {"base": "quiversandsheaths:sheaths/empty/pistol_bronze"},
+              {"base": "quiversandsheaths:sheaths/accessories/pouch_firearms"}
+            ]
+          }
         },
         "textures": {
-          "metal-*::leather-*::right_metal-*::right_leather-*::right_wood-*": {
+          "metal-*::leather-*::right_metal-*::right_leather-*::right_wood-*::left_metal-*::left_leather-*::left_wood-*": {
             "belt-waist-plain-material": {"base": "game:block/leather/{leather}"},
             "belt-waist-plain-metal": {"base": "game:block/metal/plate/{metal}"},
             "belt-waist-plain-right-metal": {"base": "game:block/metal/plate/{right_metal}"},
             "belt-waist-plain-right-leather": {"base": "game:block/leather/{right_leather}"},
-            "belt-waist-plain-right-wood": {"base": "game:block/wood/debarked/{right_wood}"}
+            "belt-waist-plain-right-wood": {"base": "game:block/wood/debarked/{right_wood}"},
+            "belt-waist-plain-left-metal": {"base": "game:block/metal/plate/{left_metal}"},
+            "belt-waist-plain-left-leather": {"base": "game:block/leather/{left_leather}"},
+            "belt-waist-plain-left-wood": {"base": "game:block/wood/debarked/{left_wood}"}
           },
-          "right_metal-*::right_leather-*::right_wood-*": {
+          "right_metal-*::right_leather-*::right_wood-*::left_metal-*::left_leather-*::left_wood-*": {
             "belt-waist-plain-right-metal": {"base": "game:block/metal/plate/{right_metal}"},
             "belt-waist-plain-right-leather": {"base": "game:block/leather/{right_leather}"},
-            "belt-waist-plain-right-wood": {"base": "game:block/wood/debarked/{right_wood}"}
+            "belt-waist-plain-right-wood": {"base": "game:block/wood/debarked/{right_wood}"},
+            "belt-waist-plain-left-metal": {"base": "game:block/metal/plate/{left_metal}"},
+            "belt-waist-plain-left-leather": {"base": "game:block/leather/{left_leather}"},
+            "belt-waist-plain-left-wood": {"base": "game:block/wood/debarked/{left_wood}"}
           },
           "metal-*::leather-*": {"belt-waist-plain-material": {"base": "game:block/leather/{leather}"}, "belt-waist-plain-metal": {"base": "game:block/metal/plate/{metal}"}}
         }

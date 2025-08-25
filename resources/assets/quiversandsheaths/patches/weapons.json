@@ -153,5 +153,13 @@
     "op": "add",
     "path": "/attributes/MetalVariantCodeByType",
     "value": {"*-steel": "steel", "*": "steel"}
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{"modid": "combatoverhaul"}],
+    "file": "game:itemtypes/combatoverhaul/bow",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": {"*-crude": "crude", "*-simple": "simple", "*-long": "long", "*-recurve": "recurve", "*": "recurve"}
   }
 ]

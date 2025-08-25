@@ -1,16 +1,56 @@
 [
 	{
 		"enabled": true,
-		"ingredientPattern": "LSQ",
+		"ingredientPattern": "LNL,LFL,LSL",
 		"recipeGroup": 1,
 		"ingredients": {
-			"Q": {"type": "item", "code": "quiver-waist-plain-arrow"},
+			"N": {"type": "item", "code": "part-buckle-iron"},
 			"L": { "type": "item", "code": "game:leather-normal-plain", "quantity":  2 },
+			"F": { "type": "item", "code": "game:bow-*", "isTool": true, "toolDurabilityCost": 0 },
 			"S": {"type": "item", "code": "game:sewingkit"}
 		},
 		"width": 3,
-		"height": 1,
+		"height": 3,
+		"requiresTrait": "clothier",
 		"name": "saydak",
-		"output": { "type": "item", "code": "saydak-waist-plain" }
+		"output": { "type": "item", "code": "quiver-waist-plain-saydak" }
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "LNL,LLL,SF_",
+		"recipeGroup": 2,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-buckle-{metal}"},
+			"L": { "type": "item", "code": "game:leather-normal-{leather}", "quantity":  2 },
+			"F": { "type": "item", "code": "game:bow-*", "isTool": true, "toolDurabilityCost": 0 },
+			"S": {"type": "item", "code": "game:sewingkit"}
+		},
+		"allowedVariants": {
+			"metal": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"]
+		},
+		"width": 3,
+		"height": 3,
+		"requiresTrait": "clothier",
+		"name": "saydak",
+		"output": { "type": "item", "code": "quiver-waist-plain-saydak",  "attributes": {"types": {"belt": "thin", "leather": "{leather}", "metal": "{metal}"}} }
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "LNL,LFL,LSL",
+		"recipeGroup": 2,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-buckle-{metal}"},
+			"L": { "type": "item", "code": "game:leather-normal-{leather}", "quantity":  2 },
+			"F": { "type": "item", "code": "game:bow-*", "isTool": true, "toolDurabilityCost": 0 },
+			"S": {"type": "item", "code": "game:sewingkit"}
+		},
+		"allowedVariants": {
+			"metal": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"]
+		},
+		"width": 3,
+		"height": 3,
+		"requiresTrait": "clothier",
+		"name": "saydak",
+		"output": { "type": "item", "code": "quiver-waist-plain-saydak",  "attributes": {"types": {"belt": "thick", "leather": "{leather}", "metal": "{metal}"}} }
 	}
 ]

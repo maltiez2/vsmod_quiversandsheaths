@@ -1,7 +1,7 @@
 {
 	"editor": {
 		"backDropShape": "E:/Programs/VSModelCreator/thin",
-		"collapsedPaths": "Root/Bow,Root/Waist-Quiver/Quiver,Root/Waist-Belt/Quiver/quiver_1,Root/Sowrd/Handle,Root/Waist/buckle-bottom,Root/Waist-Quiver/Pouch_1,Root/Waist-Quiver/Pouch_0,Root/Waist-Belt/Saydak/saydak_0/Bow,Root/Sowrd/Metal,Root/Waist-Belt/Sheath,Root/Waist-Belt/Pouch_1,Root/Waist-Quiver/Sheath_0,Root/Waist-Quiver/Belt,Root/Waist-Belt/Saydak/Bow,Root/Waist-Quiver/Saydak,Root/Waist-Quiver/Sheath/sheath_0,Root/Waist-Quiver/Sheath/sheath_0/Sowrd/Handle2,Root/Waist-Belt/Quiver/arrow_7,Root/Waist-Belt/Quiver/arrow_6,Root/Waist-Belt/Quiver/arrow_5,Root/Waist-Quiver/Quiver/arrow_3,Root/Waist-Quiver/Quiver/arrow_2,Root/Waist-Quiver/Quiver/arrow_1,Root/Waist-Quiver/Bow,Root/Waist-Quiver/Quiver/arrow_0,Root/Waist-Belt/Quiver/arrow_0,Root/Waist-Quiver/Sheath/sheath_0/Handle2/Guard_2,Root/Waist-Belt/Quiver/arrow_4,Root/Waist-Belt/Quiver/arrow_3,Root/Waist-Belt/Quiver/arrow_2,Root/Waist-Belt/Quiver/arrow_1",
+		"collapsedPaths": "Root/Bow,Root/Waist-Quiver/Quiver,Root/Waist-Belt/Quiver/quiver_1,Root/Sowrd/Handle,Root/Waist/buckle-bottom,Root/Waist-Quiver/Pouch_1,Root/Waist-Quiver/Pouch_0,Root/Waist-Belt/Saydak/saydak_0/Bow,Root/Waist-Belt/Saydak/saydak_0/saydak_3,Root/Sowrd/Metal,Root/Waist-Belt/Sheath,Root/Waist-Belt/Pouch_1,Root/Waist-Quiver/Sheath_0,Root/Waist-Quiver/Belt,Root/Waist-Belt/Saydak/Bow,Root/Waist-Quiver/Saydak,Root/Waist-Quiver/Sheath/sheath_0,Root/Waist-Quiver/Sheath/sheath_0/Sowrd/Handle2,Root/Waist-Belt/Quiver/arrow_7,Root/Waist-Belt/Saydak/saydak_0/quiver_1,Root/Waist-Belt/Quiver/arrow_6,Root/Waist-Belt/Quiver/arrow_5,Root/Waist-Quiver/Quiver/arrow_3,Root/Waist-Quiver/Quiver/arrow_2,Root/Waist-Quiver/Quiver/arrow_1,Root/Waist-Quiver/Bow,Root/Waist-Quiver/Quiver/arrow_0,Root/Waist-Belt/Quiver/arrow_0,Root/Waist-Quiver/Sheath/sheath_0/Handle2/Guard_2,Root/Waist-Belt/Quiver/arrow_4,Root/Waist-Belt/Quiver/arrow_3,Root/Waist-Belt/Quiver/arrow_2,Root/Waist-Belt/Quiver/arrow_1",
 		"allAngles": true,
 		"entityTextureMode": false
 	},
@@ -10,9 +10,9 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"quiverbolts-black": "block/leather/black",
-		"belt-waist-plain-material": "block/leather/plain",
-		"belt-waist-plain-metal": "block/metal/plate/brass"
+		"quiverbolts-black": "game:block/leather/black",
+		"belt-waist-plain-material": "game:block/leather/plain",
+		"belt-waist-plain-metal": "game:block/metal/plate/brass"
 	},
 	"elements": [
 		{
@@ -40,11 +40,11 @@
 					"children": [
 						{
 							"name": "saydak_0",
-							"from": [ -0.6, -1.8, -3.8 ],
-							"to": [ -0.6, -1.8, -3.8 ],
-							"rotationOrigin": [ -0.6, -1.8, -3.8 ],
+							"from": [ -1.6, -1.8, -1.8 ],
+							"to": [ -1.6, -1.8, -1.8 ],
+							"rotationOrigin": [ -1.6, -1.8, -1.8 ],
 							"rotationX": -3.0,
-							"rotationY": -10.0,
+							"rotationY": 37.0,
 							"rotationZ": -49.0,
 							"faces": {
 								"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
@@ -146,16 +146,16 @@
 								{
 									"name": "saydak_6",
 									"from": [ 0.2, -0.5, 0.5 ],
-									"to": [ 0.8, 5.0, 0.7 ],
+									"to": [ 0.8, 4.0, 0.7 ],
 									"rotationOrigin": [ 0.8, -0.5, 0.5 ],
-									"rotationX": 53.0,
-									"rotationY": 10.0,
-									"rotationZ": 33.0,
+									"rotationX": 36.0,
+									"rotationY": 2.0,
+									"rotationZ": 50.0,
 									"faces": {
-										"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 5.5 ] },
-										"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 5.5 ] },
-										"south": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 5.5 ] },
-										"west": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 5.5 ] },
+										"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 4.5 ] },
+										"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 4.5 ] },
+										"south": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 4.5 ] },
+										"west": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 4.5 ] },
 										"up": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
 										"down": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
 									}
@@ -165,8 +165,8 @@
 									"from": [ 5.2, -0.5, 0.5 ],
 									"to": [ 5.8, 8.3, 0.7 ],
 									"rotationOrigin": [ 5.8, -0.5, 0.5 ],
-									"rotationX": 30.0,
-									"rotationZ": 42.0,
+									"rotationX": 42.0,
+									"rotationZ": 53.0,
 									"faces": {
 										"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 8.5 ] },
 										"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 8.5 ] },

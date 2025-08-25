@@ -10,11 +10,11 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"leather2": "game:block/leather/plain",
-		"brass": "game:block/metal/plate/brass",
-		"iron": "game:block/metal/plate/iron",
-		"oak": "game:block/wood/debarked/oak",
-		"feather1": "game:item/tool/material/feather1"
+		"leather2": "block/leather/plain",
+		"brass": "block/metal/plate/brass",
+		"iron": "block/metal/plate/iron",
+		"oak": "block/wood/debarked/oak",
+		"feather1": "item/tool/material/feather1"
 	},
 	"elements": [
 		{

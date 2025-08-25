@@ -10,16 +10,16 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"fireclay": "game:block/clay/fireclay",
-		"wrapping": "game:block/cloth/linen/normal1",
-		"leather2": "game:block/leather/plain",
-		"plain": "game:block/leather/plain",
-		"brass": "game:block/metal/plate/brass",
-		"iron": "game:block/metal/plate/iron",
-		"kapok": "game:block/wood/debarked/kapok",
-		"wood": "game:block/wood/debarked/larch",
-		"oak": "game:block/wood/debarked/oak",
-		"feather1": "game:item/tool/material/feather1"
+		"fireclay": "block/clay/fireclay",
+		"wrapping": "block/cloth/linen/normal1",
+		"leather2": "block/leather/plain",
+		"plain": "block/leather/plain",
+		"brass": "block/metal/plate/brass",
+		"iron": "block/metal/plate/iron",
+		"kapok": "block/wood/debarked/kapok",
+		"wood": "block/wood/debarked/larch",
+		"oak": "block/wood/debarked/oak",
+		"feather1": "item/tool/material/feather1"
 	},
 	"elements": [
 		{

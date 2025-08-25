@@ -9,7 +9,7 @@
     {
       "name": "QuiversAndSheaths:Sheath",
       "properties": {
-        "toolSlot": {"slotColor": "#fc9803", "canHoldWildcards": ["*pistol-*"], "canHoldItemTags": ["pistol"], "slotsIcon": "quiversandsheaths:pistol"},
+        "toolSlot": {"slotColor": "#fc9803", "canHoldWildcards": ["*-pistol-*"], "canHoldItemTags": ["pistol"], "slotsIcon": "quiversandsheaths:pistol"},
         "canHoldWildcards": ["*bullet-*", "*pellet-*", "*slug-*", "*match-*", "*linenpatch", "*powderflask-*", "*cockinglever-*"],
         "slotColor": "#bb7020",
         "slotsNumber": 4,

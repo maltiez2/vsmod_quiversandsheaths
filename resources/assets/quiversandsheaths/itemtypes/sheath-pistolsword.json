@@ -12,7 +12,7 @@
     {
       "name": "QuiversAndSheaths:Sheath",
       "properties": {
-        "offhandToolSlot": {"slotColor": "#fc9803", "canHoldWildcards": ["*pistol-*"], "canHoldItemTags": ["pistol"], "slotsIcon": "quiversandsheaths:pistol"},
+        "offhandToolSlot": {"slotColor": "#fc9803", "canHoldWildcards": ["*-pistol-*"], "canHoldItemTags": ["pistol"], "slotsIcon": "quiversandsheaths:pistol"},
         "toolSlot": {"slotColor": "#fc9803", "canHoldItemTagsCondition": [["sword", "onehanded"], ["mace", "onehanded"]], "slotsIcon": "quiversandsheaths:sword"},
         "canHoldWildcards": ["*bullet-*", "*pellet-*", "*slug-*", "*match-*", "*linenpatch", "*powderflask-*", "*cockinglever-*"],
         "slotColor": "#bb7020",

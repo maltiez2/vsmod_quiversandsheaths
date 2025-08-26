@@ -48,7 +48,7 @@
 		"output": { "type": "item", "code": "pouch-waist-plain-sling",  "attributes": {"types": {"belt": "thick", "leather": "{leather}", "metal": "{metal}"}} }
 	},
 	{
-		"enabled": true,
+		"enabled": false,
 		"ingredientPattern": "LNL,LFL,LLL",
 		"recipeGroup": 1,
 		"ingredients": {
@@ -62,7 +62,7 @@
 		"output": { "type": "item", "code": "pouch-waist-plain-sling" }
 	},
 	{
-		"enabled": true,
+		"enabled": false,
 		"ingredientPattern": "LNL,LLL,_F_",
 		"recipeGroup": 2,
 		"ingredients": {
@@ -79,7 +79,7 @@
 		"output": { "type": "item", "code": "pouch-waist-plain-sling",  "attributes": {"types": {"belt": "thin", "leather": "{leather}", "metal": "{metal}"}} }
 	},
 	{
-		"enabled": true,
+		"enabled": false,
 		"ingredientPattern": "LNL,LFL,LLL",
 		"recipeGroup": 2,
 		"ingredients": {

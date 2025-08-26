@@ -41,5 +41,7 @@
   {"side": "Server", "dependsOn": [{"modid": "maltiezcrossbows"}], "file": "quiversandsheaths:recipes/grid/quiver-bolts", "op": "replace", "path": "/0/enabled", "value": true},
   {"side": "Server", "dependsOn": [{"modid": "maltiezcrossbows"}], "file": "quiversandsheaths:recipes/grid/quiver-bolts", "op": "replace", "path": "/1/enabled", "value": true},
   {"side": "Server", "dependsOn": [{"modid": "maltiezcrossbows"}], "file": "quiversandsheaths:recipes/grid/quiver-bolts", "op": "replace", "path": "/2/enabled", "value": true},
-  {"side": "Server", "dependsOn": [{"modid": "combatoverhaul"}], "file": "quiversandsheaths:recipes/grid/pouch", "op": "replace", "path": "/1/enabled", "value": true}
+  {"side": "Server", "dependsOn": [{"modid": "combatoverhaul"}], "file": "quiversandsheaths:recipes/grid/pouch-sling", "op": "replace", "path": "/3/enabled", "value": true},
+  {"side": "Server", "dependsOn": [{"modid": "combatoverhaul"}], "file": "quiversandsheaths:recipes/grid/pouch-sling", "op": "replace", "path": "/4/enabled", "value": true},
+  {"side": "Server", "dependsOn": [{"modid": "combatoverhaul"}], "file": "quiversandsheaths:recipes/grid/pouch-sling", "op": "replace", "path": "/5/enabled", "value": true}
 ]

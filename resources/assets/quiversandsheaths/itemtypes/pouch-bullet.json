@@ -29,7 +29,7 @@
       }
     }
   ],
-  "attributes": {"wearableAttachment": true, "clothescategory": "waist", "warmthByType": {"*": 0}, "handbook": {"groupBy": ["pouch-{category}-{subtype}-{type}"]}},
+  "attributes": {"wearableAttachment": true, "clothescategory": "waistgear", "warmthByType": {"*": 0}, "handbook": {"groupBy": ["pouch-{category}-{subtype}-{type}"]}},
   "creativeinventory": {"general": ["*"], "quiversandsheaths": ["*"]},
   "creativeinventoryStacks": [
     {

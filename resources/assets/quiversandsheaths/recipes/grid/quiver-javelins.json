@@ -1,6 +1,6 @@
 [
 	{
-		"enabled": true,
+		"enabled": false,
 		"ingredientPattern": "LNL,LFL,LLL",
 		"recipeGroup": 1,
 		"ingredients": {
@@ -14,7 +14,7 @@
 		"output": { "type": "item", "code": "quiver-waist-plain-javelin" }
 	},
 	{
-		"enabled": true,
+		"enabled": false,
 		"ingredientPattern": "LNL,LLL,_F_",
 		"recipeGroup": 2,
 		"ingredients": {
@@ -31,7 +31,7 @@
 		"output": { "type": "item", "code": "quiver-waist-plain-javelin",  "attributes": {"types": {"belt": "thin", "leather": "{leather}", "metal": "{metal}"}} }
 	},
 	{
-		"enabled": true,
+		"enabled": false,
 		"ingredientPattern": "LNL,LFL,LLL",
 		"recipeGroup": 2,
 		"ingredients": {

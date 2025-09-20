@@ -89,6 +89,8 @@ function Convert-CustomJsonString {
                 $propValue = $value.PSObject.Properties[$key].Value
                 $val = _stringify $propValue $nextIndent $reservedForValue
 
+
+
                 if ($val -ne $null) { $items += $keyPart + $val }
             }
 

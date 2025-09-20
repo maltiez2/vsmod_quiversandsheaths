@@ -67,7 +67,7 @@ function Convert-CustomJsonString {
             if ($items.Count -gt 0) {
                 return "$start`n$nextIndent$($items -join ",`n$nextIndent")`n$currentIndent$end"
             } else {
-                return "[]"
+                return _stringify $value
             }
         }
 
@@ -95,7 +95,7 @@ function Convert-CustomJsonString {
             if ($items.Count -gt 0) {
                 return "$start`n$nextIndent$($items -join ",`n$nextIndent")`n$currentIndent$end"
             } else {
-                return "{}"
+                return _stringify $value
             }
         }
 

@@ -6,7 +6,33 @@
   "texturesByType": {"*": {"seraph": {"base": "game:block/transparent"}}},
   "storageFlags": 128,
   "behaviors": [
-    {"name": "QuiversAndSheaths:Quiver", "properties": {}},
+    {
+      "name": "QuiversAndSheaths:Quiver",
+      "properties": {
+        "slots": [
+          {
+            "canHoldWildcards": ["*bolt-*"],
+            "canHoldItemTags": ["bolt"],
+            "slotColor": "#cfbd59",
+            "slotsNumber": 2,
+            "slotsIcon": "quiversandsheaths:bolts",
+            "SetVariants": true,
+            "SlotVariant": "bolt_slot",
+            "SlotStateVariant": "bolt_slot_state"
+          },
+          {
+            "canHoldWildcards": ["*spanningtool-*"],
+            "canHoldItemTags": ["crossbow-equipment"],
+            "slotColor": "#d68140",
+            "slotsNumber": 1,
+            "slotsIcon": "quiversandsheaths:spanningtool",
+            "SetVariants": true,
+            "SlotVariant": "equipment_slot",
+            "SlotStateVariant": "equipment_slot_state"
+          }
+        ]
+      }
+    },
     {
       "name": "QuiversAndSheaths:ShapeTexturesFromAttributes",
       "properties": {

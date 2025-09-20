@@ -2,15 +2,16 @@
   "code": "beltbag",
   "class": "Item",
   "tags": ["belt-bag"],
-  "variantgroups": [{ "code": "category", "states": ["right"] }, { "code": "subtype", "states": ["saydak"] }, { "code": "type", "states": ["general"] }],
-  "shape": { "base": "quiversandsheaths:sheaths/accessories/empty/quiver_default_bow" },
+  "variantgroups": [{ "code": "category", "states": ["back"] }, { "code": "subtype", "states": ["quiver"] }, { "code": "type", "states": ["javelins"] }],
+  "shape": { "base": "quiversandsheaths:sheaths/accessories/empty/quiver_javelins" },
   "texturesByType": { "*": { "seraph": { "base": "game:block/transparent" } } },
   "storageFlags": 128,
   "behaviors": [
     {
       "name": "QuiversAndSheaths:Sheath",
       "properties": {
-        "toolSlot": { "slotColor": "#fc9803", "canHoldWildcards": ["*bow-*"], "canHoldItemTags": ["bow"], "slotsIcon": "quiversandsheaths:bow" },
+        "toolSlot": { "slotColor": "#fc9803", "canHoldWildcards": ["*javelin-*"], "canHoldItemTags": ["javelin"], "slotsIcon": "quiversandsheaths:javelin" },
+        "slots": [{ "canHoldWildcards": ["*javelin-*"], "canHoldItemTags": ["javelin"], "slotColor": "#969350", "slotsNumber": 4, "slotsIcon": "quiversandsheaths:javelin" }],
         "takeOutColor": "#999999",
         "hotkeyCode": "combatoverhaul-swap-weapon-right-ranged",
         "hotkeyName": "Swap ranged weapon (main hand)",
@@ -23,8 +24,8 @@
       "properties": {
         "addOverlayPrefix": false,
         "shape": {
-          "right_slot-*::right_slot_state-*": { "base": "quiversandsheaths:sheaths/accessories/{right_slot_state}/quiver_{right_slot}_bow" },
-          "*": { "base": "quiversandsheaths:sheaths/accessories/empty/quiver_default_bow" }
+          "right_slot-*::right_slot_state-*": { "base": "quiversandsheaths:sheaths/accessories/{right_slot_state}/quiver_javelins" },
+          "*": { "base": "quiversandsheaths:sheaths/accessories/empty/quiver_javelins" }
         },
         "textures": { "metal-*::leather-*": { "belt-waist-plain-material": { "base": "game:block/leather/{leather}" }, "belt-waist-plain-metal": { "base": "game:block/metal/plate/{metal}" } } }
       }
@@ -34,12 +35,12 @@
       "properties": {
         "addOverlayPrefix": false,
         "renderTargets": ["Gui", "HandTp", "HandTpOff", "Ground"],
-        "shape": { "*": { "base": "quiversandsheaths:gui/saydak" } },
+        "shape": { "*": { "base": "quiversandsheaths:gui/quiver-javelins" } },
         "textures": { "metal-*::leather-*": { "belt-waist-plain-material": { "base": "game:block/leather/{leather}" }, "belt-waist-plain-metal": { "base": "game:block/metal/plate/{metal}" } } }
       }
     }
   ],
-  "attributes": { "wearableAttachment": true, "clothescategory": "addBeltRight", "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["beltbag-{category}-{subtype}-{type}"] } },
+  "attributes": { "wearableAttachment": true, "clothescategory": "addBeltBack", "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["beltbag-{category}-{subtype}-{type}"] } },
   "creativeinventory": { "general": ["*"], "quiversandsheaths": ["*"] },
   "creativeinventoryStacks": [
     {
@@ -271,6 +272,6 @@
   ],
   "renderAlphaTest": "0.25",
   "tpHandTransform": { "translation": { "x": 0, "y": "-0.05", "z": 0 }, "rotation": { "x": 0, "y": 180, "z": 48 }, "origin": { "x": 0, "y": 0, "z": 0 }, "scale": 1 },
-  "guiTransform": { "translation": { "x": 0, "y": 0, "z": 0 }, "rotation": { "x": 55, "y": -1, "z": 36 }, "origin": { "x": "-0.11", "y": "-0.15", "z": 0 }, "scaleXyz": { "x": "-2.77", "y": "2.77", "z": "2.77" } },
+  "guiTransform": { "translation": { "x": 0, "y": 0, "z": 0 }, "rotation": { "x": 48, "y": 0, "z": 33 }, "origin": { "x": "-0.02", "y": "-0.05", "z": 0 }, "scaleXyz": { "x": "-2.9", "y": "2.9", "z": "2.9" } },
   "groundTransform": { "translation": { "x": 0, "y": 0, "z": 0 }, "rotation": { "x": 90, "y": 0, "z": 0 }, "origin": { "x": 0, "y": 0, "z": "0.1" }, "scale": 4 }
 }

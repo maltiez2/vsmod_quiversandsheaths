@@ -89,7 +89,7 @@ public class SheathBehavior : ToolBag
 
         ItemSlotToolHolder? weaponSlot = backpackInventory[slotIndex] as ItemSlotToolHolder;
 
-        if (weaponSlot == null) return;
+        if (weaponSlot == null || weaponSlot.SourceBag?.Item?.Id != collObj.Id) return;
 
         if (weaponSlot.Empty)
         {
@@ -206,7 +206,7 @@ public class SheathBehavior : ToolBag
         IEnumerable<string> variantCodes = backpackInventory
             .OfType<ItemSlotBagContentWithWildcardMatch>()
             .Where(slot => slot is not ItemSlotToolHolder)
-            .Where(slot => slot.Config.SetVariants)
+            .Where(slot => slot.Config.SetVariants && slot.SourceBag?.Item?.Id == collObj.Id)
             .Select(slot => slot.Config.SlotVariant)
             .Distinct();
 

@@ -2,7 +2,7 @@
   "code": "beltbag",
   "class": "Item",
   "tags": ["belt-bag"],
-  "variantgroups": [{ "code": "category", "states": ["right"] }, { "code": "subtype", "states": ["pouch"] }, { "code": "type", "states": ["sling"] }],
+  "variantgroups": [{ "code": "category", "states": ["back"] }, { "code": "subtype", "states": ["pouch"] }, { "code": "type", "states": ["sling"] }],
   "shape": { "base": "quiversandsheaths:sheaths/accessories/pouch_sling" },
   "texturesByType": { "*": { "seraph": { "base": "game:block/transparent" } } },
   "storageFlags": 128,
@@ -13,9 +13,9 @@
         "toolSlot": { "slotColor": "#fc9803", "canHoldWildcards": ["*sling-*"], "canHoldItemTags": ["sling"], "slotsIcon": "quiversandsheaths:sling" },
         "slots": [{ "canHoldWildcards": ["*slingbullet-*"], "slotColor": "#bb7020", "slotsNumber": 2, "slotsIcon": "quiversandsheaths:bullets" }],
         "takeOutColor": "#999999",
-        "hotkeyCode": "combatoverhaul-swap-tool-alt",
-        "hotkeyName": "Swap tool from tool bag (alternative)",
-        "hotkeyKey": "T",
+        "hotkeyCode": "combatoverhaul-swap-weapon-right-ranged",
+        "hotkeyName": "Swap ranged weapon (main hand)",
+        "hotkeyKey": "R",
         "takeOutSlotIcon": "quiversandsheaths:takeout"
       }
     },
@@ -36,7 +36,7 @@
       }
     }
   ],
-  "attributes": { "wearableAttachment": true, "clothescategory": "addBeltRight", "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["sheath-{category}-{subtype}-{type}"] } },
+  "attributes": { "wearableAttachment": true, "clothescategory": "addBeltBack", "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["beltbag-{category}-{subtype}-{type}"] } },
   "creativeinventory": { "general": ["*"], "quiversandsheaths": ["*"] },
   "creativeinventoryStacks": [
     {

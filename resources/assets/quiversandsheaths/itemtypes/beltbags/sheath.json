@@ -2,7 +2,7 @@
   "code": "beltbag",
   "class": "Item",
   "tags": ["belt-bag"],
-  "variantgroups": [{ "code": "category", "states": ["left"] }, { "code": "subtype", "states": ["sheath"] }, { "code": "type", "states": ["general"] }],
+  "variantgroups": [{ "code": "category", "states": ["left"] }, { "code": "subtype", "states": ["sheath"] }, { "code": "type", "states": ["sword"] }],
   "shape": { "base": "quiversandsheaths:sheaths/empty/default" },
   "texturesByType": { "*": { "seraph": { "base": "game:block/transparent" } } },
   "storageFlags": 128,
@@ -12,8 +12,8 @@
       "properties": {
         "toolSlot": { "slotColor": "#fc9803", "canHoldItemTagsCondition": [["sword", "onehanded"], ["mace", "onehanded"]], "slotsIcon": "quiversandsheaths:sword" },
         "takeOutColor": "#999999",
-        "hotkeyCode": "combatoverhaul-swap-tool",
-        "hotkeyName": "Swap tool from tool bag",
+        "hotkeyCode": "combatoverhaul-swap-weapon-right-melee",
+        "hotkeyName": "Swap melee weapon (main hand)",
         "hotkeyKey": "R",
         "takeOutSlotIcon": "quiversandsheaths:takeout"
       }
@@ -50,7 +50,7 @@
       }
     }
   ],
-  "attributes": { "wearableAttachment": true, "clothescategory": "addBeltLeft", "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["sheath-{category}-{subtype}-{type}"] } },
+  "attributes": { "wearableAttachment": true, "clothescategory": "addBeltLeft", "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["beltbag-{category}-{subtype}-{type}"] } },
   "creativeinventory": { "general": ["*"], "quiversandsheaths": ["*"] },
   "creativeinventoryStacks": [
     {

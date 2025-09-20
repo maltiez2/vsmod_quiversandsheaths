@@ -11,7 +11,7 @@
 		"width": 3,
 		"height": 3,
 		"name": "pouch-bullet",
-		"output": { "type": "item", "code": "pouch-waist-plain-bullet" }
+		"output": { "type": "item", "code": "beltbag-back-pouch-firearms" }
 	},
 	{
 		"enabled": false,
@@ -28,7 +28,7 @@
 		"width": 3,
 		"height": 3,
 		"name": "pouch-bullet",
-		"output": { "type": "item", "code": "pouch-waist-plain-bullet",  "attributes": {"types": {"belt": "thin", "leather": "{leather}", "metal": "{metal}"}} }
+		"output": { "type": "item", "code": "beltbag-back-pouch-firearms",  "attributes": {"types": {"belt": "thin", "leather": "{leather}", "metal": "{metal}"}} }
 	},
 	{
 		"enabled": false,
@@ -45,7 +45,7 @@
 		"width": 3,
 		"height": 3,
 		"name": "pouch-bullet",
-		"output": { "type": "item", "code": "pouch-waist-plain-bullet",  "attributes": {"types": {"belt": "thick", "leather": "{leather}", "metal": "{metal}"}} }
+		"output": { "type": "item", "code": "beltbag-back-pouch-firearms",  "attributes": {"types": {"belt": "thick", "leather": "{leather}", "metal": "{metal}"}} }
 	},
 	{
 		"enabled": false,
@@ -93,7 +93,7 @@
 		"width": 3,
 		"height": 3,
 		"name": "pouch-bullet",
-		"output": { "type": "item", "code": "pouch-waist-plain-bullet",  "attributes": {"types": {"belt": "thick", "leather": "{leather}", "metal": "{metal}"}} }
+		"output": { "type": "item", "code": "beltbag-back-pouch-firearms",  "attributes": {"types": {"belt": "thick", "leather": "{leather}", "metal": "{metal}"}} }
 	},
 	{
 		"enabled": false,
@@ -107,7 +107,7 @@
 		"width": 3,
 		"height": 3,
 		"name": "pouch-bullet",
-		"output": { "type": "item", "code": "pouch-waist-plain-bullet" }
+		"output": { "type": "item", "code": "beltbag-back-pouch-firearms" }
 	},
 	{
 		"enabled": false,
@@ -124,7 +124,7 @@
 		"width": 3,
 		"height": 3,
 		"name": "pouch-bullet",
-		"output": { "type": "item", "code": "pouch-waist-plain-bullet",  "attributes": {"types": {"belt": "thin", "leather": "{leather}", "metal": "{metal}"}} }
+		"output": { "type": "item", "code": "beltbag-back-pouch-firearms",  "attributes": {"types": {"belt": "thin", "leather": "{leather}", "metal": "{metal}"}} }
 	},
 	{
 		"enabled": false,
@@ -141,6 +141,6 @@
 		"width": 3,
 		"height": 3,
 		"name": "pouch-bullet",
-		"output": { "type": "item", "code": "pouch-waist-plain-bullet",  "attributes": {"types": {"belt": "thick", "leather": "{leather}", "metal": "{metal}"}} }
+		"output": { "type": "item", "code": "beltbag-back-pouch-firearms",  "attributes": {"types": {"belt": "thick", "leather": "{leather}", "metal": "{metal}"}} }
 	}
 ]

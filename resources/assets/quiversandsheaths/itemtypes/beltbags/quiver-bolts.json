@@ -2,7 +2,7 @@
   "code": "beltbag",
   "class": "Item",
   "tags": ["belt-bag"],
-  "variantgroups": [{ "code": "category", "states": ["right"] }, { "code": "subtype", "states": ["quiver"] }, { "code": "type", "states": ["bolts"] }],
+  "variantgroups": [{ "code": "category", "states": ["back"] }, { "code": "subtype", "states": ["quiver"] }, { "code": "type", "states": ["bolts"] }],
   "shape": { "base": "sheaths/accessories/empty/quiver_bolts", "overlays": [{ "base": "sheaths/accessories/empty/quiver_default" }] },
   "texturesByType": { "*": { "seraph": { "base": "game:block/transparent" } } },
   "storageFlags": 128,
@@ -60,7 +60,7 @@
       }
     }
   ],
-  "attributes": { "wearableAttachment": true, "clothescategory": "addBeltRight", "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["sheath-{category}-{subtype}-{type}"] } },
+  "attributes": { "wearableAttachment": true, "clothescategory": "addBeltBack", "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["beltbag-{category}-{subtype}-{type}"] } },
   "creativeinventory": { "general": ["*"], "quiversandsheaths": ["*"] },
   "creativeinventoryStacks": [
     {

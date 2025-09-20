@@ -26,9 +26,9 @@
 			"children": [
 				{
 					"name": "Saydak",
-					"from": [ 2.6, -0.9, 11.9 ],
-					"to": [ 2.6, -0.9, 11.9 ],
-					"rotationOrigin": [ 2.6, -0.9, 11.9 ],
+					"from": [ 2.6, -0.9, -0.1 ],
+					"to": [ 2.6, -0.9, -0.1 ],
+					"rotationOrigin": [ 2.6, -0.9, -0.1 ],
 					"faces": {
 						"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
 						"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
@@ -40,10 +40,11 @@
 					"children": [
 						{
 							"name": "saydak_0",
-							"from": [ -2.6, -0.8, -4.1 ],
-							"to": [ -2.6, -0.8, -4.1 ],
-							"rotationOrigin": [ -2.6, -0.8, -4.1 ],
+							"from": [ 0.4, -1.8, -3.8 ],
+							"to": [ 0.4, -1.8, -3.8 ],
+							"rotationOrigin": [ 0.4, -1.8, -3.8 ],
 							"rotationX": -3.0,
+							"rotationY": -10.0,
 							"rotationZ": -28.0,
 							"faces": {
 								"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
@@ -113,33 +114,32 @@
 								},
 								{
 									"name": "saydak_6",
-									"from": [ 0.2, -0.3, 0.0 ],
-									"to": [ 0.8, 3.3, 0.2 ],
-									"rotationOrigin": [ 0.8, -0.3, 0.0 ],
-									"rotationX": -25.0,
-									"rotationY": -5.0,
-									"rotationZ": 9.0,
+									"from": [ 0.2, -0.3, 0.5 ],
+									"to": [ 0.8, 5.2, 0.7 ],
+									"rotationOrigin": [ 0.8, -0.3, 0.5 ],
+									"rotationX": 59.0,
+									"rotationZ": 30.0,
 									"faces": {
-										"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 3.5 ] },
-										"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 3.5 ] },
-										"south": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 3.5 ] },
-										"west": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 3.5 ] },
+										"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 5.5 ] },
+										"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 5.5 ] },
+										"south": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 5.5 ] },
+										"west": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 5.5 ] },
 										"up": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
 										"down": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
 									}
 								},
 								{
 									"name": "saydak_7",
-									"from": [ 7.2, 0.0, 0.0 ],
-									"to": [ 7.8, 7.1, 0.2 ],
-									"rotationOrigin": [ 7.8, 0.0, 0.0 ],
-									"rotationX": -21.0,
-									"rotationZ": 50.0,
+									"from": [ 7.2, 0.0, 0.5 ],
+									"to": [ 7.8, 9.3, 0.7 ],
+									"rotationOrigin": [ 7.8, 0.0, 0.5 ],
+									"rotationX": 51.0,
+									"rotationZ": 44.0,
 									"faces": {
-										"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 7.0 ] },
-										"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 7.0 ] },
-										"south": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 7.0 ] },
-										"west": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 7.0 ] },
+										"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 9.0 ] },
+										"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 9.0 ] },
+										"south": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 9.0 ] },
+										"west": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 9.0 ] },
 										"up": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
 										"down": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
 									}
@@ -147,7 +147,7 @@
 								{
 									"name": "quiver_1",
 									"from": [ -0.3, -3.1, -0.5 ],
-									"to": [ 2.9, -2.6, 0.8 ],
+									"to": [ 2.9, -2.6, 0.7 ],
 									"rotationOrigin": [ -0.3, -3.1, -0.5 ],
 									"rotationZ": 90.0,
 									"faces": {
@@ -268,4 +268,7 @@
 				}
 			]
 		}
-	]}
+	],
+	"animations": [
+	]
+}

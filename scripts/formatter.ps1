@@ -17,92 +17,63 @@ function Convert-CustomJsonString {
         $obj = ConvertFrom-Json $JsonText -ErrorAction Stop
     }
     catch {
-        Write-Warning "Invalid JSON detected, skipping file."
+        Write-Warning "Invalid JSON detected, skipping."
         return $null
     }
 
     function _stringify {
         param(
             $value,
-            [string]$currentIndent = "",
-            [int]$reserved = 0
+            [string]$currentIndent = ""
         )
 
-        $jsonString = ConvertTo-Json $value -Depth 100 -Compress
-        if ($jsonString -eq $null) { return $null }
-
-        $length = $MaxLength - $currentIndent.Length - $reserved
-
-        # Attempt short inline formatting
-        if ($jsonString.Length -le $length) {
-            function Add-SpaceAfterPunctuation($json) {
-                $inString = $false
-                $result = ""
-                for ($i = 0; $i -lt $json.Length; $i++) {
-                    $c = $json[$i]
-                    if ($c -eq '"') { $inString = -not $inString }
-                    $result += $c
-                    if (-not $inString -and ($c -eq ":" -or $c -eq ",")) { $result += " " }
-                }
-                return $result
-            }
-            $prettified = Add-SpaceAfterPunctuation $jsonString
-            if ($prettified.Length -le $length) { return $prettified }
+        # Handle primitives
+        if ($value -is [string]) {
+            return '"' + ($value -replace '"','\"') + '"'
+        }
+        elseif ($value -is [bool]) {
+            return $value.ToString().ToLower()
+        }
+        elseif ($value -is [int] -or $value -is [double] -or $value -eq $null) {
+            if ($value -eq $null) { return "null" }
+            else { return $value.ToString() }
         }
 
+
         # Handle arrays
-        if ($value -is [System.Collections.IEnumerable] -and -not ($value -is [string])) {
+        elseif ($value -is [System.Array] -or $value -is [System.Collections.IList]) {
             $nextIndent = $currentIndent + (" " * $Indent)
             $items = @()
-            $start = "["
-            $end = "]"
-
-            # Ensure we have a real array so .Count is safe
-            $arr = @($value)
-            for ($i = 0; $i -lt $arr.Count; $i++) {
-                $reservedForItem = if ($i -lt ($arr.Count - 1)) { 1 } else { 0 }
-                $items += _stringify $arr[$i] $nextIndent $reservedForItem
+            foreach ($item in $value) {
+                $items += _stringify $item $nextIndent
             }
 
-            if ($items.Count -gt 0) {
-                return "$start`n$nextIndent$($items -join ",`n$nextIndent")`n$currentIndent$end"
-            } else {
-                return _stringify $value
-            }
+            # Try inline if short
+            $inline = "[" + ($items -join ", ") + "]"
+            if ($inline.Length + $currentIndent.Length -le $MaxLength) { return $inline }
+
+            return "[`n$nextIndent$($items -join ",`n$nextIndent")`n$currentIndent]"
         }
 
         # Handle objects
         elseif ($value -is [PSCustomObject] -or $value -is [Hashtable]) {
             $nextIndent = $currentIndent + (" " * $Indent)
             $items = @()
-            $start = "{"
-            $end = "}"
-
-            $keys = $value.PSObject.Properties | ForEach-Object { $_.Name }
-            for ($i = 0; $i -lt $keys.Count; $i++) {
-                $key = $keys[$i]
-                $keyPart = '"' + $key + '": '
-
-                $reservedForValue = if ($i -lt ($keys.Count - 1)) { 1 + $keyPart.Length } else { $keyPart.Length }
-
-                # Safe property access
-                $propValue = $value.PSObject.Properties[$key].Value
-                $val = _stringify $propValue $nextIndent $reservedForValue
-
-
-
-                if ($val -ne $null) { $items += $keyPart + $val }
+            foreach ($prop in $value.PSObject.Properties) {
+                $key = $prop.Name
+                $val = _stringify $prop.Value $nextIndent
+                $items += '"' + $key + '": ' + $val
             }
 
-            if ($items.Count -gt 0) {
-                return "$start`n$nextIndent$($items -join ",`n$nextIndent")`n$currentIndent$end"
-            } else {
-                return _stringify $value
-            }
+            # Try inline if short
+            $inline = "{ " + ($items -join ", ") + " }"
+            if ($inline.Length + $currentIndent.Length -le $MaxLength) { return $inline }
+
+            return "{`n$nextIndent$($items -join ",`n$nextIndent")`n$currentIndent}"
         }
 
         # fallback
-        return $jsonString
+        return '"' + ($value.ToString() -replace '"','\"') + '"'
     }
 
     return _stringify $obj
@@ -137,8 +108,6 @@ foreach ($file in $files) {
         Write-Host "Formatted $($file.FullName)"
     }
     finally {
-        if (Test-Path $temp) {
-            Remove-Item $temp -Force -ErrorAction SilentlyContinue
-        }
+        if (Test-Path $temp) { Remove-Item $temp -Force -ErrorAction SilentlyContinue }
     }
 }

@@ -1,18 +1,18 @@
 ﻿[
   {
     "side": "Server",
-    "dependsOn": [{"modid": "maltiezcrossbows"}],
+    "dependsOn": [{ "modid": "maltiezcrossbows" }],
     "file": "maltiezcrossbows:itemtypes/spanningtool",
     "op": "add",
     "path": "/attributes/InSheathVariantCodeByType",
-    "value": {"*-goatsfoot": "goatsfoot", "*-windlass": "windlass", "*": "default"}
+    "value": { "*-goatsfoot": "goatsfoot", "*-windlass": "windlass", "*": "default" }
   },
   {
     "side": "Server",
-    "dependsOn": [{"modid": "maltiezcrossbows"}],
+    "dependsOn": [{ "modid": "maltiezcrossbows" }],
     "file": "maltiezcrossbows:itemtypes/spanningtool",
     "op": "add",
     "path": "/attributes/MetalVariantCodeByType",
-    "value": {"*-goatsfoot": "steel", "*-windlass": "steel"}
+    "value": { "*-goatsfoot": "steel", "*-windlass": "steel" }
   }
 ]

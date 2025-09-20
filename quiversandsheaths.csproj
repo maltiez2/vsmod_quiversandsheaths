@@ -63,7 +63,11 @@
     <Formatter>$(Scripts)\formatter.ps1</Formatter>
   </PropertyGroup>
   <ItemGroup>
-    <AssetsToFormat Include="$(AssetsDir)\$(ModId)\itemtypebelts\beltbags\set" />
+    <AssetsToFormat Include="$(AssetsDir)\$(ModId)\blocktypes" />
+    <AssetsToFormat Include="$(AssetsDir)\$(ModId)\itemtypes" />
+    <AssetsToFormat Include="$(AssetsDir)\$(ModId)\patches" />
+    <AssetsToFormat Include="$(AssetsDir)\$(ModId)\entities" />
+    <AssetsToFormat Include="$(AssetsDir)\$(ModId)\config\animations" />
   </ItemGroup>
 
   <!-- References to libraries that are being used in project -->

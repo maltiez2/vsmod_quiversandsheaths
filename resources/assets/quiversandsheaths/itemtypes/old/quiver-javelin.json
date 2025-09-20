@@ -27,16 +27,11 @@
             "base": "quiversandsheaths:sheaths/belts/{belt}",
             "overlays": [{"base": "quiversandsheaths:sheaths/accessories/{right_slot_state}/quiver_javelins"}]
           },
-          "right_slot-*::right_slot_state-*": {
-            "base": "quiversandsheaths:sheaths/belts/default",
-            "overlays": [{"base": "quiversandsheaths:sheaths/accessories/{right_slot_state}/quiver_javelins"}]
-          },
+          "right_slot-*::right_slot_state-*": {"base": "quiversandsheaths:sheaths/belts/default", "overlays": [{"base": "quiversandsheaths:sheaths/accessories/{right_slot_state}/quiver_javelins"}]},
           "belt-*": {"base": "quiversandsheaths:sheaths/belts/{belt}", "overlays": [{"base": "quiversandsheaths:sheaths/accessories/empty/quiver_javelins"}]},
           "*": {"base": "quiversandsheaths:sheaths/belts/default", "overlays": [{"base": "quiversandsheaths:sheaths/accessories/empty/quiver_javelins"}]}
         },
-        "textures": {
-          "metal-*::leather-*": {"belt-waist-plain-material": {"base": "game:block/leather/{leather}"}, "belt-waist-plain-metal": {"base": "game:block/metal/plate/{metal}"}}
-        }
+        "textures": {"metal-*::leather-*": {"belt-waist-plain-material": {"base": "game:block/leather/{leather}"}, "belt-waist-plain-metal": {"base": "game:block/metal/plate/{metal}"}}}
       }
     }
   ],

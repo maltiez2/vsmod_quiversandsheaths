@@ -1,18 +1,14 @@
 ﻿{
   "code": "quiver",
   "class": "Item",
-  "variantgroups": [{"code": "category", "states": ["waist"]}, {"code": "subtype", "states": ["plain"]}, {"code": "type", "states": ["saydak"]}],
-  "shape": {
-    "base": "quiversandsheaths:sheaths/belts/default",
-    "overlays": [{"base": "quiversandsheaths:sheaths/accessories/empty/quiver_arrows"}, {"base": "quiversandsheaths:sheaths/accessories/empty/quiver_default_bow"}]
-  },
+  "variantgroups": [{"code": "category", "states": ["waist"]}, {"code": "subtype", "states": ["plain"]}, {"code": "type", "states": ["arrow"]}],
+  "shape": {"base": "quiversandsheaths:sheaths/belts/default", "overlays": [{"base": "quiversandsheaths:sheaths/accessories/empty/quiver_arrows"}]},
   "texturesByType": {"*": {"seraph": {"base": "game:block/transparent"}}},
   "storageFlags": 128,
   "behaviors": [
     {
-      "name": "QuiversAndSheaths:Sheath",
+      "name": "QuiversAndSheaths:Quiver",
       "properties": {
-        "toolSlot": {"slotColor": "#fc9803", "canHoldWildcards": ["*bow-*"], "canHoldItemTags": ["bow"], "slotsIcon": "quiversandsheaths:bow"},
         "slots": [
           {
             "canHoldWildcards": ["*arrow-*"],
@@ -25,11 +21,8 @@
             "SlotStateVariant": "arrow_slot_state"
           }
         ],
-        "takeOutColor": "#999999",
-        "hotkeyCode": "combatoverhaul-swap-tool",
-        "hotkeyName": "Swap tool from tool bag",
-        "hotkeyKey": "R",
-        "takeOutSlotIcon": "quiversandsheaths:takeout"
+        "putIntoMainHand": true,
+        "slotsIcon": "quiversandsheaths:arrows"
       }
     },
     {
@@ -37,60 +30,15 @@
       "properties": {
         "addOverlayPrefix": false,
         "shape": {
-          "belt-*::arrow_slot-*::arrow_slot_state-*::right_slot-*::right_slot_state-*": {
-            "base": "quiversandsheaths:sheaths/belts/{belt}",
-            "overlays": [
-              {"base": "quiversandsheaths:sheaths/accessories/{arrow_slot_state}/quiver_arrows"},
-              {"base": "quiversandsheaths:sheaths/accessories/{right_slot_state}/quiver_{right_slot}_bow"}
-            ]
-          },
           "belt-*::arrow_slot-*::arrow_slot_state-*": {
             "base": "quiversandsheaths:sheaths/belts/{belt}",
-            "overlays": [
-              {"base": "quiversandsheaths:sheaths/accessories/{arrow_slot_state}/quiver_arrows"},
-              {"base": "quiversandsheaths:sheaths/accessories/empty/quiver_default_bow"}
-            ]
+            "overlays": [{"base": "quiversandsheaths:sheaths/accessories/{arrow_slot_state}/quiver_arrows"}]
           },
-          "belt-*::right_slot-*::right_slot_state-*": {
-            "base": "quiversandsheaths:sheaths/belts/{belt}",
-            "overlays": [
-              {"base": "quiversandsheaths:sheaths/accessories/empty/quiver_arrows"},
-              {"base": "quiversandsheaths:sheaths/accessories/{right_slot_state}/quiver_{right_slot}_bow"}
-            ]
-          },
-          "arrow_slot-*::arrow_slot_state-*::right_slot-*::right_slot_state-*": {
-            "base": "quiversandsheaths:sheaths/belts/default",
-            "overlays": [
-              {"base": "quiversandsheaths:sheaths/accessories/{arrow_slot_state}/quiver_arrows"},
-              {"base": "quiversandsheaths:sheaths/accessories/{right_slot_state}/quiver_{right_slot}_bow"}
-            ]
-          },
-          "arrow_slot-*::arrow_slot_state-*": {
-            "base": "quiversandsheaths:sheaths/belts/default",
-            "overlays": [
-              {"base": "quiversandsheaths:sheaths/accessories/{arrow_slot_state}/quiver_arrows"},
-              {"base": "quiversandsheaths:sheaths/accessories/empty/quiver_default_bow"}
-            ]
-          },
-          "right_slot-*::right_slot_state-*": {
-            "base": "quiversandsheaths:sheaths/belts/default",
-            "overlays": [
-              {"base": "quiversandsheaths:sheaths/accessories/empty/quiver_arrows"},
-              {"base": "quiversandsheaths:sheaths/accessories/{right_slot_state}/quiver_{right_slot}_bow"}
-            ]
-          },
-          "belt-*": {
-            "base": "quiversandsheaths:sheaths/belts/{belt}",
-            "overlays": [{"base": "quiversandsheaths:sheaths/accessories/empty/quiver_arrows"}, {"base": "quiversandsheaths:sheaths/accessories/empty/quiver_default_bow"}]
-          },
-          "*": {
-            "base": "quiversandsheaths:sheaths/belts/default",
-            "overlays": [{"base": "quiversandsheaths:sheaths/accessories/empty/quiver_arrows"}, {"base": "quiversandsheaths:sheaths/accessories/empty/quiver_default_bow"}]
-          }
+          "arrow_slot-*::arrow_slot_state-*": {"base": "quiversandsheaths:sheaths/belts/default", "overlays": [{"base": "quiversandsheaths:sheaths/accessories/{arrow_slot_state}/quiver_arrows"}]},
+          "belt-*": {"base": "quiversandsheaths:sheaths/belts/{belt}", "overlays": [{"base": "quiversandsheaths:sheaths/accessories/empty/quiver_arrows"}]},
+          "*": {"base": "quiversandsheaths:sheaths/belts/default", "overlays": [{"base": "quiversandsheaths:sheaths/accessories/empty/quiver_arrows"}]}
         },
-        "textures": {
-          "metal-*::leather-*": {"belt-waist-plain-material": {"base": "game:block/leather/{leather}"}, "belt-waist-plain-metal": {"base": "game:block/metal/plate/{metal}"}}
-        }
+        "textures": {"metal-*::leather-*": {"belt-waist-plain-material": {"base": "game:block/leather/{leather}"}, "belt-waist-plain-metal": {"base": "game:block/metal/plate/{metal}"}}}
       }
     }
   ],

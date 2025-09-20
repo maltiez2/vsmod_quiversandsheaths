@@ -30,9 +30,9 @@
 			"children": [
 				{
 					"name": "Saydak",
-					"from": [ 2.6, -0.9, -0.1 ],
-					"to": [ 2.6, -0.9, -0.1 ],
-					"rotationOrigin": [ 2.6, -0.9, -0.1 ],
+					"from": [ 2.7, 1.8, 9.6 ],
+					"to": [ 2.7, 1.8, 9.6 ],
+					"rotationOrigin": [ 2.7, 1.8, 9.6 ],
 					"faces": {
 						"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
 						"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
@@ -48,7 +48,7 @@
 							"to": [ -2.3, -1.8, -2.0 ],
 							"rotationOrigin": [ -2.3, -1.8, -2.0 ],
 							"rotationX": -3.0,
-							"rotationY": 18.0,
+							"rotationY": -9.0,
 							"rotationZ": -49.0,
 							"faces": {
 								"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
@@ -148,33 +148,33 @@
 								},
 								{
 									"name": "saydak_6",
-									"from": [ 0.2, -0.3, 0.5 ],
-									"to": [ 0.8, 4.4, 0.7 ],
-									"rotationOrigin": [ 0.8, -0.3, 0.5 ],
-									"rotationX": 40.0,
-									"rotationZ": 46.0,
+									"from": [ 0.2, -0.3, -0.3 ],
+									"to": [ 0.8, 1.9, -0.1 ],
+									"rotationOrigin": [ 0.8, -0.3, -0.3 ],
+									"rotationX": -38.0,
+									"rotationZ": 12.0,
 									"faces": {
-										"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 4.5 ] },
-										"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 4.5 ] },
-										"south": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 4.5 ] },
-										"west": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 4.5 ] },
+										"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 2.0 ] },
+										"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 2.0 ] },
+										"south": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 2.0 ] },
+										"west": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 2.0 ] },
 										"up": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
 										"down": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
 									}
 								},
 								{
 									"name": "saydak_7",
-									"from": [ 7.2, 0.0, 0.5 ],
-									"to": [ 7.8, 10.0, 0.7 ],
-									"rotationOrigin": [ 7.8, 0.0, 0.5 ],
-									"rotationX": 50.0,
-									"rotationY": -11.0,
-									"rotationZ": 54.0,
+									"from": [ 7.2, 0.0, -0.2 ],
+									"to": [ 7.8, 7.2, 0.0 ],
+									"rotationOrigin": [ 7.8, 0.0, -0.2 ],
+									"rotationX": -13.0,
+									"rotationY": -9.0,
+									"rotationZ": 58.0,
 									"faces": {
-										"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 10.0 ] },
-										"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 10.0 ] },
-										"south": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 10.0 ] },
-										"west": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 10.0 ] },
+										"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 7.0 ] },
+										"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 7.0 ] },
+										"south": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 7.0 ] },
+										"west": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 7.0 ] },
 										"up": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
 										"down": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
 									}
@@ -182,7 +182,7 @@
 								{
 									"name": "quiver_1",
 									"from": [ -0.3, -3.1, -0.5 ],
-									"to": [ 2.9, -2.6, 0.7 ],
+									"to": [ 2.9, -2.6, 0.8 ],
 									"rotationOrigin": [ -0.3, -3.1, -0.5 ],
 									"rotationZ": 90.0,
 									"faces": {

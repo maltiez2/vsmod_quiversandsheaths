@@ -2,30 +2,9 @@
   {"side": "Server", "dependsOn": [{"modid": "armory"}], "file": "quiversandsheaths:recipes/grid/quiver-javelins", "op": "replace", "path": "/0/enabled", "value": true},
   {"side": "Server", "dependsOn": [{"modid": "armory"}], "file": "quiversandsheaths:recipes/grid/quiver-javelins", "op": "replace", "path": "/1/enabled", "value": true},
   {"side": "Server", "dependsOn": [{"modid": "armory"}], "file": "quiversandsheaths:recipes/grid/quiver-javelins", "op": "replace", "path": "/2/enabled", "value": true},
-  {
-    "side": "Server",
-    "dependsOn": [{"modid": "maltiezfirearms"}],
-    "file": "quiversandsheaths:recipes/grid/sheath-pistolsword",
-    "op": "replace",
-    "path": "/0/enabled",
-    "value": true
-  },
-  {
-    "side": "Server",
-    "dependsOn": [{"modid": "maltiezfirearms"}],
-    "file": "quiversandsheaths:recipes/grid/sheath-pistolsword",
-    "op": "replace",
-    "path": "/1/enabled",
-    "value": true
-  },
-  {
-    "side": "Server",
-    "dependsOn": [{"modid": "maltiezfirearms"}],
-    "file": "quiversandsheaths:recipes/grid/sheath-pistolsword",
-    "op": "replace",
-    "path": "/2/enabled",
-    "value": true
-  },
+  {"side": "Server", "dependsOn": [{"modid": "maltiezfirearms"}], "file": "quiversandsheaths:recipes/grid/sheath-pistolsword", "op": "replace", "path": "/0/enabled", "value": true},
+  {"side": "Server", "dependsOn": [{"modid": "maltiezfirearms"}], "file": "quiversandsheaths:recipes/grid/sheath-pistolsword", "op": "replace", "path": "/1/enabled", "value": true},
+  {"side": "Server", "dependsOn": [{"modid": "maltiezfirearms"}], "file": "quiversandsheaths:recipes/grid/sheath-pistolsword", "op": "replace", "path": "/2/enabled", "value": true},
   {"side": "Server", "dependsOn": [{"modid": "maltiezfirearms"}], "file": "quiversandsheaths:recipes/grid/sheath-pistol", "op": "replace", "path": "/0/enabled", "value": true},
   {"side": "Server", "dependsOn": [{"modid": "maltiezfirearms"}], "file": "quiversandsheaths:recipes/grid/sheath-pistol", "op": "replace", "path": "/1/enabled", "value": true},
   {"side": "Server", "dependsOn": [{"modid": "maltiezfirearms"}], "file": "quiversandsheaths:recipes/grid/sheath-pistol", "op": "replace", "path": "/2/enabled", "value": true},

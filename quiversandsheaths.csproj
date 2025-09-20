@@ -16,8 +16,6 @@
     <ModInfoAuthors Include="Maltiez" />
   </ItemGroup>
 
-  <!-- Translators -->
-
   <!-- Dependencies -->
   <ItemGroup>
     <Dependencies Include="overhaullib" Version="*" />
@@ -32,12 +30,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <!-- Loading local settings file -->
+  <Import Project="Properties\localSettings.props" Condition="Exists('Properties\localSettings.props')" />
+  
   <!-- Paths -->
   <PropertyGroup>
     <ProjectDir>$(MSBuildProjectDirectory)</ProjectDir>
     <OutputDir>bin\$(Configuration)\Mods</OutputDir>
     <OutputPath>$(OutputDir)\$(ModId)</OutputPath>
-    <GameDirectory>$(VINTAGE_STORY)</GameDirectory>
     <AssetsDir>$(ProjectDir)\resources\assets</AssetsDir>
     <ModIconFile>$(ProjectDir)\resources\modicon.png</ModIconFile>
     <ReleasesDir>$(ProjectDir)\Releases</ReleasesDir>
@@ -45,21 +45,22 @@
     <ReleasePath>$(ReleasesDir)\$(ReleaseFile).zip</ReleasePath>
     <ReleasePathDev>$(ReleasesDir)\$(ReleaseFile)_dev.zip</ReleasePathDev>
     <ExternalLibDir>$(ProjectDir)\external</ExternalLibDir>
+    <GameDirectory Condition="'$(GameDirectory)' == ''">$(VINTAGE_STORY)</GameDirectory>
   </PropertyGroup>
 
   <!-- Startup settings -->
   <PropertyGroup>
-    <DataFolderName>VintagestoryDataDev</DataFolderName>
     <DataFolder>$(AppData)\$(DataFolderName)</DataFolder>
     <AditionalModsFolder>$(AppData)\$(DataFolderName)\Mods</AditionalModsFolder>
     <WorldName>test_$(ModId)</WorldName>
     <ModDir>$(ProjectDir)\$(OutputDir)</ModDir>
+    <EnterWorldCommand Condition="'$(EnterWorldOnStartup)' == 'true'">"-o" "$(WorldName)"</EnterWorldCommand>
   </PropertyGroup>
 
   <!-- Formatting JSON files -->
   <PropertyGroup>
     <Scripts>$(ProjectDir)\scripts</Scripts>
-    <Formatter>$(Scripts)\formatter.py</Formatter>
+    <Formatter>$(Scripts)\formatter.ps1</Formatter>
   </PropertyGroup>
   <ItemGroup>
     <AssetsToFormat Include="$(AssetsDir)\$(ModId)\blocktypes" />
@@ -67,16 +68,21 @@
     <AssetsToFormat Include="$(AssetsDir)\$(ModId)\patches" />
     <AssetsToFormat Include="$(AssetsDir)\$(ModId)\entities" />
     <AssetsToFormat Include="$(AssetsDir)\$(ModId)\config\animations" />
-    <AssetsToFormat Include="$(AssetsDir)\game\itemtypes" />
   </ItemGroup>
 
   <!-- References to libraries that are being used in project -->
   <ItemGroup>
     <PackageReference Include="VSImGui" Version="0.0.6" />
-    <Reference Include="$(GameDirectory)/**/*.dll" Private="false" />
-    <Reference Include="$(ExternalLibDir)/**/*.dll" Private="false" />
-    <Reference Include="$(ProjectDir)/../Overhaullib/bin/Release/Mods/overhaullib/Overhaullib.dll" Private="false" />
+    <Reference Include="$(GameDirectory)/**/*.dll" Private="false" Condition="'$(GameDirectory)' != ''" />
+    <Reference Include="$(ExternalLibDir)/**/*.dll" Private="false" Condition="'$(ExternalLibDir)' != ''" />
   </ItemGroup>
+
+  <!-- Creating local settings file -->
+  <Target Name="EnsureSettingsJson" BeforeTargets="ModInfo" Condition="!Exists('Properties\localSettings.props')">
+    <MakeDir Directories="Properties" />
+    <WriteLinesToFile File="Properties\localSettings.props" Overwrite="true" Lines="&lt;Project&gt;&#xD;&#xA;  &lt;PropertyGroup&gt;&#xD;&#xA;    &lt;RunFormatter&gt;false&lt;/RunFormatter&gt;&#xD;&#xA;    &lt;DataFolderName&gt;VintagestoryData&lt;/DataFolderName&gt;&#xD;&#xA;    &lt;GameDirectory&gt;&lt;/GameDirectory&gt;&#xD;&#xA;    &lt;PackageDevBuild&gt;false&lt;/PackageDevBuild&gt;&#xD;&#xA;    &lt;EnterWorldOnStartup&gt;false&lt;/EnterWorldOnStartup&gt;&#xD;&#xA;    &lt;JsonIndent&gt;2&lt;/JsonIndent&gt;&#xD;&#xA;    &lt;JsonMaxLineLength&gt;200&lt;/JsonMaxLineLength&gt;&#xD;&#xA;  &lt;/PropertyGroup&gt;&#xD;&#xA;&lt;/Project&gt;" />
+    <Error Text="Local settings file was missing, generated a new one. Run build again." />
+  </Target>
 
   <!-- Forces rebuild -->
   <Target Name="ForceRebuild" BeforeTargets="BeforeBuild">
@@ -106,7 +112,6 @@
 }
       </ModInfo>
     </PropertyGroup>
-    <!-- Remove all folders in output directory to get rid of builds from bullseye branch -->
     <RemoveDir Directories="$(OutputDir)" />
     <Message Text="Generating modinfo.json" Importance="high" />
     <WriteLinesToFile File="$(OutputPath)/modinfo.json" Lines="$(ModInfo)" Overwrite="true" WriteOnlyWhenDifferent="true" />
@@ -114,20 +119,17 @@
 
   <!-- Formats asssets files -->
   <Target Name="Format" AfterTargets="ModInfo" BeforeTargets="CopyFilesToOutput">
-    <Exec Command="python $(Formatter) -a -d %(AssetsToFormat.Identity)" />
+    <Exec Condition="'$(OS)' == 'Windows_NT' and '$(RunFormatter)' == 'true'" Command="powershell -NoProfile -ExecutionPolicy Bypass -File &quot;$(Formatter)&quot; -Path &quot;%(AssetsToFormat.Identity)&quot; -Indent $(JsonIndent) -MaxLength $(JsonMaxLineLength)" />
   </Target>
 
   <!-- Copies modicon, assets folder and native libraries if they exist into output directory -->
   <Target Name="CopyFilesToOutput" AfterTargets="Format" BeforeTargets="BeforeBuild">
-    <ItemGroup>
-      <AssetsFolder Include="$(AssetsDir)\**\*.*" />
-      <ModIcon Include="$(ModIconFile)" />
-    </ItemGroup>
-    <Message Text="Clearing assets folder in build directory" Importance="high" />
     <RemoveDir Directories="$(OutputPath)assets" />
-    <Message Text="Copying assets to build directory" Importance="high" />
-    <Copy SourceFiles="@(AssetsFolder)" DestinationFiles="@(AssetsFolder->'$(OutputPath)assets\%(RecursiveDir)%(Filename)%(Extension)')" Condition="Exists('$(AssetsDir)')" OverwriteReadOnlyFiles="true" />
-    <Copy SourceFiles="@(ModIcon)" DestinationFolder="$(OutputPath)" Condition="Exists('$(ModIconFile)')" OverwriteReadOnlyFiles="true" />
+    <Copy SourceFiles="$(ModIconFile)" DestinationFolder="$(OutputPath)" Condition="Exists('$(ModIconFile)')" />
+    <!-- Windows symlink -->
+    <Exec Condition="'$(OS)' == 'Windows_NT'" Command="mklink /D &quot;$(OutputPath)assets&quot; &quot;$(ProjectDir)\resources\assets&quot;" />
+    <!-- Linux/macOS symlink -->
+    <Exec Condition="'$(OS)' != 'Windows_NT'" Command="ln -s &quot;$(OutputPath)/assets&quot; &quot;$(ProjectDir)/resources/assets&quot;" />
   </Target>
 
   <!-- Archives output directory into zip and puts it into Releases folder -->
@@ -137,7 +139,7 @@
     <Delete Files="$(ReleasePath)" />
     <ZipDirectory SourceDirectory="$(OutputPath)" DestinationFile="$(ReleasePath)" />
   </Target>
-  <Target Name="ZipFilesDev" AfterTargets="Build" Condition=" '$(Configuration)' == 'Debug' ">
+  <Target Name="ZipFilesDev" AfterTargets="Build" Condition=" '$(Configuration)' == 'Debug' and '$(PackageDevBuild)' == 'true'">
     <Message Text="Pachaging into '$(ReleaseFile)'" Importance="high" />
     <MakeDir Directories="$(ReleasesDir)" />
     <Delete Files="$(ReleasePathDev)" />

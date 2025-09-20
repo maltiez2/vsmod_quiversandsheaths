@@ -22,9 +22,7 @@
       "name": "QuiversAndSheaths:ShapeTexturesFromAttributes",
       "properties": {
         "addOverlayPrefix": false,
-        "textures": {
-          "metal-*::leather-*": {"belt-waist-plain-material": {"base": "game:block/leather/{leather}"}, "belt-waist-plain-metal": {"base": "game:block/metal/plate/{metal}"}}
-        }
+        "textures": {"metal-*::leather-*": {"belt-waist-plain-material": {"base": "game:block/leather/{leather}"}, "belt-waist-plain-metal": {"base": "game:block/metal/plate/{metal}"}}}
       }
     }
   ],

@@ -1,8 +1,6 @@
 ﻿using AttributeRenderingLibrary;
-using System.Text;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
-using Vintagestory.API.Common.Entities;
 using Vintagestory.API.Datastructures;
 using Vintagestory.API.MathTools;
 using Vintagestory.API.Util;
@@ -10,7 +8,7 @@ using Vintagestory.GameContent;
 
 namespace QuiversAndSheaths;
 
-public class ShapeTexturesFromAttributes : CollectibleBehavior, IContainedMeshSource, IShapeTexturesFromAttributes, IAttachableToEntity
+public class ShapeReplacement : CollectibleBehavior, IContainedMeshSource, IShapeTexturesFromAttributes
 {
     public Dictionary<string, List<object>> NameByType { get; protected set; } = new();
     public Dictionary<string, List<object>> DescriptionByType { get; protected set; } = new();
@@ -21,8 +19,7 @@ public class ShapeTexturesFromAttributes : CollectibleBehavior, IContainedMeshSo
     public Dictionary<string, string[]> DisableElementsByType { get; protected set; } = new();
     public Dictionary<string, string[]> KeepElementsByType { get; protected set; } = new();
     public bool AddOverlayPrefix { get; protected set; } = true;
-    public bool OnlyWhenWorn { get; protected set; } = false;
-    public bool OnlyWhenNotWorn { get; protected set; } = false;
+    public EnumItemRenderTarget[] Targets { get; protected set; } = [];
 
     Dictionary<string, CompositeShape> IShapeTexturesFromAttributes.shapeByType => ShapeByType;
     Dictionary<string, Dictionary<string, CompositeTexture>> IShapeTexturesFromAttributes.texturesByType => TexturesByType;
@@ -31,7 +28,7 @@ public class ShapeTexturesFromAttributes : CollectibleBehavior, IContainedMeshSo
     private ICoreAPI? _api;
     private ICoreClientAPI? _clientApi;
 
-    public ShapeTexturesFromAttributes(CollectibleObject collObj) : base(collObj) { }
+    public ShapeReplacement(CollectibleObject collObj) : base(collObj) { }
 
     public override void OnLoaded(ICoreAPI api)
     {
@@ -58,8 +55,7 @@ public class ShapeTexturesFromAttributes : CollectibleBehavior, IContainedMeshSo
             KeepElementsByType = properties["keepElements"].AsObject<Dictionary<string, string[]>>();
             AddOverlayPrefix = properties["addOverlayPrefix"].AsBool(true);
 
-            OnlyWhenWorn = properties["onlyWhenWorn"].AsBool(false);
-            OnlyWhenNotWorn = properties["onlyWhenNotWorn"].AsBool(false);
+            Targets = properties["renderTargets"].AsObject<string[]>([]).Select(Enum.Parse<EnumItemRenderTarget>).ToArray();
         }
     }
 
@@ -72,6 +68,8 @@ public class ShapeTexturesFromAttributes : CollectibleBehavior, IContainedMeshSo
 
     public override void OnBeforeRender(ICoreClientAPI clientApi, ItemStack itemstack, EnumItemRenderTarget target, ref ItemRenderInfo renderinfo)
     {
+        if (!Targets.Contains(target)) return;
+
         Dictionary<string, MultiTextureMeshRef> meshRefs = ObjectCacheUtil.GetOrCreate(clientApi, "AttributeRenderingLibrary_BehaviorShapeTexturesFromAttributes_MeshRefs", () => new Dictionary<string, MultiTextureMeshRef>());
 
         string key = GetMeshCacheKey(itemstack);
@@ -89,46 +87,13 @@ public class ShapeTexturesFromAttributes : CollectibleBehavior, IContainedMeshSo
         base.OnBeforeRender(clientApi, itemstack, target, ref renderinfo);
     }
 
-    public override void GetHeldItemName(StringBuilder sb, ItemStack itemStack)
-    {
-        if (NameByType == null || !NameByType.Any())
-        {
-            return;
-        }
-
-        Variants variants = Variants.FromStack(itemStack);
-        variants.FindByVariant(NameByType, out List<object> _langKeys);
-
-        string name = variants.GetName(_langKeys);
-        if (string.IsNullOrEmpty(name))
-        {
-            return;
-        }
-
-        sb.Clear();
-        sb.Append(name);
-    }
-
-    public override void GetHeldItemInfo(ItemSlot inSlot, StringBuilder dsc, IWorldAccessor world, bool withDebugInfo)
-    {
-        if (DescriptionByType == null || !DescriptionByType.Any())
-        {
-            return;
-        }
-
-        Variants variants = Variants.FromStack(inSlot.Itemstack);
-        variants.FindByVariant(DescriptionByType, out List<object> _langKeys);
-        variants.GetDescription(dsc, _langKeys);
-        variants.GetDebugDescription(dsc, withDebugInfo);
-    }
-
     public virtual MeshData GetOrCreateMesh(ItemStack itemstack, ITextureAtlasAPI targetAtlas)
     {
         MeshData mesh = RenderExtensions.GenEmptyMesh();
 
         Variants variants = Variants.FromStack(itemstack);
         variants.FindByVariant(ShapeByType, out CompositeShape ucshape);
-        ucshape ??= itemstack.Item.Shape;
+        ucshape ??= ShapeByType.Values.FirstOrDefault() ?? itemstack.Item.Shape;
 
         if (ucshape == null) return mesh;
 
@@ -155,7 +120,7 @@ public class ShapeTexturesFromAttributes : CollectibleBehavior, IContainedMeshSo
 
         ShapeOverlayHelper.BakeVariantTextures(_clientApi, stexSource, variants, TexturesByType, prefixedTextureCodes, AddOverlayPrefix ? overlayPrefix : "");
 
-        _clientApi?.Tesselator.TesselateShape("ShapeTexturesFromAttributes behavior", shape, out mesh, stexSource, quantityElements: rcshape.QuantityElements, selectiveElements: rcshape.SelectiveElements);
+        _clientApi?.Tesselator.TesselateShape("InGuiShape behavior", shape, out mesh, stexSource, quantityElements: rcshape.QuantityElements, selectiveElements: rcshape.SelectiveElements);
         return mesh;
     }
 
@@ -166,101 +131,6 @@ public class ShapeTexturesFromAttributes : CollectibleBehavior, IContainedMeshSo
 
     public virtual string GetMeshCacheKey(ItemStack itemstack)
     {
-        return $"{itemstack.Collectible.Code}-{Variants.FromStack(itemstack)}";
+        return $"{itemstack.Collectible.Code}-{Variants.FromStack(itemstack)}-gui";
     }
-
-
-
-    void IAttachableToEntity.CollectTextures(ItemStack stack, Shape shape, string texturePrefixCode, Dictionary<string, CompositeTexture> intoDict)
-    {
-        foreach ((string textureCode, CompositeTexture texture) in stack.Item.Textures)
-        {
-            shape.Textures[textureCode] = texture.Baked.BakedName;
-        }
-
-        Dictionary<string, Dictionary<string, CompositeTexture>> texturesByType = new();
-
-        if (stack.Collectible.GetCollectibleInterface<IShapeTexturesFromAttributes>() is IShapeTexturesFromAttributes fromAttributes)
-        {
-            texturesByType = fromAttributes.texturesByType;
-        }
-
-        Variants variants = Variants.FromStack(stack);
-        ICoreClientAPI capi = _api as ICoreClientAPI;
-        if (variants.FindByVariant(texturesByType, out Dictionary<string, CompositeTexture> _textures))
-        {
-            foreach ((string textureCode, CompositeTexture texture) in _textures)
-            {
-                CompositeTexture ctex = texture.Clone();
-                ctex = variants.ReplacePlaceholders(ctex);
-                if (!_api.Assets.Exists(ctex.Base.CopyWithPathPrefixAndAppendixOnce("textures/", ".png")))
-                {
-                    ctex.Base.Path = "unknown";
-                    ctex.Base.Domain = "game";
-                }
-                ctex.Bake(_api.Assets);
-                intoDict[textureCode] = ctex;
-                shape.Textures[textureCode] = ctex.Baked.BakedName;
-            }
-        }
-    }
-
-    CompositeShape IAttachableToEntity.GetAttachedShape(ItemStack stack, string slotCode)
-    {
-        Variants variants = Variants.FromStack(stack);
-        variants.FindByVariant(ShapeByType, out CompositeShape ucshape);
-        ucshape ??= stack.Item.Shape;
-        CompositeShape rcshape = variants.ReplacePlaceholders(ucshape.Clone());
-
-        return rcshape;
-    }
-
-    string IAttachableToEntity.GetCategoryCode(ItemStack stack)
-    {
-        if (CategoryCodeByType == null || !CategoryCodeByType.Any())
-        {
-            return _attachable?.GetCategoryCode(stack);
-        }
-
-        Variants variants = Variants.FromStack(stack);
-        variants.FindByVariant(CategoryCodeByType, out string categoryCode);
-        return categoryCode;
-    }
-
-    string[] IAttachableToEntity.GetDisableElements(ItemStack stack)
-    {
-        if (DisableElementsByType == null || !DisableElementsByType.Any())
-        {
-            return _attachable?.GetDisableElements(stack);
-        }
-
-        Variants variants = Variants.FromStack(stack);
-        variants.FindByVariant(DisableElementsByType, out string[] disableElements);
-        return disableElements;
-    }
-
-    string[] IAttachableToEntity.GetKeepElements(ItemStack stack)
-    {
-        if (KeepElementsByType == null || !KeepElementsByType.Any())
-        {
-            return _attachable?.GetKeepElements(stack);
-        }
-
-        Variants variants = Variants.FromStack(stack);
-        variants.FindByVariant(KeepElementsByType, out string[] keepElements);
-        return keepElements;
-    }
-
-    string IAttachableToEntity.GetTexturePrefixCode(ItemStack stack)
-    {
-        string texturePrefixCode = stack.Collectible.GetCollectibleInterface<IContainedMeshSource>().GetMeshCacheKey(stack);
-        return texturePrefixCode;
-    }
-
-    bool IAttachableToEntity.IsAttachable(Entity toEntity, ItemStack itemStack)
-    {
-        return true;
-    }
-
-    int IAttachableToEntity.RequiresBehindSlots { get; set; }
 }

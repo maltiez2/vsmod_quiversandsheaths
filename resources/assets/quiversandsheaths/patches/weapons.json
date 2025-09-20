@@ -38,15 +38,7 @@
     "file": "armory:itemtypes/weapons/sabre",
     "op": "add",
     "path": "/attributes/MetalVariantCodeByType",
-    "value": {
-      "*-tinbronze": "tinbronze",
-      "*-bismuthbronze": "bismuthbronze",
-      "*-blackbronze": "blackbronze",
-      "*-iron": "iron",
-      "*-meteoriciron": "meteoriciron",
-      "*-steel": "steel",
-      "*": "iron"
-    }
+    "value": {"*-tinbronze": "tinbronze", "*-bismuthbronze": "bismuthbronze", "*-blackbronze": "blackbronze", "*-iron": "iron", "*-meteoriciron": "meteoriciron", "*-steel": "steel", "*": "iron"}
   },
   {
     "side": "Server",
@@ -87,15 +79,7 @@
     "file": "armory:itemtypes/weapons/sword-long",
     "op": "add",
     "path": "/attributes/MetalVariantCodeByType",
-    "value": {
-      "*-tinbronze": "tinbronze",
-      "*-bismuthbronze": "bismuthbronze",
-      "*-blackbronze": "blackbronze",
-      "*-iron": "iron",
-      "*-meteoriciron": "meteoriciron",
-      "*-steel": "steel",
-      "*": "iron"
-    }
+    "value": {"*-tinbronze": "tinbronze", "*-bismuthbronze": "bismuthbronze", "*-blackbronze": "blackbronze", "*-iron": "iron", "*-meteoriciron": "meteoriciron", "*-steel": "steel", "*": "iron"}
   },
   {
     "side": "Server",

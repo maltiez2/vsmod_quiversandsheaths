@@ -2,10 +2,7 @@
   "code": "sheath",
   "class": "Item",
   "variantgroups": [{"code": "category", "states": ["waist"]}, {"code": "subtype", "states": ["plain"]}, {"code": "type", "states": ["pistolsword"]}],
-  "shape": {
-    "base": "sheaths/belts/default",
-    "overlays": [{"base": "sheaths/empty/default"}, {"base": "sheaths/empty/pistol_bronze"}, {"base": "sheaths/accessories/pouch_firearms"}]
-  },
+  "shape": {"base": "sheaths/belts/default", "overlays": [{"base": "sheaths/empty/default"}, {"base": "sheaths/empty/pistol_bronze"}, {"base": "sheaths/accessories/pouch_firearms"}]},
   "texturesByType": {"*": {"seraph": {"base": "game:block/transparent"}}},
   "storageFlags": 128,
   "behaviors": [

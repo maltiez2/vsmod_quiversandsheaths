@@ -1,0 +1,90 @@
+{
+	"editor": {
+		"collapsedPaths": "Root/Waist-Belt/Pouch_1,Root/Waist-Quiver/Sheath_0,Root/Waist-Quiver/Belt,Root/Bow,Root/Waist-Quiver/Quiver,Root/Sowrd/Handle,Root/Waist-Quiver/Saydak,Root/Waist-Quiver/Sheath/sheath_0,Root/root,Root/Waist-Quiver/Sheath/sheath_0/Sowrd/Handle2,Root/Waist-Quiver/Quiver/arrow_3,Root/Waist-Quiver/Quiver/arrow_2,Root/Waist-Quiver/Quiver/arrow_1,Root/Waist-Quiver/Bow,Root/Waist/buckle-bottom,Root/Waist-Quiver/Quiver/arrow_0,Root/Waist-Quiver/Pouch_1,Root/Waist-Quiver/Sheath/sheath_0/Handle2/Guard_2,Root/Waist-Quiver/Pouch_0,Root/Sowrd/Metal,Root/Waist-Belt/Sheath",
+		"allAngles": true,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"belt-waist-plain-material": "game:block/leather/plain",
+		"belt-waist-plain-metal": "game:block/metal/plate/brass"
+	},
+	"elements": [
+		{
+			"name": "root",
+			"from": [ 0.0, 0.0, 0.0 ],
+			"to": [ 0.0, 0.0, 0.0 ],
+			"rotationOrigin": [ 0.0, 0.0, 0.0 ],
+			"rotationX": 90.0,
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "Pouch_0",
+					"from": [ -1.2, -1.0, -1.2 ],
+					"to": [ 2.3, 1.5, 0.3 ],
+					"rotationOrigin": [ 0.3, 0.0, 0.3 ],
+					"rotationX": 90.0,
+					"rotationZ": 180.0,
+					"faces": {
+						"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.5, 2.5 ] },
+						"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.5, 2.5 ] },
+						"south": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.5, 2.5 ] },
+						"west": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.5, 2.5 ] },
+						"up": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.5, 1.5 ] },
+						"down": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.5, 1.5 ] }
+					},
+					"children": [
+						{
+							"name": "quiver_4",
+							"from": [ -0.2, 2.5, 0.0 ],
+							"to": [ 3.7, 2.7, 1.5 ],
+							"rotationOrigin": [ 0.8, 8.5, 2.0 ],
+							"faces": {
+								"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.5, 0.5 ] },
+								"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+								"south": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.5, 0.5 ] },
+								"west": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+								"up": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.5, 1.5 ] },
+								"down": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.5, 1.5 ] }
+							}
+						},
+						{
+							"name": "quiver_5",
+							"from": [ -0.2, 2.5, -1.0 ],
+							"to": [ 3.7, 2.7, 0.0 ],
+							"rotationOrigin": [ -0.2, 2.7, 0.0 ],
+							"rotationX": -80.0,
+							"faces": {
+								"north": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.5, 0.5 ] },
+								"east": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"south": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.5, 0.5 ] },
+								"west": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"up": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.5, 1.0 ] },
+								"down": { "texture": "#belt-waist-plain-material", "uv": [ 0.0, 0.0, 3.5, 1.0 ] }
+							},
+							"children": [
+								{
+									"name": "Cube2",
+									"from": [ 1.6, 0.1, -0.1 ],
+									"to": [ 2.3, 0.3, 0.4 ],
+									"rotationOrigin": [ 1.6, 0.1, -0.1 ],
+									"faces": {
+										"north": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"east": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"south": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"west": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"up": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+										"down": { "texture": "#belt-waist-plain-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]}

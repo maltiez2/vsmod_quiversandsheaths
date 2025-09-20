@@ -23,9 +23,7 @@
           "belt-*": {"base": "quiversandsheaths:sheaths/belts/{belt}", "overlays": [{"base": "quiversandsheaths:sheaths/accessories/pouch_firearms"}]},
           "*": {"base": "quiversandsheaths:sheaths/belts/default", "overlays": [{"base": "quiversandsheaths:sheaths/accessories/pouch_firearms"}]}
         },
-        "textures": {
-          "metal-*::leather-*": {"belt-waist-plain-material": {"base": "game:block/leather/{leather}"}, "belt-waist-plain-metal": {"base": "game:block/metal/plate/{metal}"}}
-        }
+        "textures": {"metal-*::leather-*": {"belt-waist-plain-material": {"base": "game:block/leather/{leather}"}, "belt-waist-plain-metal": {"base": "game:block/metal/plate/{metal}"}}}
       }
     }
   ],

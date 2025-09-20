@@ -1,36 +1,35 @@
 ﻿{
   "code": "quiver",
   "class": "Item",
-  "variantgroups": [{"code": "category", "states": ["waist"]}, {"code": "subtype", "states": ["plain"]}, {"code": "type", "states": ["bolt"]}],
-  "shape": {"base": "sheaths/belts/default", "overlays": [{"base": "sheaths/accessories/empty/quiver_bolts"}, {"base": "sheaths/accessories/empty/quiver_default"}]},
+  "variantgroups": [{"code": "category", "states": ["waist"]}, {"code": "subtype", "states": ["plain"]}, {"code": "type", "states": ["saydak"]}],
+  "shape": {
+    "base": "quiversandsheaths:sheaths/belts/default",
+    "overlays": [{"base": "quiversandsheaths:sheaths/accessories/empty/quiver_arrows"}, {"base": "quiversandsheaths:sheaths/accessories/empty/quiver_default_bow"}]
+  },
   "texturesByType": {"*": {"seraph": {"base": "game:block/transparent"}}},
   "storageFlags": 128,
   "behaviors": [
     {
-      "name": "QuiversAndSheaths:Quiver",
+      "name": "QuiversAndSheaths:Sheath",
       "properties": {
+        "toolSlot": {"slotColor": "#fc9803", "canHoldWildcards": ["*bow-*"], "canHoldItemTags": ["bow"], "slotsIcon": "quiversandsheaths:bow"},
         "slots": [
           {
-            "canHoldWildcards": ["*bolt-*"],
-            "canHoldItemTags": ["bolt"],
-            "slotColor": "#cfbd59",
+            "canHoldWildcards": ["*arrow-*"],
+            "canHoldItemTags": ["arrow"],
+            "slotColor": "#84b054",
             "slotsNumber": 2,
-            "slotsIcon": "quiversandsheaths:bolts",
+            "slotsIcon": "quiversandsheaths:arrows",
             "SetVariants": true,
-            "SlotVariant": "bolt_slot",
-            "SlotStateVariant": "bolt_slot_state"
-          },
-          {
-            "canHoldWildcards": ["*spanningtool-*"],
-            "canHoldItemTags": ["crossbow-equipment"],
-            "slotColor": "#d68140",
-            "slotsNumber": 1,
-            "slotsIcon": "quiversandsheaths:spanningtool",
-            "SetVariants": true,
-            "SlotVariant": "equipment_slot",
-            "SlotStateVariant": "equipment_slot_state"
+            "SlotVariant": "arrow_slot",
+            "SlotStateVariant": "arrow_slot_state"
           }
-        ]
+        ],
+        "takeOutColor": "#999999",
+        "hotkeyCode": "combatoverhaul-swap-tool",
+        "hotkeyName": "Swap tool from tool bag",
+        "hotkeyKey": "R",
+        "takeOutSlotIcon": "quiversandsheaths:takeout"
       }
     },
     {
@@ -38,54 +37,46 @@
       "properties": {
         "addOverlayPrefix": false,
         "shape": {
-          "belt-*::bolt_slot-*::bolt_slot_state-*::equipment_slot-*::equipment_slot_state-*": {
+          "belt-*::arrow_slot-*::arrow_slot_state-*::right_slot-*::right_slot_state-*": {
             "base": "quiversandsheaths:sheaths/belts/{belt}",
             "overlays": [
-              {"base": "quiversandsheaths:sheaths/accessories/{bolt_slot_state}/quiver_bolts"},
-              {"base": "quiversandsheaths:sheaths/accessories/{equipment_slot_state}/quiver_{equipment_slot}"}
+              {"base": "quiversandsheaths:sheaths/accessories/{arrow_slot_state}/quiver_arrows"},
+              {"base": "quiversandsheaths:sheaths/accessories/{right_slot_state}/quiver_{right_slot}_bow"}
             ]
           },
-          "belt-*::bolt_slot-*::bolt_slot_state-*": {
+          "belt-*::arrow_slot-*::arrow_slot_state-*": {
             "base": "quiversandsheaths:sheaths/belts/{belt}",
-            "overlays": [{"base": "quiversandsheaths:sheaths/accessories/{bolt_slot_state}/quiver_bolts"}, {"base": "quiversandsheaths:sheaths/accessories/empty/quiver_default"}]
+            "overlays": [{"base": "quiversandsheaths:sheaths/accessories/{arrow_slot_state}/quiver_arrows"}, {"base": "quiversandsheaths:sheaths/accessories/empty/quiver_default_bow"}]
           },
-          "belt-*::equipment_slot-*::equipment_slot_state-*": {
+          "belt-*::right_slot-*::right_slot_state-*": {
             "base": "quiversandsheaths:sheaths/belts/{belt}",
-            "overlays": [
-              {"base": "quiversandsheaths:sheaths/accessories/empty/quiver_bolts"},
-              {"base": "quiversandsheaths:sheaths/accessories/{equipment_slot_state}/quiver_{equipment_slot}"}
-            ]
+            "overlays": [{"base": "quiversandsheaths:sheaths/accessories/empty/quiver_arrows"}, {"base": "quiversandsheaths:sheaths/accessories/{right_slot_state}/quiver_{right_slot}_bow"}]
           },
-          "bolt_slot-*::bolt_slot_state-*::equipment_slot-*::equipment_slot_state-*": {
+          "arrow_slot-*::arrow_slot_state-*::right_slot-*::right_slot_state-*": {
             "base": "quiversandsheaths:sheaths/belts/default",
             "overlays": [
-              {"base": "quiversandsheaths:sheaths/accessories/{bolt_slot_state}/quiver_bolts"},
-              {"base": "quiversandsheaths:sheaths/accessories/{equipment_slot_state}/quiver_{equipment_slot}"}
+              {"base": "quiversandsheaths:sheaths/accessories/{arrow_slot_state}/quiver_arrows"},
+              {"base": "quiversandsheaths:sheaths/accessories/{right_slot_state}/quiver_{right_slot}_bow"}
             ]
           },
-          "bolt_slot-*::bolt_slot_state-*": {
+          "arrow_slot-*::arrow_slot_state-*": {
             "base": "quiversandsheaths:sheaths/belts/default",
-            "overlays": [{"base": "quiversandsheaths:sheaths/accessories/{bolt_slot_state}/quiver_bolts"}, {"base": "quiversandsheaths:sheaths/accessories/empty/quiver_default"}]
+            "overlays": [{"base": "quiversandsheaths:sheaths/accessories/{arrow_slot_state}/quiver_arrows"}, {"base": "quiversandsheaths:sheaths/accessories/empty/quiver_default_bow"}]
           },
-          "equipment_slot-*::equipment_slot_state-*": {
+          "right_slot-*::right_slot_state-*": {
             "base": "quiversandsheaths:sheaths/belts/default",
-            "overlays": [
-              {"base": "quiversandsheaths:sheaths/accessories/empty/quiver_bolts"},
-              {"base": "quiversandsheaths:sheaths/accessories/{equipment_slot_state}/quiver_{equipment_slot}"}
-            ]
+            "overlays": [{"base": "quiversandsheaths:sheaths/accessories/empty/quiver_arrows"}, {"base": "quiversandsheaths:sheaths/accessories/{right_slot_state}/quiver_{right_slot}_bow"}]
           },
           "belt-*": {
             "base": "quiversandsheaths:sheaths/belts/{belt}",
-            "overlays": [{"base": "quiversandsheaths:sheaths/accessories/empty/quiver_bolts"}, {"base": "quiversandsheaths:sheaths/accessories/empty/quiver_default"}]
+            "overlays": [{"base": "quiversandsheaths:sheaths/accessories/empty/quiver_arrows"}, {"base": "quiversandsheaths:sheaths/accessories/empty/quiver_default_bow"}]
           },
           "*": {
             "base": "quiversandsheaths:sheaths/belts/default",
-            "overlays": [{"base": "quiversandsheaths:sheaths/accessories/empty/quiver_bolts"}, {"base": "quiversandsheaths:sheaths/accessories/empty/quiver_default"}]
+            "overlays": [{"base": "quiversandsheaths:sheaths/accessories/empty/quiver_arrows"}, {"base": "quiversandsheaths:sheaths/accessories/empty/quiver_default_bow"}]
           }
         },
-        "textures": {
-          "metal-*::leather-*": {"belt-waist-plain-material": {"base": "game:block/leather/{leather}"}, "belt-waist-plain-metal": {"base": "game:block/metal/plate/{metal}"}}
-        }
+        "textures": {"metal-*::leather-*": {"belt-waist-plain-material": {"base": "game:block/leather/{leather}"}, "belt-waist-plain-metal": {"base": "game:block/metal/plate/{metal}"}}}
       }
     }
   ],
@@ -322,5 +313,5 @@
   "renderAlphaTest": 0.25,
   "tpHandTransform": {"translation": {"x": -0.2, "y": -0.3, "z": -0.07}, "rotation": {"x": 35, "y": -90, "z": 49}, "origin": {"x": 0, "y": 0, "z": 0}, "scale": 1},
   "guiTransform": {"translation": {"x": 0, "y": 0, "z": 0}, "rotation": {"x": 180, "y": -63, "z": 22}, "origin": {"x": 1.4, "y": -0.4, "z": 1}, "scale": 2.01},
-  "groundTransform": {"translation": {"x": 0.05, "y": -0.21, "z": 0}, "rotation": {"x": 0, "y": 0, "z": 0}, "origin": {"x": 0.5, "y": 0.5, "z": 0.5299}, "scale": 2.72}
+  "groundTransform": {"translation": {"x": 0, "y": 0, "z": 0}, "rotation": {"x": 0, "y": 0, "z": 44}, "origin": {"x": 0.5, "y": 0.8, "z": 0.4299}, "scale": 2.72}
 }

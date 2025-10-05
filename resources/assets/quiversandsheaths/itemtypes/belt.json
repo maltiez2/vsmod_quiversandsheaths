@@ -8,7 +8,7 @@
   "storageFlags": 128,
   "behaviors": [
     {
-      "name": "AttributeRenderingLibrary.ShapeTexturesFromAttributes",
+      "name": "QuiversAndSheaths:ShapeTexturesFromAttributes",
       "properties": {
         "shape": { "belt-*": { "base": "quiversandsheaths:sheaths/belts/{belt}" }, "*": { "base": "quiversandsheaths:sheaths/belts/default" } },
         "textures": { "metal-*::leather-*": { "belt-waist-plain-material": { "base": "game:block/leather/{leather}" }, "belt-waist-plain-metal": { "base": "game:block/metal/plate/{metal}" } } }
@@ -22,7 +22,7 @@
       }
     }
   ],
-  "attributes": { "wearableAttachment": true, "clothescategory": "waistgear", "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["sheath-{category}-{subtype}-{type}"] } },
+  "attributes": { "wearableAttachment": true, "clothescategory": "waistgear", "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["belt-{category}-{subtype}-{type}"] } },
   "creativeinventory": { "general": ["*"], "quiversandsheaths": ["*"] },
   "creativeinventoryStacks": [
     {

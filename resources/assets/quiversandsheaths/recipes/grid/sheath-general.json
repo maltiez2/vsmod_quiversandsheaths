@@ -1,7 +1,7 @@
 [
 	{
 		"enabled": true,
-		"ingredientPattern": "LNL,L_L,LLL",
+		"ingredientPattern": "LNL,LLL,LLL",
 		"recipeGroup": 1,
 		"ingredients": {
 			"N": {"type": "item", "code": "part-buckle-iron"},
@@ -10,27 +10,11 @@
 		"width": 3,
 		"height": 3,
 		"name": "sheath-general",
-		"output": { "type": "item", "code": "sheath-waist-plain-general" }
+		"output": { "type": "item", "code": "beltbag-left-sheath-swords" }
 	},
 	{
 		"enabled": true,
-		"ingredientPattern": "LNL,LLL",
-		"recipeGroup": 2,
-		"ingredients": {
-			"N": {"type": "item", "code": "part-buckle-{metal}"},
-			"L": { "type": "item", "code": "game:leather-normal-{leather}" }
-		},
-		"allowedVariants": {
-			"metal": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"]
-		},
-		"width": 3,
-		"height": 2,
-		"name": "sheath-general",
-		"output": { "type": "item", "code": "sheath-waist-plain-general",  "attributes": {"types": {"belt": "thin", "leather": "{leather}", "metal": "{metal}"}} }
-	},
-	{
-		"enabled": true,
-		"ingredientPattern": "LNL,L_L,LLL",
+		"ingredientPattern": "LNL,LLL,LLL",
 		"recipeGroup": 2,
 		"ingredients": {
 			"N": {"type": "item", "code": "part-buckle-{metal}"},
@@ -42,6 +26,6 @@
 		"width": 3,
 		"height": 3,
 		"name": "sheath-general",
-		"output": { "type": "item", "code": "sheath-waist-plain-general",  "attributes": {"types": {"belt": "thick", "leather": "{leather}", "metal": "{metal}"}} }
+		"output": { "type": "item", "code": "beltbag-left-sheath-swords",  "attributes": {"types": {"leather": "{leather}", "metal": "{metal}"}} }
 	}
 ]

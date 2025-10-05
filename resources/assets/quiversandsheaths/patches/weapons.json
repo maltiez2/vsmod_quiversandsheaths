@@ -1,6 +1,31 @@
 ﻿[
   {
     "side": "Server",
+    "file": "game:itemtypes/tool/blade",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": { "*-blackguard-*": "blackguardsword", "*-forlorn-*": "forlornsword", "*-falx-*": "falxsword", "*": "default" }
+  },
+  {
+    "side": "Server",
+    "file": "game:itemtypes/tool/blade",
+    "op": "add",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": {
+      "*-copper": "copper",
+      "*-tinbronze": "tinbronze",
+      "*-bismuthbronze": "bismuthbronze",
+      "*-blackbronze": "blackbronze",
+      "*-gold": "gold",
+      "*-silver": "silver",
+      "*-iron": "iron",
+      "*-meteoriciron": "meteoriciron",
+      "*-steel": "steel",
+      "*": "iron"
+    }
+  },
+  {
+    "side": "Server",
     "file": "game:itemtypes/combatoverhaul/sword",
     "op": "add",
     "path": "/attributes/InSheathVariantCodeByType",

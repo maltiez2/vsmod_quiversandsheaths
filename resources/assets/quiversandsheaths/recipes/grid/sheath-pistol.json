@@ -11,24 +11,7 @@
 		"width": 3,
 		"height": 3,
 		"name": "sheath-pistol",
-		"output": { "type": "item", "code": "sheath-waist-plain-pistol" }
-	},
-	{
-		"enabled": false,
-		"ingredientPattern": "LNL,LLL,_F_",
-		"recipeGroup": 2,
-		"ingredients": {
-			"N": {"type": "item", "code": "part-buckle-{metal}"},
-			"L": { "type": "item", "code": "game:leather-normal-{leather}", "quantity":  1 },
-			"F": { "type": "item", "code": "maltiezfirearms:firearm-*", "isTool": true, "toolDurabilityCost": 0 }
-		},
-		"allowedVariants": {
-			"metal": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"]
-		},
-		"width": 3,
-		"height": 3,
-		"name": "sheath-pistol",
-		"output": { "type": "item", "code": "sheath-waist-plain-pistol",  "attributes": {"types": {"belt": "thin", "leather": "{leather}", "metal": "{metal}"}} }
+		"output": { "type": "item", "code": "beltbag-right-sheath-pistols" }
 	},
 	{
 		"enabled": false,
@@ -45,6 +28,32 @@
 		"width": 3,
 		"height": 3,
 		"name": "sheath-pistol",
-		"output": { "type": "item", "code": "sheath-waist-plain-pistol",  "attributes": {"types": {"belt": "thick", "leather": "{leather}", "metal": "{metal}"}} }
+		"output": { "type": "item", "code": "beltbag-right-sheath-pistols",  "attributes": {"types": {"leather": "{leather}", "metal": "{metal}"}} }
+	},
+	{
+		"enabled": false,
+		"ingredientPattern": "N",
+		"CopyAttributesFrom": "N",
+		"recipeGroup": 3,
+		"ingredients": {
+			"N": {"type": "item", "code": "beltbag-right-sheath-pistols"}
+		},
+		"width": 1,
+		"height": 1,
+		"name": "sheath-pistol",
+		"output": { "type": "item", "code": "beltbag-right-sheath-pistolsoffhand" }
+	},
+	{
+		"enabled": false,
+		"ingredientPattern": "N",
+		"CopyAttributesFrom": "N",
+		"recipeGroup": 3,
+		"ingredients": {
+			"N": {"type": "item", "code": "beltbag-right-sheath-pistolsoffhand"}
+		},
+		"width": 1,
+		"height": 1,
+		"name": "sheath-pistol",
+		"output": { "type": "item", "code": "beltbag-right-sheath-pistols" }
 	}
 ]

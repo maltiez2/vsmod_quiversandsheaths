@@ -1,22 +1,330 @@
 {
   "version": 0,
   "patches": {
-    "string": {
-
+    "integer": {
+      "quiversandsheaths:itemtypes/beltbags/pouch-firearms.json": {
+        "behaviors/0/properties/slotsNumber": "pouch_fierarms_slots"
+      },
+      "quiversandsheaths:itemtypes/beltbags/pouch-sling.json": {
+        "behaviors/0/properties/slots/0/slotsNumber": "pouch_sling_slots"
+      },
+      "quiversandsheaths:itemtypes/beltbags/quiver-arrows.json": {
+        "behaviors/0/properties/slots/0/slotsNumber": "quiver_arrows_slots"
+      },
+      "quiversandsheaths:itemtypes/beltbags/quiver-bolts.json": {
+        "behaviors/0/properties/slots/0/slotsNumber": "quiver_bolts_slots"
+      },
+      "quiversandsheaths:itemtypes/beltbags/quiver-javelins.json": {
+        "behaviors/0/properties/slots/0/slotsNumber": "quiver_javelins_slots"
+      }
     },
-    "other":  {
-
-    },
-    "boolean": {
-
-    },
-    "number": {
-
+    "other": {
+      "quiversandsheaths:itemtypes/beltbags/saydak.json": {
+        "behaviors/0/properties/hotkey": "sheath_bow_hotkey"
+      },
+      "quiversandsheaths:itemtypes/beltbags/pouch-sling.json": {
+        "behaviors/0/properties/hotkey": "sheath_sling_hotkey"
+      },
+      "quiversandsheaths:itemtypes/beltbags/quiver-javelins.json": {
+        "behaviors/0/properties/hotkey": "sheath_javelin_hotkey"
+      },
+      "quiversandsheaths:itemtypes/beltbags/sheath.json": {
+        "behaviors/0/properties/hotkey": "sheath_sword_hotkey"
+      },
+      "quiversandsheaths:itemtypes/beltbags/sheath-pistol.json": {
+        "behaviors/0/properties/hotkey": "sheath_pistol_hotkey"
+      },
+      "quiversandsheaths:itemtypes/beltbags/sheath-pistol-offhand.json": {
+        "behaviors/0/properties/hotkey": "sheath_pistol_offhand_hotkey"
+      }
     }
   },
   "constants": {
-
+    
   },
   "settings": [
+    {
+      "type": "separator",
+      "title": "quiversandsheaths:setting-title-hotkeys",
+      "collapsible": true
+    },
+    {
+      "code": "sheath_bow_hotkey",
+      "type": "other",
+      "ingui": "quiversandsheaths:setting-sheath_bow_hotkey",
+      "default": "Ranged (main hand)",
+      "mapping": {
+        "Ranged (main hand)" : {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-right-ranged",
+          "hotkeyName": "(CO) Swap ranged weapon (main hand)",
+          "hotkeyKey": "R"
+        },
+        "Ranged (off hand)": {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-left-ranged",
+          "hotkeyName": "(CO) Swap ranged weapon (off hand)",
+          "hotkeyKey": "R"
+        },
+        "Melee (main hand)": {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-right-melee",
+          "hotkeyName": "(CO) Swap melee weapon (main hand)",
+          "hotkeyKey": "R"
+        },
+        "Melee (off hand)": {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-left-melee",
+          "hotkeyName": "(CO) Swap melee weapon (off hand)",
+          "hotkeyKey": "R"
+        },
+        "Tool": {
+          "hotkeyCode": "quiversandsheaths-swap-tool",
+          "hotkeyName": "(CO) Swap tool",
+          "hotkeyKey": "R"
+        },
+        "Additional": {
+          "HotkeyCode": "quiversandsheaths-swap-additional",
+          "HotkeyName": "(CO) Additional swap hotkey",
+          "HotkeyKey": "R"
+        }
+      }
+    },
+    {
+      "code": "sheath_sling_hotkey",
+      "type": "other",
+      "ingui": "quiversandsheaths:setting-sheath_sling_hotkey",
+      "default": "Ranged (main hand)",
+      "mapping": {
+        "Ranged (main hand)" : {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-right-ranged",
+          "hotkeyName": "(CO) Swap ranged weapon (main hand)",
+          "hotkeyKey": "R"
+        },
+        "Ranged (off hand)": {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-left-ranged",
+          "hotkeyName": "(CO) Swap ranged weapon (off hand)",
+          "hotkeyKey": "R"
+        },
+        "Melee (main hand)": {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-right-melee",
+          "hotkeyName": "(CO) Swap melee weapon (main hand)",
+          "hotkeyKey": "R"
+        },
+        "Melee (off hand)": {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-left-melee",
+          "hotkeyName": "(CO) Swap melee weapon (off hand)",
+          "hotkeyKey": "R"
+        },
+        "Tool": {
+          "hotkeyCode": "quiversandsheaths-swap-tool",
+          "hotkeyName": "(CO) Swap tool",
+          "hotkeyKey": "R"
+        },
+        "Additional": {
+          "hotkeyCode": "quiversandsheaths-swap-additional",
+          "hotkeyName": "(CO) Additional swap hotkey",
+          "hotkeyKey": "R"
+        }
+      }
+    },
+    {
+      "code": "sheath_javelin_hotkey",
+      "type": "other",
+      "ingui": "quiversandsheaths:setting-sheath_javelin_hotkey",
+      "default": "Ranged (main hand)",
+      "mapping": {
+        "Ranged (main hand)" : {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-right-ranged",
+          "hotkeyName": "(CO) Swap ranged weapon (main hand)",
+          "hotkeyKey": "R"
+        },
+        "Ranged (off hand)": {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-left-ranged",
+          "hotkeyName": "(CO) Swap ranged weapon (off hand)",
+          "hotkeyKey": "R"
+        },
+        "Melee (main hand)": {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-right-melee",
+          "hotkeyName": "(CO) Swap melee weapon (main hand)",
+          "hotkeyKey": "R"
+        },
+        "Melee (off hand)": {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-left-melee",
+          "hotkeyName": "(CO) Swap melee weapon (off hand)",
+          "hotkeyKey": "R"
+        },
+        "Tool": {
+          "hotkeyCode": "quiversandsheaths-swap-tool",
+          "hotkeyName": "(CO) Swap tool",
+          "hotkeyKey": "R"
+        },
+        "Additional": {
+          "hotkeyCode": "quiversandsheaths-swap-additional",
+          "hotkeyName": "(CO) Additional swap hotkey",
+          "hotkeyKey": "R"
+        }
+      }
+    },
+    {
+      "code": "sheath_sword_hotkey",
+      "type": "other",
+      "ingui": "quiversandsheaths:setting-sheath_sword_hotkey",
+      "default": "Melee (main hand)",
+      "mapping": {
+        "Ranged (main hand)" : {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-right-ranged",
+          "hotkeyName": "(CO) Swap ranged weapon (main hand)",
+          "hotkeyKey": "R"
+        },
+        "Ranged (off hand)": {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-left-ranged",
+          "hotkeyName": "(CO) Swap ranged weapon (off hand)",
+          "hotkeyKey": "R"
+        },
+        "Melee (main hand)": {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-right-melee",
+          "hotkeyName": "(CO) Swap melee weapon (main hand)",
+          "hotkeyKey": "R"
+        },
+        "Melee (off hand)": {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-left-melee",
+          "hotkeyName": "(CO) Swap melee weapon (off hand)",
+          "hotkeyKey": "R"
+        },
+        "Tool": {
+          "hotkeyCode": "quiversandsheaths-swap-tool",
+          "hotkeyName": "(CO) Swap tool",
+          "hotkeyKey": "R"
+        },
+        "Additional": {
+          "hotkeyCode": "quiversandsheaths-swap-additional",
+          "hotkeyName": "(CO) Additional swap hotkey",
+          "hotkeyKey": "R"
+        }
+      }
+    },
+    {
+      "code": "sheath_pistol_hotkey",
+      "type": "other",
+      "ingui": "quiversandsheaths:setting-sheath_pistol_hotkey",
+      "default": "Ranged (main hand)",
+      "mapping": {
+        "Ranged (main hand)" : {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-right-ranged",
+          "hotkeyName": "(CO) Swap ranged weapon (main hand)",
+          "hotkeyKey": "R"
+        },
+        "Ranged (off hand)": {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-left-ranged",
+          "hotkeyName": "(CO) Swap ranged weapon (off hand)",
+          "hotkeyKey": "R"
+        },
+        "Melee (main hand)": {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-right-melee",
+          "hotkeyName": "(CO) Swap melee weapon (main hand)",
+          "hotkeyKey": "R"
+        },
+        "Melee (off hand)": {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-left-melee",
+          "hotkeyName": "(CO) Swap melee weapon (off hand)",
+          "hotkeyKey": "R"
+        },
+        "Tool": {
+          "hotkeyCode": "quiversandsheaths-swap-tool",
+          "hotkeyName": "(CO) Swap tool",
+          "hotkeyKey": "R"
+        },
+        "Additional": {
+          "hotkeyCode": "quiversandsheaths-swap-additional",
+          "hotkeyName": "(CO) Additional swap hotkey",
+          "hotkeyKey": "R"
+        }
+      }
+    },
+    {
+      "code": "sheath_pistol_offhand_hotkey",
+      "type": "other",
+      "ingui": "quiversandsheaths:setting-sheath_pistol_offhand_hotkey",
+      "default": "Ranged (off hand)",
+      "mapping": {
+        "Ranged (main hand)" : {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-right-ranged",
+          "hotkeyName": "(CO) Swap ranged weapon (main hand)",
+          "hotkeyKey": "R"
+        },
+        "Ranged (off hand)": {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-left-ranged",
+          "hotkeyName": "(CO) Swap ranged weapon (off hand)",
+          "hotkeyKey": "R"
+        },
+        "Melee (main hand)": {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-right-melee",
+          "hotkeyName": "(CO) Swap melee weapon (main hand)",
+          "hotkeyKey": "R"
+        },
+        "Melee (off hand)": {
+          "hotkeyCode": "quiversandsheaths-swap-weapon-left-melee",
+          "hotkeyName": "(CO) Swap melee weapon (off hand)",
+          "hotkeyKey": "R"
+        },
+        "Tool": {
+          "hotkeyCode": "quiversandsheaths-swap-tool",
+          "hotkeyName": "(CO) Swap tool",
+          "hotkeyKey": "R"
+        },
+        "Additional": {
+          "hotkeyCode": "quiversandsheaths-swap-additional",
+          "hotkeyName": "(CO) Additional swap hotkey",
+          "hotkeyKey": "R"
+        }
+      }
+    },
+    {
+      "type": "separator",
+      "title": "quiversandsheaths:setting-title-capacities",
+      "collapsible": true
+    },
+    {
+      "code": "pouch_fierarms_slots",
+      "type": "integer",
+      "ingui": "quiversandsheaths:setting-pouch_fierarms_slots",
+      "default": 5,
+      "range": {
+        "min": 1
+      }
+    },
+    {
+      "code": "pouch_sling_slots",
+      "type": "integer",
+      "ingui": "quiversandsheaths:setting-pouch_sling_slots",
+      "default": 2,
+      "range": {
+        "min": 1
+      }
+    },
+    {
+      "code": "quiver_arrows_slots",
+      "type": "integer",
+      "ingui": "quiversandsheaths:setting-quiver_arrows_slots",
+      "default": 3,
+      "range": {
+        "min": 1
+      }
+    },
+    {
+      "code": "quiver_bolts_slots",
+      "type": "integer",
+      "ingui": "quiversandsheaths:setting-quiver_bolts_slots",
+      "default": 2,
+      "range": {
+        "min": 1
+      }
+    },
+    {
+      "code": "quiver_javelins_slots",
+      "type": "integer",
+      "ingui": "quiversandsheaths:setting-quiver_javelins_slots",
+      "default": 4,
+      "range": {
+        "min": 1
+      }
+    }
   ]
 }

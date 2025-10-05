@@ -11,24 +11,7 @@
 		"width": 3,
 		"height": 3,
 		"name": "pouch-sling",
-		"output": { "type": "item", "code": "pouch-waist-plain-sling" }
-	},
-	{
-		"enabled": true,
-		"ingredientPattern": "LNL,LLL,_F_",
-		"recipeGroup": 2,
-		"ingredients": {
-			"N": {"type": "item", "code": "part-buckle-{metal}"},
-			"L": { "type": "item", "code": "game:leather-normal-{leather}", "quantity":  1 },
-			"F": { "type": "item", "code": "game:sling", "isTool": true, "toolDurabilityCost": 0 }
-		},
-		"allowedVariants": {
-			"metal": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"]
-		},
-		"width": 3,
-		"height": 3,
-		"name": "pouch-sling",
-		"output": { "type": "item", "code": "pouch-waist-plain-sling",  "attributes": {"types": {"belt": "thin", "leather": "{leather}", "metal": "{metal}"}} }
+		"output": { "type": "item", "code": "beltbag-back-pouch-sling" }
 	},
 	{
 		"enabled": true,
@@ -45,7 +28,7 @@
 		"width": 3,
 		"height": 3,
 		"name": "pouch-sling",
-		"output": { "type": "item", "code": "pouch-waist-plain-sling",  "attributes": {"types": {"belt": "thick", "leather": "{leather}", "metal": "{metal}"}} }
+		"output": { "type": "item", "code": "beltbag-back-pouch-sling",  "attributes": {"types": {"leather": "{leather}", "metal": "{metal}"}} }
 	},
 	{
 		"enabled": false,
@@ -59,24 +42,7 @@
 		"width": 3,
 		"height": 3,
 		"name": "pouch-sling",
-		"output": { "type": "item", "code": "pouch-waist-plain-sling" }
-	},
-	{
-		"enabled": false,
-		"ingredientPattern": "LNL,LLL,_F_",
-		"recipeGroup": 2,
-		"ingredients": {
-			"N": {"type": "item", "code": "part-buckle-{metal}"},
-			"L": { "type": "item", "code": "game:leather-normal-{leather}", "quantity":  1 },
-			"F": { "type": "item", "code": "combatoverhaul:sling-*", "isTool": true, "toolDurabilityCost": 0 }
-		},
-		"allowedVariants": {
-			"metal": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"]
-		},
-		"width": 3,
-		"height": 3,
-		"name": "pouch-sling",
-		"output": { "type": "item", "code": "pouch-waist-plain-sling",  "attributes": {"types": {"belt": "thin", "leather": "{leather}", "metal": "{metal}"}} }
+		"output": { "type": "item", "code": "beltbag-back-pouch-sling" }
 	},
 	{
 		"enabled": false,
@@ -93,6 +59,6 @@
 		"width": 3,
 		"height": 3,
 		"name": "pouch-sling",
-		"output": { "type": "item", "code": "pouch-waist-plain-sling",  "attributes": {"types": {"belt": "thick", "leather": "{leather}", "metal": "{metal}"}} }
+		"output": { "type": "item", "code": "beltbag-back-pouch-sling",  "attributes": {"types": {"leather": "{leather}", "metal": "{metal}"}} }
 	}
 ]

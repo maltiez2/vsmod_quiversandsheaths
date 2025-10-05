@@ -11,24 +11,7 @@
 		"width": 3,
 		"height": 3,
 		"name": "quiver-bolt",
-		"output": { "type": "item", "code": "quiver-waist-plain-bolt" }
-	},
-	{
-		"enabled": false,
-		"ingredientPattern": "LNL,LLL,_F_",
-		"recipeGroup": 2,
-		"ingredients": {
-			"N": {"type": "item", "code": "part-buckle-{metal}"},
-			"L": { "type": "item", "code": "game:leather-normal-{leather}", "quantity":  1 },
-			"F": { "type": "item", "code": "maltiezcrossbows:bolt-*", "isTool": true, "toolDurabilityCost": 0 }
-		},
-		"allowedVariants": {
-			"metal": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"]
-		},
-		"width": 3,
-		"height": 3,
-		"name": "quiver-bolt",
-		"output": { "type": "item", "code": "quiver-waist-plain-bolt",  "attributes": {"types": {"belt": "thin", "leather": "{leather}", "metal": "{metal}"}} }
+		"output": { "type": "item", "code": "beltbag-back-quiver-bolts" }
 	},
 	{
 		"enabled": false,
@@ -45,6 +28,6 @@
 		"width": 3,
 		"height": 3,
 		"name": "quiver-bolt",
-		"output": { "type": "item", "code": "quiver-waist-plain-bolt",  "attributes": {"types": {"belt": "thick", "leather": "{leather}", "metal": "{metal}"}} }
+		"output": { "type": "item", "code": "beltbag-back-quiver-bolts",  "attributes": {"types": {"leather": "{leather}", "metal": "{metal}"}} }
 	}
 ]

@@ -13,7 +13,8 @@
         "canHoldWildcards": ["*bullet-*", "*pellet-*", "*slug-*", "*match-*", "*linenpatch", "*powderflask-*", "*cockinglever-*"],
         "slotColor": "#cf9059",
         "slotsNumber": 5,
-        "slotsIcon": "quiversandsheaths:bullets"
+        "slotsIcon": "quiversandsheaths:bullets",
+        "SlotBackpackCategory": "ammunition"
       }
     },
     {

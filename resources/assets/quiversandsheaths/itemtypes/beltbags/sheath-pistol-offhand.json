@@ -10,7 +10,14 @@
     {
       "name": "QuiversAndSheaths:Sheath",
       "properties": {
-        "offhandToolSlot": { "slotColor": "#fc9803", "canHoldWildcards": ["*-pistol-*"], "canHoldItemTags": ["pistol"], "slotsIcon": "quiversandsheaths:pistol" },
+        "offhandToolSlot": {
+          "slotColor": "#fc9803",
+          "canHoldWildcards": ["*-pistol-*"],
+          "canHoldItemTags": ["pistol"],
+          "slotsIcon": "quiversandsheaths:pistol",
+          "SlotBackpackCategory": "weapon",
+          "CategoryOrderPriority": "1.1"
+        },
         "takeOutColor": "#999999",
         "hotkey": { "hotkeyCode": "combatoverhaul-swap-weapon-left-ranged", "hotkeyName": "Swap ranged weapon (off hand)", "hotkeyKey": "R" },
         "takeOutSlotIcon": "quiversandsheaths:takeout"

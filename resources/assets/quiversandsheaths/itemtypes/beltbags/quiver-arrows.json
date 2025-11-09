@@ -19,7 +19,8 @@
             "slotsIcon": "quiversandsheaths:arrows",
             "SetVariants": true,
             "SlotVariant": "arrow_slot",
-            "SlotStateVariant": "arrow_slot_state"
+            "SlotStateVariant": "arrow_slot_state",
+            "SlotBackpackCategory": "ammunition"
           }
         ],
         "putIntoMainHand": true,

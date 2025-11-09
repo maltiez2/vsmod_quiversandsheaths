@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ModName>Quivers And Sheaths</ModName>
     <ModType>code</ModType>
-    <ModVersion>0.5.1</ModVersion>
+    <ModVersion>0.5.4</ModVersion>
     <ModId>quiversandsheaths</ModId>
     <Description></Description>
     <Side>universal</Side>
@@ -18,7 +18,7 @@
 
   <!-- Dependencies -->
   <ItemGroup>
-    <Dependencies Include="overhaullib" Version="1.10.1" />
+    <Dependencies Include="overhaullib" Version="1.13.0" />
     <Dependencies Include="attributerenderinglibrary" Version="2.3.0" />
   </ItemGroup>
 
@@ -75,6 +75,9 @@
     <PackageReference Include="VSImGui" Version="0.0.6" />
     <Reference Include="$(GameDirectory)/**/*.dll" Private="false" Condition="'$(GameDirectory)' != ''" />
     <Reference Include="$(ExternalLibDir)/**/*.dll" Private="false" Condition="'$(ExternalLibDir)' != ''" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="resources\assets\quiversandsheaths\shapes\sheaths\shoulder\" />
   </ItemGroup>
 
   <!-- Creating local settings file -->

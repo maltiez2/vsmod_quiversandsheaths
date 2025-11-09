@@ -2,6 +2,10 @@
   "game:tabname-quiversandsheaths": "Quivers And Sheaths",
   "game:tabname-quiversandsheaths-colors": "Quivers And Sheaths (Colored)",
 
+  "game:slotcategory-weapon": "Weapons",
+  "game:slotcategory-ammunition": "Ammunition",
+  "game:slotcategory-takeout": "Temporary storage",
+
   "item-belt-*": "Bags belt",
   "item-beltbag-*-pouch-firearms": "Ammo pouch",
   "item-beltbag-*-pouch-sling": "Sling pouch",

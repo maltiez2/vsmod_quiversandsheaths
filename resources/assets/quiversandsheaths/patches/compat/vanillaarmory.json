@@ -1,0 +1,74 @@
+﻿[
+  { "side": "Server", "dependsOn": [{ "modid": "vanillaarmory" }], "file": "vanillaarmory:itemtypes/tool/blade/bladearmingtype", "op": "addMerge", "path": "/tags", "value": ["sword", "onehanded"] },
+  { "side": "Server", "dependsOn": [{ "modid": "vanillaarmory" }], "file": "vanillaarmory:itemtypes/tool/blade/bladeclaymoretype", "op": "addMerge", "path": "/tags", "value": ["sword", "onehanded"] },
+  { "side": "Server", "dependsOn": [{ "modid": "vanillaarmory" }], "file": "vanillaarmory:itemtypes/tool/blade/bladegladiustype", "op": "addMerge", "path": "/tags", "value": ["sword", "onehanded"] },
+  { "side": "Server", "dependsOn": [{ "modid": "vanillaarmory" }], "file": "vanillaarmory:itemtypes/tool/blade/bladesabretype", "op": "addMerge", "path": "/tags", "value": ["sword", "onehanded"] },
+  { "side": "Server", "dependsOn": [{ "modid": "vanillaarmory" }], "file": "vanillaarmory:itemtypes/tool/knife/knifebaselardtype", "op": "addMerge", "path": "/tags", "value": ["sword", "onehanded"] },
+  { "side": "Server", "dependsOn": [{ "modid": "vanillaarmory" }], "file": "vanillaarmory:itemtypes/tool/knife/knifedaggertype", "op": "addMerge", "path": "/tags", "value": ["sword", "onehanded"] },
+  { "side": "Server", "dependsOn": [{ "modid": "vanillaarmory" }], "file": "vanillaarmory:itemtypes/tool/knife/knifekhanjartype", "op": "addMerge", "path": "/tags", "value": ["sword", "onehanded"] },
+  { "side": "Server", "dependsOn": [{ "modid": "vanillaarmory" }], "file": "vanillaarmory:itemtypes/tool/knife/knifestilettotype", "op": "addMerge", "path": "/tags", "value": ["sword", "onehanded"] },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "vanillaarmory" }],
+    "file": "vanillaarmory:itemtypes/tool/relic blades/relicarmingtype",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": ["sword", "onehanded"]
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "vanillaarmory" }],
+    "file": "vanillaarmory:itemtypes/tool/relic blades/relicclaymoretype",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": ["sword", "onehanded"]
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "vanillaarmory" }],
+    "file": "vanillaarmory:itemtypes/tool/relic blades/relicgladiustype",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": ["sword", "onehanded"]
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "vanillaarmory" }],
+    "file": "vanillaarmory:itemtypes/tool/relic blades/relicsabretype",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": ["sword", "onehanded"]
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "vanillaarmory" }],
+    "file": "vanillaarmory:itemtypes/tool/relic knives/relicbaselardtype",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": ["sword", "onehanded"]
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "vanillaarmory" }],
+    "file": "vanillaarmory:itemtypes/tool/relic knives/relicdaggertype",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": ["sword", "onehanded"]
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "vanillaarmory" }],
+    "file": "vanillaarmory:itemtypes/tool/relic knives/relickhanjartype",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": ["sword", "onehanded"]
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "vanillaarmory" }],
+    "file": "vanillaarmory:itemtypes/tool/relic knives/relicstilettotype",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": ["sword", "onehanded"]
+  }
+]

@@ -10,7 +10,7 @@
     {
       "name": "QuiversAndSheaths:Sheath",
       "properties": {
-        "toolSlot": { "slotColor": "#fc9803", "canHoldItemTagsCondition": [["sword", "onehanded"], ["mace", "onehanded"]], "slotsIcon": "quiversandsheaths:sword" },
+        "toolSlot": { "slotColor": "#fc9803", "canHoldItemTagsCondition": [["sword", "onehanded"], ["mace", "onehanded"]], "slotsIcon": "quiversandsheaths:sword", "SlotBackpackCategory": "weapon" },
         "takeOutColor": "#999999",
         "hotkey": { "hotkeyCode": "combatoverhaul-swap-weapon-right-melee", "hotkeyName": "Swap melee weapon (main hand)", "hotkeyKey": "R" },
         "takeOutSlotIcon": "quiversandsheaths:takeout"

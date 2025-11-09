@@ -19,7 +19,8 @@
             "slotsIcon": "quiversandsheaths:bolts",
             "SetVariants": true,
             "SlotVariant": "bolt_slot",
-            "SlotStateVariant": "bolt_slot_state"
+            "SlotStateVariant": "bolt_slot_state",
+            "SlotBackpackCategory": "ammunition"
           },
           {
             "canHoldWildcards": ["*spanningtool-*"],
@@ -29,7 +30,8 @@
             "slotsIcon": "quiversandsheaths:spanningtool",
             "SetVariants": true,
             "SlotVariant": "equipment_slot",
-            "SlotStateVariant": "equipment_slot_state"
+            "SlotStateVariant": "equipment_slot_state",
+            "SlotBackpackCategory": "ammunition"
           }
         ]
       }

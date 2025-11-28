@@ -1,0 +1,26 @@
+﻿[
+  {
+    "side": "Server",
+    "dependsOn": [],
+    "file": "game:itemtypes/tool/bow",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": { "*-crude": "crude", "*-simple": "simple", "*-long": "long", "*-recurve": "recurve", "*": "recurve" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "bullseyecontinued" }],
+    "file": "game:itemtypes/bullseyecontinued/bow",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": { "*-crude": "crude", "*-simple": "simple", "*-long": "long", "*-recurve": "recurve", "*": "recurve" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "combatoverhaul" }],
+    "file": "game:itemtypes/combatoverhaul/bow",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": { "*-crude": "crude", "*-simple": "simple", "*-long": "long", "*-recurve": "recurve", "*": "recurve" }
+  }
+]

@@ -3,7 +3,7 @@
   "class": "Item",
   "tags": ["belt-bag"],
   "variantgroups": [{ "code": "category", "states": ["back"] }, { "code": "subtype", "states": ["quiver"] }, { "code": "type", "states": ["bolts"] }],
-  "shape": { "base": "sheaths/accessories/empty/quiver_bolts", "overlays": [{ "base": "sheaths/accessories/empty/quiver_default" }] },
+  "shape": { "base": "sheaths/accessories/empty/quiver_bolts" },
   "texturesByType": { "*": { "seraph": { "base": "game:block/transparent" } } },
   "storageFlags": 128,
   "behaviors": [

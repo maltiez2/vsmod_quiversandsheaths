@@ -10,5 +10,6 @@ public sealed class QuiversAndSheathsSystem : ModSystem
         api.RegisterCollectibleBehaviorClass("QuiversAndSheaths:ShapeReplacement", typeof(ShapeReplacement));
         api.RegisterCollectibleBehaviorClass("QuiversAndSheaths:Sheath", typeof(SheathBehavior));
         api.RegisterCollectibleBehaviorClass("QuiversAndSheaths:Quiver", typeof(QuiverBehavior));
+        api.RegisterCollectibleBehaviorClass("QuiversAndSheaths:VariantFromSlot", typeof(VariantFromSlotBehavior));
     }
 }

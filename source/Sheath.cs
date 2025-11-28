@@ -1,5 +1,7 @@
 ﻿using AttributeRenderingLibrary;
 using CombatOverhaul.Armor;
+using CombatOverhaul.Utils;
+using System.Diagnostics;
 using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
 using Vintagestory.API.Config;
@@ -49,13 +51,15 @@ public class SheathBehavior : ToolBag
 
     public override List<ItemSlotBagContent?> GetOrCreateSlots(ItemStack bagstack, InventoryBase parentinv, int bagIndex, IWorldAccessor world)
     {
+        Debug.WriteLine($"GetOrCreateSlots: {bagIndex}");
+
         if (parentinv is InventoryBasePlayer playerInventory && playerInventory.Player?.Entity != null && world.Api is ICoreServerAPI)
         {
             EntityPlayer player = playerInventory.Player.Entity;
 
             if (!ProcessedPlayers.Contains(player.EntityId))
             {
-                playerInventory.SlotModified += slotIndex => OnSlotModified(playerInventory, player, slotIndex, bagIndex);
+                playerInventory.SlotModified += slotIndex => OnSlotModified(playerInventory, player, slotIndex);
                 ProcessedPlayers.Add(player.EntityId);
             }
         }
@@ -75,16 +79,42 @@ public class SheathBehavior : ToolBag
         return entity.Player.InventoryManager.GetOwnInventory(GlobalConstants.backpackInvClassName) as InventoryPlayerBackPacks;
     }
 
-    protected virtual void OnSlotModified(InventoryBasePlayer backpackInventory, EntityPlayer player, int slotIndex, int bagIndex)
+    protected virtual int GetBagIndex(InventoryBasePlayer backpackInventory, EntityPlayer player, int slotIndex)
     {
+        try
+        {
+            ItemSlot slot = backpackInventory[slotIndex];
+            if (slot is ItemSlotBagContentWithWildcardMatch mainSlot)
+            {
+                return mainSlot.BagIndex;
+            }
+
+            if (slot is ItemSlotTakeOutOnly takeOutSlot)
+            {
+                return takeOutSlot.BagIndex;
+            }
+        }
+        catch (Exception exception)
+        {
+            LoggerUtil.Error(player.Api, this, $"Error on getting bag index: {exception}");
+        }
+
+        return 0;
+    }
+
+    protected virtual void OnSlotModified(InventoryBasePlayer backpackInventory, EntityPlayer player, int slotIndex)
+    {
+        int bagIndex = GetBagIndex(backpackInventory, player, slotIndex);
+
         OnSlotModifiedOtherSlots(backpackInventory, player, slotIndex, bagIndex);
+
+        Debug.WriteLine($"OnSlotModified: {bagIndex}");
 
         InventoryBase? gearInventory = GetGearInventory(player);
         if (gearInventory == null) return;
 
-        ItemSlot? sheathSlot = gearInventory
-            .Where(slot => slot?.Itemstack?.Collectible?.Id == collObj.Id)
-            .FirstOrDefault((ItemSlot?)null);
+        ItemSlot? sheathSlot = gearInventory[bagIndex];
+
         if (sheathSlot?.Itemstack == null) return;
 
         ItemSlotToolHolder? weaponSlot = backpackInventory[slotIndex] as ItemSlotToolHolder;

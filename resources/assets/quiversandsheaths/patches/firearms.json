@@ -1,0 +1,130 @@
+﻿[
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "maltiezfirearms" }],
+    "file": "maltiezfirearms:itemtypes/firearms/pistol",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": { "*-*bronze": "pistol_bronze", "*": "pistol_bronze" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "maltiezfirearms" }],
+    "file": "maltiezfirearms:itemtypes/firearms/pistol",
+    "op": "add",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": { "*-tinbronze": "tinbronze", "*-bismuthbronze": "bismuthbronze", "*-blackbronze": "blackbronze", "*": "tinbronze" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "maltiezfirearms" }],
+    "file": "maltiezfirearms:itemtypes/firearms/pistol-flintlock",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": { "*-steel": "pistol_steel", "*": "pistol_steel" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "maltiezfirearms" }],
+    "file": "maltiezfirearms:itemtypes/firearms/pistol-flintlock",
+    "op": "add",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": { "*-steel": "steel", "*": "steel" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "maltiezfirearms" }],
+    "file": "maltiezfirearms:itemtypes/firearms/carbine",
+    "op": "add",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": { "*-steel": "steel", "*": "steel" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "maltiezfirearms" }],
+    "file": "maltiezfirearms:itemtypes/firearms/carbine",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": { "*-steel": "carbine", "*": "carbine" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "maltiezfirearms" }],
+    "file": "maltiezfirearms:itemtypes/firearms/arquebus",
+    "op": "add",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": { "*-steel": "steel", "*-iron": "iron", "*-meteoriciron": "meteoriciron", "*-tinbronze": "tinbronze", "*-bismuthbronze": "bismuthbronze", "*-blackbronze": "blackbronze", "*": "iron" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "maltiezfirearms" }],
+    "file": "maltiezfirearms:itemtypes/firearms/arquebus",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": { "*-steel": "arquebus", "*": "arquebus" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "maltiezfirearms" }],
+    "file": "maltiezfirearms:itemtypes/firearms/blunderbuss",
+    "op": "add",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": { "*-steel": "steel", "*-iron": "iron", "*-meteoriciron": "meteoriciron", "*-tinbronze": "tinbronze", "*-bismuthbronze": "bismuthbronze", "*-blackbronze": "blackbronze", "*": "iron" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "maltiezfirearms" }],
+    "file": "maltiezfirearms:itemtypes/firearms/blunderbuss",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": { "*-steel": "blunderbuss", "*": "blunderbuss" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "maltiezfirearms" }],
+    "file": "maltiezfirearms:itemtypes/firearms/blunderbuss-flintlock",
+    "op": "add",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": { "*-steel": "steel", "*-iron": "iron", "*-meteoriciron": "meteoriciron", "*-tinbronze": "tinbronze", "*-bismuthbronze": "bismuthbronze", "*-blackbronze": "blackbronze", "*": "steel" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "maltiezfirearms" }],
+    "file": "maltiezfirearms:itemtypes/firearms/blunderbuss-flintlock",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": { "*-steel": "blunderbuss-flintlock", "*": "blunderbuss-flintlock" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "maltiezfirearms" }],
+    "file": "maltiezfirearms:itemtypes/firearms/musket",
+    "op": "add",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": { "*-steel": "steel", "*-iron": "iron", "*-meteoriciron": "meteoriciron", "*-tinbronze": "tinbronze", "*-bismuthbronze": "bismuthbronze", "*-blackbronze": "blackbronze", "*": "steel" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "maltiezfirearms" }],
+    "file": "maltiezfirearms:itemtypes/firearms/musket",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": { "*-steel": "musket", "*": "musket" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "maltiezfirearms" }],
+    "file": "maltiezfirearms:itemtypes/firearms/superimposed",
+    "op": "add",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": { "*-steel": "steel", "*-iron": "iron", "*-meteoriciron": "meteoriciron", "*-tinbronze": "tinbronze", "*-bismuthbronze": "bismuthbronze", "*-blackbronze": "blackbronze", "*": "steel" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "maltiezfirearms" }],
+    "file": "maltiezfirearms:itemtypes/firearms/superimposed",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": { "*-steel": "superimposed", "*": "superimposed" }
+  }
+]

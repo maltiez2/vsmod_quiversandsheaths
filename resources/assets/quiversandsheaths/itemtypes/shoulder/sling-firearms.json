@@ -1,31 +1,43 @@
 ﻿{
   "code": "shoulderbag",
-  "enabled": false,
+  "enabled": true,
   "class": "Item",
-  "tags": ["belt-bag"],
-  "variantgroups": [{ "code": "category", "states": ["right"] }, { "code": "subtype", "states": ["sling"] }, { "code": "type", "states": ["firearms"] }],
-  "shape": { "base": "quiversandsheaths:sheaths/accessories/empty/quiver_default_bow" },
+  "tags": [],
+  "variantgroups": [{ "code": "category", "states": ["rightleftfront"] }, { "code": "subtype", "states": ["sling"] }, { "code": "type", "states": ["firearms"] }],
+  "shape": { "base": "quiversandsheaths:gui/sling-firearms" },
   "texturesByType": { "*": { "seraph": { "base": "game:block/transparent" } } },
   "storageFlags": 128,
   "behaviors": [
     {
       "name": "QuiversAndSheaths:Sheath",
       "properties": {
-        "toolSlot": { "slotColor": "#fc9803", "canHoldWildcards": ["*firearm-*"], "canHoldItemTags": ["firearm"], "slotsIcon": "quiversandsheaths:bow" },
+        "toolSlot": { "slotColor": "#fc9803", "canHoldWildcards": ["*:firearm-*"], "canHoldItemTags": ["firearm"], "slotsIcon": "quiversandsheaths:pistol", "SlotBackpackCategory": "weapon" },
         "takeOutColor": "#999999",
-        "hotkey": { "hotkeyCode": "combatoverhaul-swap-weapon-right-ranged", "hotkeyName": "Swap ranged weapon (main hand)", "hotkeyKey": "R" },
+        "hotkey": { "hotkeyCode": "combatoverhaul-swap-weapon-right-ranged-shoulder", "hotkeyName": "Swap ranged weapon from shoulder (main hand)", "hotkeyKey": "R" },
         "takeOutSlotIcon": "quiversandsheaths:takeout"
       }
     },
+    { "name": "QuiversAndSheaths:VariantFromSlot", "properties": { "targetVariant": "side", "slotsToVariants": { "leftshouldergear": "left", "rightshouldergear": "right", "frontgear": "front" } } },
     {
       "name": "QuiversAndSheaths:ShapeTexturesFromAttributes",
       "properties": {
         "addOverlayPrefix": false,
         "shape": {
-          "right_slot-*::right_slot_state-*": { "base": "quiversandsheaths:sheaths/accessories/{right_slot_state}/quiver_{right_slot}_bow" },
-          "*": { "base": "quiversandsheaths:sheaths/accessories/empty/quiver_default_bow" }
+          "side-*::right_slot-*::right_slot_state-empty": { "base": "quiversandsheaths:slings/sling-empty" },
+          "side-*::right_slot-*::right_slot_state-*": { "base": "quiversandsheaths:slings/weapons/{side}/{right_slot}" },
+          "*": { "base": "quiversandsheaths:slings/sling-empty" }
         },
-        "textures": { "metal-*::leather-*": { "belt-waist-plain-material": { "base": "game:block/leather/{leather}" }, "belt-waist-plain-metal": { "base": "game:block/metal/plate/{metal}" } } }
+        "textures": {
+          "metal-*::leather-*::right_metal-*::right_leather-*::right_wood-*": {
+            "shoulder-sling-plain-material": { "base": "game:block/leather/{leather}" },
+            "shoulder-sling-plain-metal": { "base": "game:block/metal/plate/{metal}" },
+            "metal": { "base": "game:block/metal/plate/{right_metal}" },
+            "leather": { "base": "game:block/leather/{right_leather}" },
+            "wood": { "base": "game:block/wood/debarked/{right_wood}" }
+          },
+          "metal-*::leather-*": { "shoulder-sling-plain-material": { "base": "game:block/leather/{leather}" }, "shoulder-sling-plain-metal": { "base": "game:block/metal/plate/{metal}" } },
+          "right_metal-*::right_leather-*::right_wood-*": { "metal": { "base": "game:block/metal/plate/{right_metal}" }, "leather": { "base": "game:block/leather/{right_leather}" }, "wood": { "base": "game:block/wood/debarked/{right_wood}" } }
+        }
       }
     },
     {
@@ -33,12 +45,17 @@
       "properties": {
         "addOverlayPrefix": false,
         "renderTargets": ["Gui", "HandTp", "HandTpOff", "Ground"],
-        "shape": { "*": { "base": "quiversandsheaths:gui/saydak" } },
-        "textures": { "metal-*::leather-*": { "belt-waist-plain-material": { "base": "game:block/leather/{leather}" }, "belt-waist-plain-metal": { "base": "game:block/metal/plate/{metal}" } } }
+        "shape": { "*": { "base": "quiversandsheaths:gui/sling-firearms" } },
+        "textures": { "metal-*::leather-*": { "shoulder-sling-plain-material": { "base": "game:block/leather/{leather}" }, "shoulder-sling-plain-metal": { "base": "game:block/metal/plate/{metal}" } } }
       }
     }
   ],
-  "attributes": { "wearableAttachment": true, "clothescategory": "addBeltRight", "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["shoulderbag-{category}-{subtype}-{type}"] } },
+  "attributes": {
+    "wearableAttachment": true,
+    "clothescategories": ["rightshouldergear", "leftshouldergear", "frontgear"],
+    "warmthByType": { "*": 0 },
+    "handbook": { "groupBy": ["shoulderbag-{category}-{subtype}-{type}"] }
+  },
   "creativeinventory": { "general": ["*"], "quiversandsheaths": ["*"] },
   "creativeinventoryStacks": [
     {
@@ -160,6 +177,6 @@
   ],
   "renderAlphaTest": "0.25",
   "tpHandTransform": { "translation": { "x": 0, "y": "-0.05", "z": 0 }, "rotation": { "x": 0, "y": 180, "z": 48 }, "origin": { "x": 0, "y": 0, "z": 0 }, "scale": 1 },
-  "guiTransform": { "translation": { "x": 0, "y": 0, "z": 0 }, "rotation": { "x": 55, "y": -1, "z": 36 }, "origin": { "x": "-0.11", "y": "-0.15", "z": 0 }, "scaleXyz": { "x": "-2.77", "y": "2.77", "z": "2.77" } },
+  "guiTransform": { "translation": { "x": 0, "y": 0, "z": 0 }, "rotation": { "x": 145, "y": -157, "z": 0 }, "origin": { "x": "0.09", "y": "-0.05", "z": 0 }, "scaleXyz": { "x": "-4.05", "y": "4.05", "z": "4.05" } },
   "groundTransform": { "translation": { "x": 0, "y": 0, "z": 0 }, "rotation": { "x": 90, "y": 0, "z": 0 }, "origin": { "x": 0, "y": 0, "z": "0.1" }, "scale": 4 }
 }

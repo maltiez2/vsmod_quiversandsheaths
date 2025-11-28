@@ -10,16 +10,16 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"plain": "block/cloth/linen/plain",
-		"ember": "block/coal/ember",
-		"shoulder-sling-plain-material": "block/leather/plain",
-		"brass": "block/metal/plate/brass",
-		"shoulder-sling-plain-metal": "block/metal/plate/brass",
-		"iron": "block/metal/plate/iron",
-		"lead": "block/metal/plate/lead",
-		"metal": "block/metal/plate/steel",
-		"flint": "block/stone/flint",
-		"wood": "block/wood/debarked/oak"
+		"plain": "game:block/cloth/linen/plain",
+		"ember": "game:block/coal/ember",
+		"shoulder-sling-plain-material": "game:block/leather/plain",
+		"brass": "game:block/metal/plate/brass",
+		"shoulder-sling-plain-metal": "game:block/metal/plate/brass",
+		"iron": "game:block/metal/plate/iron",
+		"lead": "game:block/metal/plate/lead",
+		"metal": "game:block/metal/plate/steel",
+		"flint": "game:block/stone/flint",
+		"wood": "game:block/wood/debarked/oak"
 	},
 	"elements": [
 		{
@@ -3151,9 +3151,9 @@
 					"children": [
 						{
 							"name": "sling_0",
-							"from": [ -4.5, 0.0, 0.1 ],
-							"to": [ 1.2, 0.5, 0.6 ],
-							"rotationOrigin": [ -4.5, 0.0, 0.1 ],
+							"from": [ -4.6, 0.0, 0.1 ],
+							"to": [ 1.2, 0.6, 0.6 ],
+							"rotationOrigin": [ -4.6, 0.0, 0.1 ],
 							"faces": {
 								"north": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 5.5, 0.5 ] },
 								"east": { "texture": "#shoulder-sling-plain-material", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
@@ -3166,7 +3166,7 @@
 								{
 									"name": "sling_2",
 									"from": [ 0.0, 0.0, 0.0 ],
-									"to": [ 5.0, 0.5, 0.5 ],
+									"to": [ 5.0, 0.6, 0.5 ],
 									"rotationOrigin": [ 0.0, 0.0, 0.0 ],
 									"rotationX": -5.0,
 									"rotationZ": -90.0,
@@ -3182,7 +3182,7 @@
 										{
 											"name": "sling_4",
 											"from": [ 5.0, 0.0, 0.0 ],
-											"to": [ 17.7, 0.5, 0.5 ],
+											"to": [ 17.7, 0.6, 0.5 ],
 											"rotationOrigin": [ 5.0, 0.0, 0.5 ],
 											"rotationY": 1.0,
 											"rotationZ": 24.9,

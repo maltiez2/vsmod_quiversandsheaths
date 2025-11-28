@@ -10,16 +10,16 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"plain": "block/cloth/linen/plain",
-		"ember": "block/coal/ember",
-		"shoulder-sling-plain-material": "block/leather/plain",
-		"brass": "block/metal/plate/brass",
-		"shoulder-sling-plain-metal": "block/metal/plate/brass",
-		"iron": "block/metal/plate/iron",
-		"lead": "block/metal/plate/lead",
-		"metal": "block/metal/plate/steel",
-		"flint": "block/stone/flint",
-		"wood": "block/wood/debarked/oak"
+		"plain": "game:block/cloth/linen/plain",
+		"ember": "game:block/coal/ember",
+		"shoulder-sling-plain-material": "game:block/leather/plain",
+		"brass": "game:block/metal/plate/brass",
+		"shoulder-sling-plain-metal": "game:block/metal/plate/brass",
+		"iron": "game:block/metal/plate/iron",
+		"lead": "game:block/metal/plate/lead",
+		"metal": "game:block/metal/plate/steel",
+		"flint": "game:block/stone/flint",
+		"wood": "game:block/wood/debarked/oak"
 	},
 	"elements": [
 		{

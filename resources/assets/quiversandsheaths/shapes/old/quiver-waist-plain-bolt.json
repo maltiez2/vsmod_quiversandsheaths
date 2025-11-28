@@ -10,10 +10,10 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"belt-waist-plain-material": "block/leather/plain",
-		"belt-waist-plain-metal": "block/metal/plate/brass",
-		"iron": "block/metal/plate/iron",
-		"oak": "block/wood/debarked/oak"
+		"belt-waist-plain-material": "game:block/leather/plain",
+		"belt-waist-plain-metal": "game:block/metal/plate/brass",
+		"iron": "game:block/metal/plate/iron",
+		"oak": "game:block/wood/debarked/oak"
 	},
 	"elements": [
 		{

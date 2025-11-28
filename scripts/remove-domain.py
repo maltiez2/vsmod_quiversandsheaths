@@ -29,9 +29,4 @@ def replace_in_folder(folder_path, pattern, replacement):
 
 
 if __name__ == "__main__":
-    # Example usage:
-    folder = r"../resources/assets/quiversandsheaths/shapes"
-    search_regex = r"game:"   # regex pattern
-    replace_with = r""      # replacement string
-
-    replace_in_folder(folder, search_regex, replace_with)
+    replace_in_folder("../resources/assets/quiversandsheaths/shapes", "game:", "")

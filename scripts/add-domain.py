@@ -3,7 +3,6 @@ import re
 import glob
 
 def replace_in_file(file_path, pattern, replacement):
-    """Replace regex pattern in a single file."""
     try:
         with open(file_path, "r", encoding="utf-8") as f:
             content = f.read()
@@ -20,8 +19,6 @@ def replace_in_file(file_path, pattern, replacement):
 
 
 def replace_in_folder(folder_pattern, pattern, replacement):
-    """Support wildcards in the folder path."""
-    # Expand using glob
     matching_paths = glob.glob(folder_pattern, recursive=True)
 
     if not matching_paths:
@@ -32,7 +29,7 @@ def replace_in_folder(folder_pattern, pattern, replacement):
         if not os.path.isdir(folder_path):
             continue
 
-        print(f"Scanning folder: {folder_path}")
+        #print(f"Scanning folder: {folder_path}")
         for root, _, files in os.walk(folder_path):
             for name in files:
                 file_path = os.path.join(root, name)
@@ -40,5 +37,5 @@ def replace_in_folder(folder_pattern, pattern, replacement):
 
 
 if __name__ == "__main__":
-    replace_in_folder("../resources/assets/*/shapes/**/.json", "block/", "game:block/")
-    replace_in_folder("../resources/assets/*/shapes/**/.json", "item/", "game:item/")
+    replace_in_folder("../resources/assets/*/shapes/**/*", '"block/', '"game:block/')
+    replace_in_folder("../resources/assets/*/shapes/**/*", '"item/', '"game:item/')

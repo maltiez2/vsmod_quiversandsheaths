@@ -10,7 +10,7 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"plain": "block/cloth/linen/plain",
+		"plain": "game:block/cloth/linen/plain",
 		"ropedcloth": "game:block/cloth/ropedcloth",
 		"ember": "game:block/coal/ember",
 		"shoulder-sling-plain-material": "game:block/leather/plain",

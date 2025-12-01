@@ -11,7 +11,13 @@
     {
       "name": "QuiversAndSheaths:Sheath",
       "properties": {
-        "toolSlot": { "slotColor": "#fc9803", "canHoldWildcards": ["*:firearm-*"], "canHoldItemTags": ["firearm"], "slotsIcon": "quiversandsheaths:pistol", "SlotBackpackCategory": "weapon" },
+        "toolSlot": {
+          "slotColor": "#fc9803",
+          "canHoldWildcards": ["*:firearm-*", "*:crossbow-*"],
+          "canHoldItemTags": ["firearm", "crossbow"],
+          "slotsIcon": "quiversandsheaths:pistol",
+          "SlotBackpackCategory": "weapon"
+        },
         "takeOutColor": "#999999",
         "hotkey": { "hotkeyCode": "combatoverhaul-swap-weapon-right-ranged-shoulder", "hotkeyName": "Swap ranged weapon from shoulder (main hand)", "hotkeyKey": "R" },
         "takeOutSlotIcon": "quiversandsheaths:takeout"
@@ -31,12 +37,16 @@
           "metal-*::leather-*::right_metal-*::right_leather-*::right_wood-*": {
             "shoulder-sling-plain-material": { "base": "game:block/leather/{leather}" },
             "shoulder-sling-plain-metal": { "base": "game:block/metal/plate/{metal}" },
-            "metal": { "base": "game:block/metal/plate/{right_metal}" },
-            "leather": { "base": "game:block/leather/{right_leather}" },
-            "wood": { "base": "game:block/wood/debarked/{right_wood}" }
+            "shoulder-sling-plain-weapon-metal": { "base": "game:block/metal/plate/{right_metal}" },
+            "shoulder-sling-plain-weapon-leather": { "base": "game:block/leather/{right_leather}" },
+            "shoulder-sling-plain-weapon-wood": { "base": "game:block/wood/debarked/{right_wood}" }
           },
           "metal-*::leather-*": { "shoulder-sling-plain-material": { "base": "game:block/leather/{leather}" }, "shoulder-sling-plain-metal": { "base": "game:block/metal/plate/{metal}" } },
-          "right_metal-*::right_leather-*::right_wood-*": { "metal": { "base": "game:block/metal/plate/{right_metal}" }, "leather": { "base": "game:block/leather/{right_leather}" }, "wood": { "base": "game:block/wood/debarked/{right_wood}" } }
+          "right_metal-*::right_leather-*::right_wood-*": {
+            "shoulder-sling-plain-weapon-metal": { "base": "game:block/metal/plate/{right_metal}" },
+            "shoulder-sling-plain-weapon-leather": { "base": "game:block/leather/{right_leather}" },
+            "shoulder-sling-plain-weapon-wood": { "base": "game:block/wood/debarked/{right_wood}" }
+          }
         }
       }
     },

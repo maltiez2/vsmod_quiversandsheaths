@@ -1,0 +1,34 @@
+﻿[
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "maltiezcrossbows" }],
+    "file": "maltiezcrossbows:itemtypes/crossbow",
+    "op": "add",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": { "*-steel": "steel", "*-iron": "iron", "*-meteoriciron": "meteoriciron", "*-tinbronze": "tinbronze", "*-bismuthbronze": "bismuthbronze", "*-blackbronze": "blackbronze", "*": "copper" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "maltiezcrossbows" }],
+    "file": "maltiezcrossbows:itemtypes/crossbow",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": { "*-simple-*": "simple", "*-stirrup-*": "stirrup", "*-latch-*": "latch", "*-goatsfoot-*": "goatsfoot", "*-windlass-*": "windlass", "*-repeating-*": "repeating", "*": "simple" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "maltiezcrossbows" }],
+    "file": "maltiezcrossbows:itemtypes/crossbow-repeating",
+    "op": "add",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": { "*-steel": "steel", "*-iron": "iron", "*-meteoriciron": "meteoriciron", "*-tinbronze": "tinbronze", "*-bismuthbronze": "bismuthbronze", "*-blackbronze": "blackbronze", "*": "copper" }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "maltiezcrossbows" }],
+    "file": "maltiezcrossbows:itemtypes/crossbow-repeating",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": { "*-simple-*": "simple", "*-stirrup-*": "stirrup", "*-latch-*": "latch", "*-goatsfoot-*": "goatsfoot", "*-windlass-*": "windlass", "*-repeating-*": "repeating", "*": "simple" }
+  }
+]

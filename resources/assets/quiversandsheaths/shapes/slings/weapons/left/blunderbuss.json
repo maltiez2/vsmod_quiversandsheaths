@@ -10,14 +10,14 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"plain": "game:block/cloth/linen/plain",
-		"ember": "game:block/coal/ember",
+		"shoulder-sling-plain-plain": "game:block/cloth/linen/plain",
+		"shoulder-sling-plain-ember": "game:block/coal/ember",
 		"shoulder-sling-plain-material": "game:block/leather/plain",
-		"brass": "game:block/metal/plate/brass",
+		"shoulder-sling-plain-brass": "game:block/metal/plate/brass",
 		"shoulder-sling-plain-metal": "game:block/metal/plate/brass",
-		"metal": "game:block/metal/plate/iron",
-		"lead": "game:block/metal/plate/lead",
-		"wood": "game:block/wood/debarked/oak"
+		"shoulder-sling-plain-weapon-metal": "game:block/metal/plate/iron",
+		"shoulder-sling-plain-lead": "game:block/metal/plate/lead",
+		"shoulder-sling-plain-weapon-wood": "game:block/wood/debarked/oak"
 	},
 	"elements": [
 		{
@@ -74,12 +74,12 @@
 											"rotationOrigin": [ 0.0, -0.08, 18.88 ],
 											"rotationX": 1.5,
 											"faces": {
-												"north": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"east": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"south": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"west": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"up": { "texture": "#wood", "uv": [ 3.5, 1.0, 4.0, 1.5 ], "autoUv": false },
-												"down": { "texture": "#wood", "uv": [ 10.5, 1.0, 11.0, 1.5 ], "autoUv": false }
+												"north": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"south": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 3.5, 1.0, 4.0, 1.5 ], "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 10.5, 1.0, 11.0, 1.5 ], "autoUv": false }
 											},
 											"children": [
 												{
@@ -88,12 +88,12 @@
 													"to": [ 0.16, 0.32, 10.88 ],
 													"rotationOrigin": [ 0.08, -0.24, 10.88 ],
 													"faces": {
-														"north": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"east": { "texture": "#wood", "uv": [ 0.0, 0.0, 13.5, 0.5 ], "autoUv": false },
-														"south": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"west": { "texture": "#wood", "uv": [ 0.0, 6.5, 11.0, 7.0 ], "autoUv": false },
-														"up": { "texture": "#wood", "uv": [ 3.5, 1.0, 4.0, 14.5 ], "autoUv": false },
-														"down": { "texture": "#wood", "uv": [ 0.0, 6.5, 11.0, 7.0 ], "rotation": 90, "autoUv": false }
+														"north": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 13.5, 0.5 ], "autoUv": false },
+														"south": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 6.5, 11.0, 7.0 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 3.5, 1.0, 4.0, 14.5 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 6.5, 11.0, 7.0 ], "rotation": 90, "autoUv": false }
 													}
 												},
 												{
@@ -102,12 +102,12 @@
 													"to": [ 0.72, 0.32, 10.88 ],
 													"rotationOrigin": [ 0.64, -0.24, 10.88 ],
 													"faces": {
-														"north": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"east": { "texture": "#wood", "uv": [ 2.5, 8.0, 13.5, 8.5 ], "autoUv": false },
-														"south": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"west": { "texture": "#wood", "uv": [ 0.0, 0.0, 13.5, 0.5 ], "autoUv": false },
-														"up": { "texture": "#wood", "uv": [ 3.5, 1.0, 4.0, 14.5 ], "autoUv": false },
-														"down": { "texture": "#wood", "uv": [ 2.5, 8.0, 13.5, 8.5 ], "rotation": 90, "autoUv": false }
+														"north": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 2.5, 8.0, 13.5, 8.5 ], "autoUv": false },
+														"south": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 13.5, 0.5 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 3.5, 1.0, 4.0, 14.5 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 2.5, 8.0, 13.5, 8.5 ], "rotation": 90, "autoUv": false }
 													}
 												},
 												{
@@ -116,12 +116,12 @@
 													"to": [ 0.48, 0.0, 10.88 ],
 													"rotationOrigin": [ 0.32, -0.24, 10.88 ],
 													"faces": {
-														"north": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"east": { "texture": "#wood", "uv": [ 0.0, 0.0, 6.0, 0.5 ], "autoUv": false },
-														"south": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"west": { "texture": "#wood", "uv": [ 0.0, 0.0, 6.0, 0.5 ], "autoUv": false },
-														"up": { "texture": "#wood", "uv": [ 3.5, 1.0, 4.0, 7.0 ], "autoUv": false },
-														"down": { "texture": "#wood", "uv": [ 6.0, 4.6, 6.5, 9.5 ], "autoUv": false }
+														"north": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 6.0, 0.5 ], "autoUv": false },
+														"south": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 6.0, 0.5 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 3.5, 1.0, 4.0, 7.0 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 6.0, 4.6, 6.5, 9.5 ], "autoUv": false }
 													}
 												}
 											]
@@ -133,12 +133,12 @@
 											"rotationOrigin": [ 0.4, 0.72, 24.0 ],
 											"rotationZ": 90.0,
 											"faces": {
-												"north": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"east": { "texture": "#wood", "uv": [ 0.0, 0.0, 16.0, 0.5 ], "autoUv": false },
-												"south": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"west": { "texture": "#wood", "uv": [ 0.0, 5.5, 11.0, 6.0 ], "autoUv": false },
-												"up": { "texture": "#wood", "uv": [ 5.0, 5.0, 16.0, 5.5 ], "rotation": 90, "autoUv": false },
-												"down": { "texture": "#wood", "uv": [ 5.0, 5.0, 16.0, 5.5 ], "rotation": 90, "autoUv": false }
+												"north": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 16.0, 0.5 ], "autoUv": false },
+												"south": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 5.5, 11.0, 6.0 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 5.0, 5.0, 16.0, 5.5 ], "rotation": 90, "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 5.0, 5.0, 16.0, 5.5 ], "rotation": 90, "autoUv": false }
 											}
 										},
 										{
@@ -148,12 +148,12 @@
 											"rotationOrigin": [ -0.4, 0.72, 24.0 ],
 											"rotationZ": 90.0,
 											"faces": {
-												"north": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"east": { "texture": "#wood", "uv": [ 0.0, 0.0, 16.0, 0.5 ], "autoUv": false },
-												"south": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"west": { "texture": "#wood", "uv": [ 0.0, 5.5, 11.0, 6.0 ], "autoUv": false },
-												"up": { "texture": "#wood", "uv": [ 5.0, 5.0, 16.0, 5.5 ], "rotation": 90, "autoUv": false },
-												"down": { "texture": "#wood", "uv": [ 5.0, 5.0, 16.0, 5.5 ], "rotation": 90, "autoUv": false }
+												"north": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 16.0, 0.5 ], "autoUv": false },
+												"south": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 5.5, 11.0, 6.0 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 5.0, 5.0, 16.0, 5.5 ], "rotation": 90, "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 5.0, 5.0, 16.0, 5.5 ], "rotation": 90, "autoUv": false }
 											}
 										}
 									]
@@ -177,12 +177,12 @@
 											"to": [ 0.48, 0.0, 1.28 ],
 											"rotationOrigin": [ -0.24, -1.04, -2.32 ],
 											"faces": {
-												"north": { "texture": "#wood", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
-												"east": { "texture": "#wood", "uv": [ 0.5, 5.0, 5.0, 6.0 ], "autoUv": false },
-												"south": { "texture": "#wood", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
-												"west": { "texture": "#wood", "uv": [ 5.0, 7.5, 9.5, 8.5 ], "autoUv": false },
-												"up": { "texture": "#wood", "uv": [ 0.0, 0.0, 1.0, 4.5 ], "autoUv": false },
-												"down": { "texture": "#wood", "uv": [ 0.5, 4.5, 1.5, 10.5 ], "autoUv": false }
+												"north": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.5, 5.0, 5.0, 6.0 ], "autoUv": false },
+												"south": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 5.0, 7.5, 9.5, 8.5 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 1.0, 4.5 ], "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.5, 4.5, 1.5, 10.5 ], "autoUv": false }
 											}
 										},
 										{
@@ -191,12 +191,12 @@
 											"to": [ 0.48, -0.24, 2.24 ],
 											"rotationOrigin": [ -0.24, -1.04, 1.28 ],
 											"faces": {
-												"north": { "texture": "#wood", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
-												"east": { "texture": "#wood", "uv": [ 0.5, 5.2, 1.5, 6.0 ], "autoUv": false },
-												"south": { "texture": "#wood", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
-												"west": { "texture": "#wood", "uv": [ 5.0, 7.5, 6.0, 8.5 ], "autoUv": false },
-												"up": { "texture": "#wood", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
-												"down": { "texture": "#wood", "uv": [ 0.5, 4.5, 1.5, 5.5 ], "autoUv": false }
+												"north": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.5, 5.2, 1.5, 6.0 ], "autoUv": false },
+												"south": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 5.0, 7.5, 6.0, 8.5 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.5, 4.5, 1.5, 5.5 ], "autoUv": false }
 											}
 										}
 									]
@@ -222,12 +222,12 @@
 											"to": [ 0.632, -0.4, 8.72 ],
 											"rotationOrigin": [ 0.0, -0.4, 1.36 ],
 											"faces": {
-												"north": { "texture": "#wood", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
-												"east": { "texture": "#wood", "uv": [ 6.0, 6.0, 15.0, 7.0 ], "autoUv": false },
-												"south": { "texture": "#wood", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
-												"west": { "texture": "#wood", "uv": [ 4.0, 6.0, 13.0, 7.0 ], "autoUv": false },
-												"up": { "texture": "#wood", "uv": [ 7.0, 6.0, 16.0, 7.0 ], "rotation": 90, "autoUv": false },
-												"down": { "texture": "#wood", "uv": [ 5.5, 5.0, 6.5, 11.0 ], "autoUv": false }
+												"north": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 6.0, 6.0, 15.0, 7.0 ], "autoUv": false },
+												"south": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 4.0, 6.0, 13.0, 7.0 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 7.0, 6.0, 16.0, 7.0 ], "rotation": 90, "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 5.5, 5.0, 6.5, 11.0 ], "autoUv": false }
 											},
 											"children": [
 												{
@@ -237,12 +237,12 @@
 													"rotationOrigin": [ 0.32, 0.0, 4.32 ],
 													"rotationX": 13.0,
 													"faces": {
-														"north": { "texture": "#wood", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
-														"east": { "texture": "#wood", "uv": [ 5.0, 8.0, 7.5, 8.5 ], "autoUv": false },
-														"south": { "texture": "#wood", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
-														"west": { "texture": "#wood", "uv": [ 8.0, 8.0, 11.5, 9.0 ], "autoUv": false },
-														"up": { "texture": "#wood", "uv": [ 0.0, 0.0, 1.0, 3.5 ], "autoUv": false },
-														"down": { "texture": "#wood", "uv": [ 5.0, 5.5, 6.5, 9.0 ], "autoUv": false }
+														"north": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 5.0, 8.0, 7.5, 8.5 ], "autoUv": false },
+														"south": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 8.0, 8.0, 11.5, 9.0 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 1.0, 3.5 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 5.0, 5.5, 6.5, 9.0 ], "autoUv": false }
 													}
 												},
 												{
@@ -251,12 +251,12 @@
 													"to": [ 1.112, 0.88, 7.68 ],
 													"rotationOrigin": [ 0.248, -0.72, 7.28 ],
 													"faces": {
-														"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 2.0 ], "autoUv": false },
-														"east": { "texture": "#metal", "uv": [ 7.5, 10.0, 8.0, 12.0 ], "autoUv": false },
-														"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 2.0 ], "autoUv": false },
-														"west": { "texture": "#metal", "uv": [ 8.0, 10.0, 8.5, 12.0 ], "autoUv": false },
-														"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
-														"down": { "texture": "#metal", "uv": [ 7.5, 4.5, 8.5, 5.0 ], "autoUv": false }
+														"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 2.0 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 7.5, 10.0, 8.0, 12.0 ], "autoUv": false },
+														"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 2.0 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 8.0, 10.0, 8.5, 12.0 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 7.5, 4.5, 8.5, 5.0 ], "autoUv": false }
 													},
 													"children": [
 														{
@@ -266,12 +266,12 @@
 															"rotationOrigin": [ 0.416, 1.6, 0.4 ],
 															"rotationX": -13.0,
 															"faces": {
-																"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.5 ], "autoUv": false },
-																"east": { "texture": "#metal", "uv": [ 7.5, 10.0, 8.0, 11.5 ], "autoUv": false },
-																"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.5 ], "autoUv": false },
-																"west": { "texture": "#metal", "uv": [ 8.0, 10.0, 8.5, 11.5 ], "autoUv": false },
-																"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
-																"down": { "texture": "#metal", "uv": [ 7.5, 4.5, 8.5, 5.0 ], "autoUv": false }
+																"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 1.5 ], "autoUv": false },
+																"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 7.5, 10.0, 8.0, 11.5 ], "autoUv": false },
+																"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 1.5 ], "autoUv": false },
+																"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 8.0, 10.0, 8.5, 11.5 ], "autoUv": false },
+																"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+																"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 7.5, 4.5, 8.5, 5.0 ], "autoUv": false }
 															}
 														}
 													]
@@ -283,12 +283,12 @@
 													"rotationOrigin": [ 0.488, 0.72, 4.56 ],
 													"rotationX": -13.0,
 													"faces": {
-														"north": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1] },
-														"east": { "texture": "#wood", "uv": [ 9.5, 5.5, 13.0, 6.5 ], "autoUv": false },
-														"south": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
-														"west": { "texture": "#wood", "uv": [ 5.0, 6.5, 8.5, 7.5 ], "autoUv": false },
-														"up": { "texture": "#wood", "uv": [ 6.0, 6.0, 12.0, 6.5 ], "rotation": 90, "autoUv": false },
-														"down": { "texture": "#wood", "uv": [ 7.5, 4.5, 8.5, 11.0 ], "autoUv": false }
+														"north": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1] },
+														"east": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 9.5, 5.5, 13.0, 6.5 ], "autoUv": false },
+														"south": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 5.0, 6.5, 8.5, 7.5 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 6.0, 6.0, 12.0, 6.5 ], "rotation": 90, "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 7.5, 4.5, 8.5, 11.0 ], "autoUv": false }
 													},
 													"children": [
 														{
@@ -297,12 +297,12 @@
 															"to": [ 0.72, 1.44, 2.8 ],
 															"rotationOrigin": [ 0.288, 1.6, -0.4 ],
 															"faces": {
-																"north": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-																"east": { "texture": "#wood", "uv": [ 6.0, 6.0, 10.0, 7.0 ], "autoUv": false },
-																"south": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-																"west": { "texture": "#wood", "uv": [ 5.0, 6.0, 9.0, 7.0 ], "autoUv": false },
-																"up": { "texture": "#wood", "uv": [ 6.0, 6.0, 12.0, 6.5 ], "rotation": 90, "autoUv": false },
-																"down": { "texture": "#wood", "uv": [ 7.5, 4.5, 8.5, 11.0 ], "autoUv": false }
+																"north": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+																"east": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 6.0, 6.0, 10.0, 7.0 ], "autoUv": false },
+																"south": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+																"west": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 5.0, 6.0, 9.0, 7.0 ], "autoUv": false },
+																"up": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 6.0, 6.0, 12.0, 6.5 ], "rotation": 90, "autoUv": false },
+																"down": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 7.5, 4.5, 8.5, 11.0 ], "autoUv": false }
 															}
 														},
 														{
@@ -311,12 +311,12 @@
 															"to": [ 0.72, 1.76, 2.8 ],
 															"rotationOrigin": [ 0.288, 1.84, -0.4 ],
 															"faces": {
-																"north": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-																"east": { "texture": "#wood", "uv": [ 6.5, 6.0, 10.5, 6.5 ], "autoUv": false },
-																"south": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-																"west": { "texture": "#wood", "uv": [ 6.5, 6.5, 10.5, 7.0 ], "autoUv": false },
-																"up": { "texture": "#wood", "uv": [ 9.5, 5.5, 13.5, 6.5 ], "rotation": 90, "autoUv": false },
-																"down": { "texture": "#wood", "uv": [ 7.5, 4.5, 8.5, 11.0 ], "autoUv": false }
+																"north": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+																"east": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 6.5, 6.0, 10.5, 6.5 ], "autoUv": false },
+																"south": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+																"west": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 6.5, 6.5, 10.5, 7.0 ], "autoUv": false },
+																"up": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 9.5, 5.5, 13.5, 6.5 ], "rotation": 90, "autoUv": false },
+																"down": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 7.5, 4.5, 8.5, 11.0 ], "autoUv": false }
 															}
 														}
 													]
@@ -328,12 +328,12 @@
 													"rotationOrigin": [ 0.16, 0.8, 0.0 ],
 													"rotationX": -3.0,
 													"faces": {
-														"north": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
-														"east": { "texture": "#wood", "uv": [ 7.5, 6.0, 12.5, 7.0 ], "autoUv": false },
-														"south": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
-														"west": { "texture": "#wood", "uv": [ 0.0, 0.0, 5.0, 1.0 ], "autoUv": false },
-														"up": { "texture": "#wood", "uv": [ 5.5, 4.5, 6.5, 9.1 ], "autoUv": false },
-														"down": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 5.0 ], "autoUv": false }
+														"north": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 7.5, 6.0, 12.5, 7.0 ], "autoUv": false },
+														"south": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 5.0, 1.0 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 5.5, 4.5, 6.5, 9.1 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 5.0 ], "autoUv": false }
 													}
 												}
 											]
@@ -364,12 +364,12 @@
 									"rotationOrigin": [ -0.16, -0.64, 0.0 ],
 									"rotationX": -8.0,
 									"faces": {
-										"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
-										"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
-										"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
-										"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
-										"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+										"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
+										"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
+										"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
+										"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
+										"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 									},
 									"children": [
 										{
@@ -379,12 +379,12 @@
 											"rotationOrigin": [ 0.0, 0.0, 0.0 ],
 											"rotationX": 112.5,
 											"faces": {
-												"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 3.0 ], "autoUv": false },
-												"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 3.0 ], "autoUv": false },
-												"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 3.0 ], "autoUv": false },
-												"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 3.0 ], "autoUv": false },
-												"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+												"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 3.0 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 3.0 ], "autoUv": false },
+												"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 3.0 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 3.0 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 											},
 											"children": [
 												{
@@ -394,12 +394,12 @@
 													"rotationOrigin": [ 0.0, 2.64, 0.0 ],
 													"rotationX": 17.0,
 													"faces": {
-														"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 3.0 ], "autoUv": false },
-														"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 3.0 ], "autoUv": false },
-														"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 3.0 ], "autoUv": false },
-														"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 3.0 ], "autoUv": false },
-														"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+														"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 3.0 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 3.0 ], "autoUv": false },
+														"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 3.0 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 3.0 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 													}
 												}
 											]
@@ -428,12 +428,12 @@
 									"to": [ 0.56, 0.164, -0.96 ],
 									"rotationOrigin": [ -0.24, -0.32, -1.76 ],
 									"faces": {
-										"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
-										"east": { "texture": "#metal", "uv": [ 4.5, 2.5, 5.5, 3.0 ], "autoUv": false },
-										"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
-										"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
-										"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
-										"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false }
+										"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+										"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 4.5, 2.5, 5.5, 3.0 ], "autoUv": false },
+										"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+										"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+										"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false },
+										"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "autoUv": false }
 									},
 									"children": [
 										{
@@ -443,12 +443,12 @@
 											"rotationOrigin": [ 0.64, 0.4, 0.16 ],
 											"rotationY": 135.0,
 											"faces": {
-												"north": { "texture": "#metal", "uv": [ 9.0, 8.0, 9.5, 8.5 ], "autoUv": false },
-												"east": { "texture": "#metal", "uv": [ 9.0, 7.5, 10.0, 8.0 ], "autoUv": false },
-												"south": { "texture": "#metal", "uv": [ 9.5, 7.5, 10.0, 8.0 ], "autoUv": false },
-												"west": { "texture": "#metal", "uv": [ 9.0, 8.5, 10.0, 9.0 ], "autoUv": false },
-												"up": { "texture": "#metal", "uv": [ 9.5, 7.5, 10.0, 8.5 ], "autoUv": false },
-												"down": { "texture": "#metal", "uv": [ 9.5, 7.5, 10.0, 8.5 ], "autoUv": false }
+												"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 9.0, 8.0, 9.5, 8.5 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 9.0, 7.5, 10.0, 8.0 ], "autoUv": false },
+												"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 9.5, 7.5, 10.0, 8.0 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 9.0, 8.5, 10.0, 9.0 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 9.5, 7.5, 10.0, 8.5 ], "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 9.5, 7.5, 10.0, 8.5 ], "autoUv": false }
 											}
 										},
 										{
@@ -457,12 +457,12 @@
 											"to": [ 0.72, 0.72, 0.24 ],
 											"rotationOrigin": [ 0.56, -0.08, 0.08 ],
 											"faces": {
-												"north": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
-												"east": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
-												"south": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
-												"west": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
-												"up": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"down": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+												"north": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
+												"south": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 											}
 										}
 									]
@@ -473,12 +473,12 @@
 									"to": [ 0.008, -0.16, 1.12 ],
 									"rotationOrigin": [ 0.0, -0.88, -2.56 ],
 									"faces": {
-										"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"east": { "texture": "#metal", "uv": [ 7.5, 10.0, 12.5, 11.0 ], "autoUv": false },
-										"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 4.5, 0.5 ], "autoUv": false },
-										"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 4.5 ], "autoUv": false },
-										"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 4.5 ], "autoUv": false }
+										"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 7.5, 10.0, 12.5, 11.0 ], "autoUv": false },
+										"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 4.5, 0.5 ], "autoUv": false },
+										"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 4.5 ], "autoUv": false },
+										"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 4.5 ], "autoUv": false }
 									}
 								},
 								{
@@ -488,12 +488,12 @@
 									"rotationOrigin": [ 0.0, -0.56, -0.72 ],
 									"rotationX": -29.0,
 									"faces": {
-										"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+										"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 									},
 									"children": [
 										{
@@ -503,12 +503,12 @@
 											"rotationOrigin": [ 0.0, 0.24, 1.6 ],
 											"rotationX": 30.0,
 											"faces": {
-												"north": { "texture": "#metal", "uv": [ 9.5, 2.0, 10.0, 2.5 ], "autoUv": false },
-												"east": { "texture": "#metal", "uv": [ 12.0, 2.0, 12.5, 2.5 ], "autoUv": false },
-												"south": { "texture": "#metal", "uv": [ 9.5, 2.0, 10.0, 2.5 ], "autoUv": false },
-												"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+												"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 9.5, 2.0, 10.0, 2.5 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 12.0, 2.0, 12.5, 2.5 ], "autoUv": false },
+												"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 9.5, 2.0, 10.0, 2.5 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 											},
 											"children": [
 												{
@@ -518,12 +518,12 @@
 													"rotationOrigin": [ 0.0, 0.64, 0.24 ],
 													"rotationX": -60.0,
 													"faces": {
-														"north": { "texture": "#metal", "uv": [ 9.5, 2.0, 10.0, 2.5 ], "autoUv": false },
-														"east": { "texture": "#metal", "uv": [ 12.0, 2.0, 12.5, 2.5 ], "autoUv": false },
-														"south": { "texture": "#metal", "uv": [ 9.5, 2.0, 10.0, 2.5 ], "autoUv": false },
-														"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+														"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 9.5, 2.0, 10.0, 2.5 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 12.0, 2.0, 12.5, 2.5 ], "autoUv": false },
+														"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 9.5, 2.0, 10.0, 2.5 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 													},
 													"children": [
 														{
@@ -533,12 +533,12 @@
 															"rotationOrigin": [ 0.0, 0.64, 0.24 ],
 															"rotationX": 30.0,
 															"faces": {
-																"north": { "texture": "#metal", "uv": [ 9.5, 2.0, 10.0, 2.5 ], "autoUv": false },
-																"east": { "texture": "#metal", "uv": [ 12.0, 2.0, 13.0, 2.5 ], "autoUv": false },
-																"south": { "texture": "#metal", "uv": [ 9.5, 2.0, 10.0, 2.5 ], "autoUv": false },
-																"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
-																"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
-																"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false }
+																"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 9.5, 2.0, 10.0, 2.5 ], "autoUv": false },
+																"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 12.0, 2.0, 13.0, 2.5 ], "autoUv": false },
+																"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 9.5, 2.0, 10.0, 2.5 ], "autoUv": false },
+																"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+																"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
+																"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false }
 															},
 															"children": [
 																{
@@ -547,12 +547,12 @@
 																	"to": [ 0.4, 0.48, 0.0 ],
 																	"rotationOrigin": [ 0.24, 0.0, -0.48 ],
 																	"faces": {
-																		"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-																		"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-																		"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-																		"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-																		"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-																		"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+																		"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+																		"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+																		"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+																		"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+																		"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+																		"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 																	}
 																},
 																{
@@ -561,12 +561,12 @@
 																	"to": [ 0.16, 0.48, 0.0 ],
 																	"rotationOrigin": [ 0.0, 0.0, -0.48 ],
 																	"faces": {
-																		"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-																		"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-																		"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-																		"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-																		"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-																		"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+																		"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+																		"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+																		"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+																		"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+																		"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+																		"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 																	}
 																}
 															]
@@ -581,12 +581,12 @@
 											"to": [ 0.4, 0.48, 1.6 ],
 											"rotationOrigin": [ 0.0, 0.48, 0.72 ],
 											"faces": {
-												"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"east": { "texture": "#metal", "uv": [ 12.5, 5.0, 13.5, 5.5 ], "autoUv": false },
-												"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
-												"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
-												"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false }
+												"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 12.5, 5.0, 13.5, 5.5 ], "autoUv": false },
+												"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false }
 											}
 										},
 										{
@@ -595,12 +595,12 @@
 											"to": [ 0.0, 0.0, 48.0 ],
 											"rotationOrigin": [ 0.0, 0.0, 48.0 ],
 											"faces": {
-												"north": { "texture": "#ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"east": { "texture": "#ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"south": { "texture": "#ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"west": { "texture": "#ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"up": { "texture": "#ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"down": { "texture": "#ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+												"north": { "texture": "#shoulder-sling-plain-ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"south": { "texture": "#shoulder-sling-plain-ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 											}
 										}
 									]
@@ -611,12 +611,12 @@
 									"to": [ -0.16, -1.0, 0.4 ],
 									"rotationOrigin": [ -0.56, -1.12, -1.28 ],
 									"faces": {
-										"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
-										"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 6.0, 1.5 ], "autoUv": false },
-										"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
-										"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 6.0, 1.5 ], "autoUv": false },
-										"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 2.0 ], "autoUv": false },
-										"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 2.0 ], "autoUv": false }
+										"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+										"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 6.0, 1.5 ], "autoUv": false },
+										"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+										"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 6.0, 1.5 ], "autoUv": false },
+										"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 2.0 ], "autoUv": false },
+										"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 2.0 ], "autoUv": false }
 									}
 								},
 								{
@@ -625,12 +625,12 @@
 									"to": [ 0.08, -0.44, -2.04 ],
 									"rotationOrigin": [ -1.2, -0.56, -2.16 ],
 									"faces": {
-										"north": { "texture": "#brass", "uv": [ 0.0, 0.0, 1.5, 0.5 ], "autoUv": false },
-										"east": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"south": { "texture": "#brass", "uv": [ 0.0, 0.0, 1.5, 0.5 ], "autoUv": false },
-										"west": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"up": { "texture": "#brass", "uv": [ 0.0, 0.0, 1.5, 0.5 ], "autoUv": false },
-										"down": { "texture": "#brass", "uv": [ 0.0, 0.0, 1.5, 0.5 ], "autoUv": false }
+										"north": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 1.5, 0.5 ], "autoUv": false },
+										"east": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"south": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 1.5, 0.5 ], "autoUv": false },
+										"west": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"up": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 1.5, 0.5 ], "autoUv": false },
+										"down": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 1.5, 0.5 ], "autoUv": false }
 									}
 								},
 								{
@@ -639,12 +639,12 @@
 									"to": [ 0.08, -0.44, 0.84 ],
 									"rotationOrigin": [ -1.2, -0.56, 0.72 ],
 									"faces": {
-										"north": { "texture": "#brass", "uv": [ 0.0, 0.0, 1.5, 0.5 ], "autoUv": false },
-										"east": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"south": { "texture": "#brass", "uv": [ 0.0, 0.0, 1.5, 0.5 ], "autoUv": false },
-										"west": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"up": { "texture": "#brass", "uv": [ 0.0, 0.0, 1.5, 0.5 ], "autoUv": false },
-										"down": { "texture": "#brass", "uv": [ 0.0, 0.0, 1.5, 0.5 ], "autoUv": false }
+										"north": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 1.5, 0.5 ], "autoUv": false },
+										"east": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"south": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 1.5, 0.5 ], "autoUv": false },
+										"west": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"up": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 1.5, 0.5 ], "autoUv": false },
+										"down": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 1.5, 0.5 ], "autoUv": false }
 									}
 								},
 								{
@@ -653,12 +653,12 @@
 									"to": [ 0.48, -0.44, -0.6 ],
 									"rotationOrigin": [ -1.2, -0.56, -0.72 ],
 									"faces": {
-										"north": { "texture": "#brass", "uv": [ 0.0, 0.0, 2.0, 0.5 ], "autoUv": false },
-										"east": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"south": { "texture": "#brass", "uv": [ 0.0, 0.0, 2.0, 0.5 ], "autoUv": false },
-										"west": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"up": { "texture": "#brass", "uv": [ 0.0, 0.0, 2.0, 0.5 ], "autoUv": false },
-										"down": { "texture": "#brass", "uv": [ 0.0, 0.0, 2.0, 0.5 ], "autoUv": false }
+										"north": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 2.0, 0.5 ], "autoUv": false },
+										"east": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"south": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 2.0, 0.5 ], "autoUv": false },
+										"west": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"up": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 2.0, 0.5 ], "autoUv": false },
+										"down": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 2.0, 0.5 ], "autoUv": false }
 									}
 								},
 								{
@@ -667,12 +667,12 @@
 									"to": [ -1.12, -0.32, 1.12 ],
 									"rotationOrigin": [ -1.12, -0.8, -2.48 ],
 									"faces": {
-										"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"east": { "texture": "#metal", "uv": [ 7.5, 10.0, 11.5, 11.0 ], "autoUv": false },
-										"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 4.5, 0.5 ], "autoUv": false },
-										"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 4.5 ], "autoUv": false },
-										"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 4.5 ], "autoUv": false }
+										"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 7.5, 10.0, 11.5, 11.0 ], "autoUv": false },
+										"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 4.5, 0.5 ], "autoUv": false },
+										"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 4.5 ], "autoUv": false },
+										"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 4.5 ], "autoUv": false }
 									}
 								}
 							]
@@ -684,12 +684,12 @@
 							"rotationOrigin": [ -0.2, 0.72, -7.32 ],
 							"rotationX": -0.5,
 							"faces": {
-								"north": { "texture": "#ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-								"east": { "texture": "#ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-								"south": { "texture": "#ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-								"west": { "texture": "#ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-								"up": { "texture": "#ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-								"down": { "texture": "#ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+								"north": { "texture": "#shoulder-sling-plain-ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"east": { "texture": "#shoulder-sling-plain-ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"south": { "texture": "#shoulder-sling-plain-ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"west": { "texture": "#shoulder-sling-plain-ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"up": { "texture": "#shoulder-sling-plain-ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"down": { "texture": "#shoulder-sling-plain-ember", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 							},
 							"children": [
 								{
@@ -698,12 +698,12 @@
 									"to": [ 0.24, 0.24, 8.4 ],
 									"rotationOrigin": [ 0.04, 0.24, 2.44 ],
 									"faces": {
-										"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 16.0, 0.5 ], "autoUv": false },
-										"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 16.0, 0.5 ], "autoUv": false },
-										"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 16.0 ], "autoUv": false },
-										"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 16.0 ], "autoUv": false }
+										"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 16.0, 0.5 ], "autoUv": false },
+										"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 16.0, 0.5 ], "autoUv": false },
+										"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 16.0 ], "autoUv": false },
+										"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 16.0 ], "autoUv": false }
 									},
 									"children": [
 										{
@@ -712,12 +712,12 @@
 											"to": [ 0.28, 0.28, 0.08 ],
 											"rotationOrigin": [ 0.0, 0.08, -0.24 ],
 											"faces": {
-												"north": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"east": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"south": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"west": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"up": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"down": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+												"north": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"south": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 											}
 										}
 									]
@@ -730,12 +730,12 @@
 							"to": [ -0.4, 1.04, -11.52 ],
 							"rotationOrigin": [ -0.4, 1.04, -11.52 ],
 							"faces": {
-								"north": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-								"east": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-								"south": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-								"west": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-								"up": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-								"down": { "texture": "#brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+								"north": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"east": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"south": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"west": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"up": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"down": { "texture": "#shoulder-sling-plain-brass", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 							},
 							"children": [
 								{
@@ -744,11 +744,11 @@
 									"to": [ 0.64, 0.16, 12.0 ],
 									"rotationOrigin": [ 0.32, 0.48, 0.0 ],
 									"faces": {
-										"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"east": { "texture": "#metal", "uv": [ 0.0, 1.5, 16.0, 2.0 ], "autoUv": false },
-										"west": { "texture": "#metal", "uv": [ 0.0, 1.5, 16.0, 2.0 ], "autoUv": false },
-										"up": { "texture": "#metal", "uv": [ 10.0, 0.0, 10.5, 16.0 ], "autoUv": false },
-										"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 16.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1] }
+										"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 1.5, 16.0, 2.0 ], "autoUv": false },
+										"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 1.5, 16.0, 2.0 ], "autoUv": false },
+										"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 10.0, 0.0, 10.5, 16.0 ], "autoUv": false },
+										"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 16.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1] }
 									},
 									"children": [
 										{
@@ -758,11 +758,11 @@
 											"rotationOrigin": [ 0.0, 0.16, 0.0 ],
 											"rotationX": -14.0,
 											"faces": {
-												"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
-												"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
-												"up": { "texture": "#metal", "uv": [ 10.0, 0.0, 10.5, 1.0 ], "autoUv": false },
-												"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false }
+												"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 10.0, 0.0, 10.5, 1.0 ], "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false }
 											}
 										},
 										{
@@ -774,11 +774,11 @@
 											"rotationY": -11.239,
 											"rotationZ": 43.868,
 											"faces": {
-												"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"up": { "texture": "#metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
-												"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+												"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 											},
 											"children": [
 												{
@@ -787,11 +787,11 @@
 													"to": [ 0.36, 0.16, 0.0 ],
 													"rotationOrigin": [ -0.08, 0.16, 0.64 ],
 													"faces": {
-														"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"up": { "texture": "#metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
-														"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+														"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 													}
 												},
 												{
@@ -800,11 +800,11 @@
 													"to": [ 0.4, 0.16, -0.16 ],
 													"rotationOrigin": [ -0.16, 0.16, 0.48 ],
 													"faces": {
-														"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"up": { "texture": "#metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
-														"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+														"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 													}
 												}
 											]
@@ -818,12 +818,12 @@
 									"rotationOrigin": [ 0.32, 0.48, 0.0 ],
 									"rotationZ": 90.0,
 									"faces": {
-										"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"east": { "texture": "#metal", "uv": [ 0.0, 1.5, 16.0, 2.0 ], "autoUv": false },
-										"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false, "windMode": [-1,-1,-1,-1] },
-										"west": { "texture": "#metal", "uv": [ 0.0, 1.5, 16.0, 2.0 ], "autoUv": false },
-										"up": { "texture": "#metal", "uv": [ 10.0, 0.0, 10.5, 16.0 ], "autoUv": false },
-										"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 16.0 ], "autoUv": false }
+										"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 1.5, 16.0, 2.0 ], "autoUv": false },
+										"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false, "windMode": [-1,-1,-1,-1] },
+										"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 1.5, 16.0, 2.0 ], "autoUv": false },
+										"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 10.0, 0.0, 10.5, 16.0 ], "autoUv": false },
+										"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 16.0 ], "autoUv": false }
 									},
 									"children": [
 										{
@@ -833,11 +833,11 @@
 											"rotationOrigin": [ 0.0, 0.16, 0.0 ],
 											"rotationX": -14.0,
 											"faces": {
-												"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
-												"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
-												"up": { "texture": "#metal", "uv": [ 10.0, 0.0, 10.5, 1.0 ], "autoUv": false },
-												"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false }
+												"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 10.0, 0.0, 10.5, 1.0 ], "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false }
 											}
 										},
 										{
@@ -849,11 +849,11 @@
 											"rotationY": -11.239,
 											"rotationZ": 43.868,
 											"faces": {
-												"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"up": { "texture": "#metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
-												"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+												"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 											},
 											"children": [
 												{
@@ -862,11 +862,11 @@
 													"to": [ 0.36, 0.16, 0.0 ],
 													"rotationOrigin": [ -0.08, 0.16, 0.64 ],
 													"faces": {
-														"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"up": { "texture": "#metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
-														"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+														"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 													}
 												},
 												{
@@ -875,11 +875,11 @@
 													"to": [ 0.4, 0.16, -0.16 ],
 													"rotationOrigin": [ -0.16, 0.16, 0.48 ],
 													"faces": {
-														"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"up": { "texture": "#metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
-														"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+														"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 													}
 												}
 											]
@@ -893,11 +893,11 @@
 									"rotationOrigin": [ 0.32, 0.48, 0.0 ],
 									"rotationZ": 180.0,
 									"faces": {
-										"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"east": { "texture": "#metal", "uv": [ 0.0, 1.5, 16.0, 2.0 ], "autoUv": false },
-										"west": { "texture": "#metal", "uv": [ 0.0, 1.5, 16.0, 2.0 ], "autoUv": false },
-										"up": { "texture": "#metal", "uv": [ 10.0, 0.0, 10.5, 16.0 ], "autoUv": false },
-										"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 16.0 ], "autoUv": false }
+										"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 1.5, 16.0, 2.0 ], "autoUv": false },
+										"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 1.5, 16.0, 2.0 ], "autoUv": false },
+										"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 10.0, 0.0, 10.5, 16.0 ], "autoUv": false },
+										"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 16.0 ], "autoUv": false }
 									},
 									"children": [
 										{
@@ -907,11 +907,11 @@
 											"rotationOrigin": [ 0.0, 0.16, 0.0 ],
 											"rotationX": -14.0,
 											"faces": {
-												"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
-												"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
-												"up": { "texture": "#metal", "uv": [ 10.0, 0.0, 10.5, 1.0 ], "autoUv": false },
-												"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false }
+												"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 10.0, 0.0, 10.5, 1.0 ], "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false }
 											}
 										},
 										{
@@ -923,11 +923,11 @@
 											"rotationY": -11.239,
 											"rotationZ": 43.868,
 											"faces": {
-												"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"up": { "texture": "#metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
-												"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+												"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 											},
 											"children": [
 												{
@@ -936,11 +936,11 @@
 													"to": [ 0.36, 0.16, 0.0 ],
 													"rotationOrigin": [ -0.08, 0.16, 0.64 ],
 													"faces": {
-														"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"up": { "texture": "#metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
-														"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+														"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 													}
 												},
 												{
@@ -949,11 +949,11 @@
 													"to": [ 0.4, 0.16, -0.16 ],
 													"rotationOrigin": [ -0.16, 0.16, 0.48 ],
 													"faces": {
-														"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"up": { "texture": "#metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
-														"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+														"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 													}
 												}
 											]
@@ -967,12 +967,12 @@
 									"rotationOrigin": [ 0.32, 0.48, 0.0 ],
 									"rotationZ": -90.0,
 									"faces": {
-										"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"east": { "texture": "#metal", "uv": [ 0.0, 1.5, 16.0, 2.0 ], "autoUv": false },
-										"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false, "windMode": [-1,-1,-1,-1] },
-										"west": { "texture": "#metal", "uv": [ 0.0, 1.5, 16.0, 2.0 ], "autoUv": false },
-										"up": { "texture": "#metal", "uv": [ 10.0, 0.0, 10.5, 16.0 ], "autoUv": false },
-										"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 16.0 ], "autoUv": false }
+										"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 1.5, 16.0, 2.0 ], "autoUv": false },
+										"south": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false, "windMode": [-1,-1,-1,-1] },
+										"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 1.5, 16.0, 2.0 ], "autoUv": false },
+										"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 10.0, 0.0, 10.5, 16.0 ], "autoUv": false },
+										"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 16.0 ], "autoUv": false }
 									},
 									"children": [
 										{
@@ -982,11 +982,11 @@
 											"rotationOrigin": [ 0.0, 0.16, 0.0 ],
 											"rotationX": -14.0,
 											"faces": {
-												"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
-												"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
-												"up": { "texture": "#metal", "uv": [ 10.0, 0.0, 10.5, 1.0 ], "autoUv": false },
-												"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false }
+												"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 10.0, 0.0, 10.5, 1.0 ], "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 1.0 ], "autoUv": false }
 											}
 										},
 										{
@@ -998,11 +998,11 @@
 											"rotationY": -11.239,
 											"rotationZ": 43.868,
 											"faces": {
-												"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-												"up": { "texture": "#metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
-												"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+												"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+												"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
+												"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 											},
 											"children": [
 												{
@@ -1011,11 +1011,11 @@
 													"to": [ 0.36, 0.16, 0.0 ],
 													"rotationOrigin": [ -0.08, 0.16, 0.64 ],
 													"faces": {
-														"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"up": { "texture": "#metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
-														"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+														"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 													}
 												},
 												{
@@ -1024,11 +1024,11 @@
 													"to": [ 0.4, 0.16, -0.16 ],
 													"rotationOrigin": [ -0.16, 0.16, 0.48 ],
 													"faces": {
-														"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-														"up": { "texture": "#metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
-														"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+														"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+														"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 10.0, 0.0, 10.5, 0.5 ], "autoUv": false },
+														"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 													}
 												}
 											]
@@ -1042,11 +1042,11 @@
 									"rotationOrigin": [ 0.32, 0.32, 0.24 ],
 									"rotationZ": 180.0,
 									"faces": {
-										"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"east": { "texture": "#metal", "uv": [ 0.0, 1.5, 16.0, 2.0 ], "autoUv": false },
-										"west": { "texture": "#metal", "uv": [ 0.0, 1.5, 16.0, 2.0 ], "autoUv": false },
-										"up": { "texture": "#metal", "uv": [ 10.0, 0.0, 10.5, 16.0 ], "autoUv": false },
-										"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 16.0 ], "autoUv": false }
+										"north": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"east": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 1.5, 16.0, 2.0 ], "autoUv": false },
+										"west": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 1.5, 16.0, 2.0 ], "autoUv": false },
+										"up": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 10.0, 0.0, 10.5, 16.0 ], "autoUv": false },
+										"down": { "texture": "#shoulder-sling-plain-weapon-metal", "uv": [ 0.0, 0.0, 0.5, 16.0 ], "autoUv": false }
 									}
 								}
 							]
@@ -1078,12 +1078,12 @@
 							"to": [ -0.08, 1.52, -10.4 ],
 							"rotationOrigin": [ -0.08, 1.52, -10.4 ],
 							"faces": {
-								"north": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-								"east": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-								"south": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-								"west": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-								"up": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-								"down": { "texture": "#wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+								"north": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"east": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"south": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"west": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"up": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"down": { "texture": "#shoulder-sling-plain-weapon-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 							},
 							"children": [
 								{
@@ -1092,12 +1092,12 @@
 									"to": [ 0.24, 0.24, 0.08 ],
 									"rotationOrigin": [ -0.16, -0.16, 0.0 ],
 									"faces": {
-										"north": { "texture": "#plain", "uv": [ 6.0, 7.0, 7.0, 8.0 ], "autoUv": false },
-										"east": { "texture": "#plain", "uv": [ 4.0, 9.0, 4.5, 10.0 ], "autoUv": false },
-										"south": { "texture": "#plain", "uv": [ 3.0, 5.0, 3.5, 5.5 ], "autoUv": false },
-										"west": { "texture": "#plain", "uv": [ 4.0, 7.0, 4.5, 8.0 ], "autoUv": false },
-										"up": { "texture": "#plain", "uv": [ 6.0, 13.5, 7.0, 14.0 ], "autoUv": false },
-										"down": { "texture": "#plain", "uv": [ 7.5, 3.0, 8.5, 3.5 ], "autoUv": false, "windMode": [-1,-1,-1,-1] }
+										"north": { "texture": "#shoulder-sling-plain-plain", "uv": [ 6.0, 7.0, 7.0, 8.0 ], "autoUv": false },
+										"east": { "texture": "#shoulder-sling-plain-plain", "uv": [ 4.0, 9.0, 4.5, 10.0 ], "autoUv": false },
+										"south": { "texture": "#shoulder-sling-plain-plain", "uv": [ 3.0, 5.0, 3.5, 5.5 ], "autoUv": false },
+										"west": { "texture": "#shoulder-sling-plain-plain", "uv": [ 4.0, 7.0, 4.5, 8.0 ], "autoUv": false },
+										"up": { "texture": "#shoulder-sling-plain-plain", "uv": [ 6.0, 13.5, 7.0, 14.0 ], "autoUv": false },
+										"down": { "texture": "#shoulder-sling-plain-plain", "uv": [ 7.5, 3.0, 8.5, 3.5 ], "autoUv": false, "windMode": [-1,-1,-1,-1] }
 									}
 								},
 								{
@@ -1106,12 +1106,12 @@
 									"to": [ 0.16, 0.24, 0.08 ],
 									"rotationOrigin": [ 0.16, -0.16, 0.0 ],
 									"faces": {
-										"north": { "texture": "#plain", "uv": [ 6.0, 7.0, 7.0, 8.0 ], "autoUv": false },
-										"east": { "texture": "#plain", "uv": [ 4.0, 9.0, 4.5, 10.0 ], "autoUv": false },
-										"south": { "texture": "#plain", "uv": [ 3.0, 5.0, 3.5, 5.5 ], "autoUv": false },
-										"west": { "texture": "#plain", "uv": [ 4.0, 7.0, 4.5, 8.0 ], "autoUv": false },
-										"up": { "texture": "#plain", "uv": [ 6.0, 13.5, 7.0, 14.0 ], "autoUv": false },
-										"down": { "texture": "#plain", "uv": [ 7.5, 3.0, 8.5, 3.5 ], "autoUv": false }
+										"north": { "texture": "#shoulder-sling-plain-plain", "uv": [ 6.0, 7.0, 7.0, 8.0 ], "autoUv": false },
+										"east": { "texture": "#shoulder-sling-plain-plain", "uv": [ 4.0, 9.0, 4.5, 10.0 ], "autoUv": false },
+										"south": { "texture": "#shoulder-sling-plain-plain", "uv": [ 3.0, 5.0, 3.5, 5.5 ], "autoUv": false },
+										"west": { "texture": "#shoulder-sling-plain-plain", "uv": [ 4.0, 7.0, 4.5, 8.0 ], "autoUv": false },
+										"up": { "texture": "#shoulder-sling-plain-plain", "uv": [ 6.0, 13.5, 7.0, 14.0 ], "autoUv": false },
+										"down": { "texture": "#shoulder-sling-plain-plain", "uv": [ 7.5, 3.0, 8.5, 3.5 ], "autoUv": false }
 									}
 								},
 								{
@@ -1120,12 +1120,12 @@
 									"to": [ 0.24, 0.16, 0.08 ],
 									"rotationOrigin": [ -0.16, 0.16, 0.0 ],
 									"faces": {
-										"north": { "texture": "#plain", "uv": [ 6.0, 7.0, 7.0, 8.0 ], "autoUv": false },
-										"east": { "texture": "#plain", "uv": [ 4.0, 9.0, 4.5, 10.0 ], "autoUv": false },
-										"south": { "texture": "#plain", "uv": [ 3.0, 5.0, 3.5, 5.5 ], "autoUv": false },
-										"west": { "texture": "#plain", "uv": [ 4.0, 7.0, 4.5, 8.0 ], "autoUv": false },
-										"up": { "texture": "#plain", "uv": [ 6.0, 13.5, 7.0, 14.0 ], "autoUv": false },
-										"down": { "texture": "#plain", "uv": [ 7.5, 3.0, 8.5, 3.5 ], "autoUv": false }
+										"north": { "texture": "#shoulder-sling-plain-plain", "uv": [ 6.0, 7.0, 7.0, 8.0 ], "autoUv": false },
+										"east": { "texture": "#shoulder-sling-plain-plain", "uv": [ 4.0, 9.0, 4.5, 10.0 ], "autoUv": false },
+										"south": { "texture": "#shoulder-sling-plain-plain", "uv": [ 3.0, 5.0, 3.5, 5.5 ], "autoUv": false },
+										"west": { "texture": "#shoulder-sling-plain-plain", "uv": [ 4.0, 7.0, 4.5, 8.0 ], "autoUv": false },
+										"up": { "texture": "#shoulder-sling-plain-plain", "uv": [ 6.0, 13.5, 7.0, 14.0 ], "autoUv": false },
+										"down": { "texture": "#shoulder-sling-plain-plain", "uv": [ 7.5, 3.0, 8.5, 3.5 ], "autoUv": false }
 									}
 								},
 								{
@@ -1134,12 +1134,12 @@
 									"to": [ 0.16, 0.16, 0.08 ],
 									"rotationOrigin": [ 0.16, 0.16, 0.0 ],
 									"faces": {
-										"north": { "texture": "#plain", "uv": [ 6.0, 7.0, 7.0, 8.0 ], "autoUv": false },
-										"east": { "texture": "#plain", "uv": [ 4.0, 9.0, 4.5, 10.0 ], "autoUv": false },
-										"south": { "texture": "#plain", "uv": [ 3.0, 5.0, 3.5, 5.5 ], "autoUv": false },
-										"west": { "texture": "#plain", "uv": [ 4.0, 7.0, 4.5, 8.0 ], "autoUv": false },
-										"up": { "texture": "#plain", "uv": [ 6.0, 13.5, 7.0, 14.0 ], "autoUv": false },
-										"down": { "texture": "#plain", "uv": [ 7.5, 3.0, 8.5, 3.5 ], "autoUv": false }
+										"north": { "texture": "#shoulder-sling-plain-plain", "uv": [ 6.0, 7.0, 7.0, 8.0 ], "autoUv": false },
+										"east": { "texture": "#shoulder-sling-plain-plain", "uv": [ 4.0, 9.0, 4.5, 10.0 ], "autoUv": false },
+										"south": { "texture": "#shoulder-sling-plain-plain", "uv": [ 3.0, 5.0, 3.5, 5.5 ], "autoUv": false },
+										"west": { "texture": "#shoulder-sling-plain-plain", "uv": [ 4.0, 7.0, 4.5, 8.0 ], "autoUv": false },
+										"up": { "texture": "#shoulder-sling-plain-plain", "uv": [ 6.0, 13.5, 7.0, 14.0 ], "autoUv": false },
+										"down": { "texture": "#shoulder-sling-plain-plain", "uv": [ 7.5, 3.0, 8.5, 3.5 ], "autoUv": false }
 									}
 								}
 							]
@@ -1149,12 +1149,12 @@
 							"from": [ 48.0, 48.0, 48.0 ],
 							"to": [ 48.0, 48.0, 48.0 ],
 							"faces": {
-								"north": { "texture": "#plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-								"east": { "texture": "#plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-								"south": { "texture": "#plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-								"west": { "texture": "#plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-								"up": { "texture": "#plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-								"down": { "texture": "#plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+								"north": { "texture": "#shoulder-sling-plain-plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"east": { "texture": "#shoulder-sling-plain-plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"south": { "texture": "#shoulder-sling-plain-plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"west": { "texture": "#shoulder-sling-plain-plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"up": { "texture": "#shoulder-sling-plain-plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+								"down": { "texture": "#shoulder-sling-plain-plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 							},
 							"children": [
 								{
@@ -1162,12 +1162,12 @@
 									"from": [ 0.0, 0.0, 0.0 ],
 									"to": [ 0.0, 0.0, 0.0 ],
 									"faces": {
-										"north": { "texture": "#plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"east": { "texture": "#plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"south": { "texture": "#plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"west": { "texture": "#plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"up": { "texture": "#plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
-										"down": { "texture": "#plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
+										"north": { "texture": "#shoulder-sling-plain-plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"east": { "texture": "#shoulder-sling-plain-plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"south": { "texture": "#shoulder-sling-plain-plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"west": { "texture": "#shoulder-sling-plain-plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"up": { "texture": "#shoulder-sling-plain-plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false },
+										"down": { "texture": "#shoulder-sling-plain-plain", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "autoUv": false }
 									},
 									"children": [
 										{

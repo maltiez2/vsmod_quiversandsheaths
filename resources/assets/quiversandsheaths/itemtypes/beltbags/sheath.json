@@ -46,7 +46,8 @@
         "shape": { "*": { "base": "quiversandsheaths:gui/sheath" } },
         "textures": { "metal-*::leather-*": { "belt-waist-plain-material": { "base": "game:block/leather/{leather}" }, "belt-waist-plain-metal": { "base": "game:block/metal/plate/{metal}" } } }
       }
-    }
+    },
+    { "name": "CombatOverhaul:GoesIntoSlotsInfo" }
   ],
   "attributes": { "wearableAttachment": true, "clothescategory": "addBeltLeft", "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["beltbag-{category}-{subtype}-{type}"] } },
   "creativeinventory": { "general": ["*"], "quiversandsheaths": ["*"] },

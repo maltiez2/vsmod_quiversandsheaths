@@ -20,7 +20,8 @@
         "enabledSlots": ["addBeltLeft", "addBeltRight", "addBeltBack", "addBeltFront"],
         "icons": { "addBeltLeft": "quiversandsheaths:bag", "addBeltRight": "quiversandsheaths:bag", "addBeltBack": "quiversandsheaths:bag", "addBeltFront": "quiversandsheaths:bag" }
       }
-    }
+    },
+    { "name": "CombatOverhaul:GoesIntoSlotsInfo" }
   ],
   "attributes": { "wearableAttachment": true, "clothescategory": "waistgear", "warmthByType": { "*": 0 }, "handbook": { "groupBy": ["belt-{category}-{subtype}-{type}"] } },
   "creativeinventory": { "general": ["*"], "quiversandsheaths": ["*"] },

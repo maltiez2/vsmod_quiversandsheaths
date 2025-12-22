@@ -1,7 +1,7 @@
 {
 	"editor": {
 		"backDropShape": "E:/Programs/VSModelCreator/seraph-faceless",
-		"collapsedPaths": "Root/Pistol/Stock,Root/Pistol/Wheellock/Plate,Root/Carbine/Band_third,Root/Carbine/Flask_origin,Root/Pistol/Trigger_assembly/Guard_plate,Root/Carbine/Flintlock,Root/Arquebus_origin/Stock,Root/Pistol/Wheellock/Flint_arm,Root/Shoulder-Sling/Weapon_origin,Root/Pistol/Patch,Root/Pistol/Wheellock,Root/Pistol/Lever_origin,Root/Pistol/Flask_origin/Flask/Bottom_plate,Root/Carbine/Stock,Root/Pistol/Barrel/Barrel_top,Root/Arquebus_origin/Ramrod,Root/Carbine/Patch,Root/Pistol/Flintlock,Root/Carbine/Trigger_assembly,Root/Pistol/Barrel,Root/Pistol/Ramrod,Root/Arquebus_origin/Barrel,Root/Carbine/Trigger_assembly_2,Root/Pistol/Trigger_assembly/Guard,Root/Pistol/Barrel/Barrel_top4,Root/Pistol/Barrel/Barrel_top3,Root/Pistol/Barrel/Barrel_top2,Root/Carbine/Band_second",
+		"collapsedPaths": "Root/Pistol/Stock,Root/Pistol/Barrel,Root/Pistol/Wheellock/Plate,Root/Carbine/Band_third,Root/Carbine/Flask_origin,Root/Pistol/Ramrod,Root/Pistol/Trigger_assembly/Guard_plate,Root/Carbine/Flintlock,Root/Arquebus_origin/Stock,Root/Pistol/Wheellock/Flint_arm,Root/Arquebus_origin/Barrel,Root/Shoulder-Sling/Weapon_origin,Root/Carbine/Trigger_assembly_2,Root/Pistol/Trigger_assembly/Guard,Root/Pistol/Patch,Root/Pistol/Wheellock,Root/Pistol/Barrel/Barrel_top4,Root/Pistol/Barrel/Barrel_top3,Root/Pistol/Lever_origin,Root/Pistol/Barrel/Barrel_top2,Root/Pistol/Flask_origin/Flask/Bottom_plate,Root/Carbine/Stock,Root/Pistol/Barrel/Barrel_top,Root/Arquebus_origin/Ramrod,Root/Carbine/Patch,Root/Pistol/Flintlock,Root/Carbine/Band_second,Root/Carbine/Trigger_assembly",
 		"allAngles": true,
 		"entityTextureMode": false
 	},

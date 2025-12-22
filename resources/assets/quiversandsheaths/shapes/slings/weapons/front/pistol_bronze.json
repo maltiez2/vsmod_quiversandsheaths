@@ -1,7 +1,7 @@
 {
 	"editor": {
 		"backDropShape": "E:/Programs/VSModelCreator/seraph-faceless",
-		"collapsedPaths": "Root/Pistol/Stock,Root/Pistol/Wheellock/Plate,Root/Pistol/Trigger_assembly/Guard_plate,Root/Arquebus_origin/Stock,Root/Pistol/Wheellock/Flint_arm,Root/Shoulder-Sling/Weapon_origin,Root/Pistol/Patch,Root/Pistol/Flask_origin/Flask/Bottom_plate,Root/Pistol/Barrel/Barrel_top,Root/Arquebus_origin/Ramrod,Root/Pistol/Barrel,Root/Pistol/Flask_origin/Flask_origin_inner/Flask/Bottom_plate,Root/Arquebus_origin/Barrel,Root/Pistol/Trigger_assembly,Root/Pistol/Barrel/Barrel_top4,Root/Pistol/Barrel/Barrel_top3,Root/Pistol/Barrel/Barrel_top2",
+		"collapsedPaths": "Root/Pistol/Stock,Root/Pistol/Barrel,Root/Pistol/Wheellock/Plate,Root/Pistol/Trigger_assembly/Guard_plate,Root/Arquebus_origin/Stock,Root/Pistol/Wheellock/Flint_arm,Root/Pistol/Flask_origin/Flask_origin_inner/Flask/Bottom_plate,Root/Arquebus_origin/Barrel,Root/Pistol/Trigger_assembly,Root/Shoulder-Sling/Weapon_origin,Root/Pistol/Patch,Root/Pistol/Barrel/Barrel_top4,Root/Pistol/Barrel/Barrel_top3,Root/Pistol/Barrel/Barrel_top2,Root/Pistol/Flask_origin/Flask/Bottom_plate,Root/Pistol/Barrel/Barrel_top,Root/Arquebus_origin/Ramrod",
 		"allAngles": true,
 		"entityTextureMode": false
 	},
@@ -1330,9 +1330,9 @@
 						},
 						{
 							"name": "sling_3",
-							"from": [ -6.4, -8.4, 4.4 ],
-							"to": [ -5.4, -8.1, 5.5 ],
-							"rotationOrigin": [ -6.4, -8.4, 4.4 ],
+							"from": [ -6.2, -8.4, 4.4 ],
+							"to": [ -5.2, -8.1, 5.5 ],
+							"rotationOrigin": [ -6.2, -8.4, 4.4 ],
 							"rotationX": 135.0,
 							"faces": {
 								"north": { "texture": "#shoulder-sling-plain-metal", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },

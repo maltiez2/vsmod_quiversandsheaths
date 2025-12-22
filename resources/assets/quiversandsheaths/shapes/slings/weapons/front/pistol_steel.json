@@ -111,7 +111,7 @@
 										{
 											"name": "Underbarrel_bottom",
 											"from": [ -0.12, 0.08, 12.56 ],
-											"to": [ -0.12, 0.88, 18.72 ],
+											"to": [ 0.58, 0.88, 18.72 ],
 											"rotationOrigin": [ 0.0, 0.24, 12.56 ],
 											"rotationX": 2.9,
 											"faces": {

@@ -2,6 +2,7 @@
   "game:tabname-quiversandsheaths": "Quivers And Sheaths",
   "game:tabname-quiversandsheaths-colors": "Quivers And Sheaths (Colored)",
 
+  "game:slotcategory-weapon-tool": "Weapons and tools",
   "game:slotcategory-weapon": "Weapons",
   "game:slotcategory-tool": "Tools",
   "game:slotcategory-ammunition": "Ammunition",
@@ -50,5 +51,7 @@
   "setting-pouch_sling_slots": "Sling pouch",
   "setting-quiver_arrows_slots": "Arrows quiver",
   "setting-quiver_bolts_slots": "Bolts quiver",
-  "setting-quiver_javelins_slots": "Javelins quiver"
+  "setting-quiver_javelins_slots": "Javelins quiver",
+  "setting-title-recipes": "Recipes",
+  "setting-class_exclusive_recipes": "Some recipes requires class traits"
 }

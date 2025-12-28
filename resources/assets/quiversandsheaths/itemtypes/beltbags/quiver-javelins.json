@@ -10,7 +10,7 @@
     {
       "name": "QuiversAndSheaths:Sheath",
       "properties": {
-        "toolSlot": { "slotColor": "#fc9803", "canHoldWildcards": ["*javelin-*"], "canHoldItemTags": ["javelin"], "slotsIcon": "quiversandsheaths:javelin", "SlotBackpackCategory": "weapon" },
+        "toolSlot": { "slotColor": "#fc9803", "canHoldWildcards": ["*javelin-*"], "canHoldItemTags": ["javelin"], "slotsIcon": "quiversandsheaths:javelin", "SlotBackpackCategory": "weapon-tool" },
         "slots": [
           {
             "canHoldWildcards": ["*javelin-*"],

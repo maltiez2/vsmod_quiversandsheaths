@@ -10,7 +10,7 @@
     {
       "name": "QuiversAndSheaths:Sheath",
       "properties": {
-        "toolSlot": { "slotColor": "#fc9803", "canHoldWildcards": ["*sling-*"], "canHoldItemTags": ["sling"], "slotsIcon": "quiversandsheaths:sling", "SlotBackpackCategory": "weapon" },
+        "toolSlot": { "slotColor": "#fc9803", "canHoldWildcards": ["*sling-*"], "canHoldItemTags": ["sling"], "slotsIcon": "quiversandsheaths:sling", "SlotBackpackCategory": "weapon-tool" },
         "slots": [{ "canHoldWildcards": ["*slingbullet-*"], "slotColor": "#bb7020", "slotsNumber": 2, "slotsIcon": "quiversandsheaths:bullets", "SlotBackpackCategory": "ammunition" }],
         "takeOutColor": "#999999",
         "hotkey": { "hotkeyCode": "combatoverhaul-swap-weapon-right-ranged", "hotkeyName": "Swap ranged weapon (main hand)", "hotkeyKey": "R" },

@@ -36,11 +36,14 @@
       },
       "quiversandsheaths:itemtypes/beltbags/sheath-pistol-offhand.json": {
         "behaviors/0/properties/hotkey": "sheath_pistol_offhand_hotkey"
+      },
+      "quiversandsheaths:recipes/grid/sheath-knife-pouch.json": {
+        "-/requiresTrait": "(class_exclusive_recipes) ? value : null"
       }
     }
   },
   "constants": {
-    
+    "null": null
   },
   "settings": [
     {
@@ -325,6 +328,17 @@
       "range": {
         "min": 1
       }
+    },
+    {
+      "type": "separator",
+      "title": "quiversandsheaths:setting-title-recipes",
+      "collapsible": true
+    },
+    {
+      "code": "class_exclusive_recipes",
+      "type": "boolean",
+      "ingui": "quiversandsheaths:setting-class_exclusive_recipes",
+      "default": true
     }
   ]
 }

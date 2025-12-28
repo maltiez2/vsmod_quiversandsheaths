@@ -10,9 +10,9 @@
     {
       "name": "QuiversAndSheaths:Sheath",
       "properties": {
-        "toolSlot": { "slotColor": "#61c8ff", "canHoldItemTagsCondition": [["knife"]], "slotsIcon": "quiversandsheaths:knife", "SlotBackpackCategory": "tool" },
+        "toolSlot": { "slotColor": "#61c8ff", "canHoldItemTagsCondition": [["knife"]], "slotsIcon": "quiversandsheaths:knife", "SlotBackpackCategory": "weapon-tool" },
         "takeOutColor": "#999999",
-        "hotkey": { "hotkeyCode": "combatoverhaul-swap-tool", "hotkeyName": "Swap tool from belt", "hotkeyKey": "R" },
+        "hotkey": { "hotkeyCode": "quiversandsheaths-swap-tool", "hotkeyName": "(CO) Swap tool", "hotkeyKey": "R" },
         "takeOutSlotIcon": "quiversandsheaths:takeout"
       }
     },
@@ -22,7 +22,7 @@
         "addOverlayPrefix": false,
         "shape": {
           "right_slot-*::right_slot_state-*": { "base": "quiversandsheaths:tools/knife-sheath/{right_slot_state}/{right_slot}" },
-          "*": { "base": "quiversandsheaths:tools/knife-sheath/empty/default" }
+          "*": { "base": "quiversandsheaths:tools/knife-sheath/empty/knife-metal" }
         },
         "textures": {
           "metal-*::leather-*::right_metal-*::right_leather-*::right_wood-*": {

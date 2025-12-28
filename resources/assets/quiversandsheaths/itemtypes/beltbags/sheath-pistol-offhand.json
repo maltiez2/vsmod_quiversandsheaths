@@ -15,7 +15,7 @@
           "canHoldWildcards": ["*-pistol-*"],
           "canHoldItemTags": ["pistol"],
           "slotsIcon": "quiversandsheaths:pistol",
-          "SlotBackpackCategory": "weapon",
+          "SlotBackpackCategory": "weapon-tool",
           "CategoryOrderPriority": "1.1"
         },
         "takeOutColor": "#999999",

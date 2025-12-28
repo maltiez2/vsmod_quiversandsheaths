@@ -19,7 +19,7 @@
 		"shoulder-sling-plain-steel": "game:block/metal/plate/steel",
 		"shoulder-sling-plain-flint": "game:block/stone/flint",
 		"kapok": "game:block/wood/debarked/oak",
-		"oak": "game:block/wood/debarked/oak"
+		"shoulder-sling-plain-wood": "game:block/wood/debarked/oak"
 	},
 	"elements": [
 		{
@@ -301,7 +301,7 @@
 											"rotationOrigin": [ 0.0, -1.28, 2.16 ],
 											"faces": {
 												"north": { "texture": "#kapok", "uv": [ 0.0, 0.0, 1.0, 1.5 ], "autoUv": false },
-												"east": { "texture": "#oak", "uv": [ 3.0, 11.5, 13.5, 13.0 ], "autoUv": false },
+												"east": { "texture": "#shoulder-sling-plain-wood", "uv": [ 3.0, 11.5, 13.5, 13.0 ], "autoUv": false },
 												"south": { "texture": "#kapok", "uv": [ 0.0, 0.0, 1.0, 1.5 ], "autoUv": false },
 												"west": { "texture": "#kapok", "uv": [ 3.0, 11.5, 13.5, 13.0 ], "autoUv": false },
 												"up": { "texture": "#kapok", "uv": [ 0.0, 2.5, 1.0, 13.0 ], "autoUv": false },

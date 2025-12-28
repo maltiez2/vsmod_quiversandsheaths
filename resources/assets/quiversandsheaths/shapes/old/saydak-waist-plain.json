@@ -18,7 +18,7 @@
 		"iron": "game:block/metal/plate/iron",
 		"kapok": "game:block/wood/debarked/kapok",
 		"wood": "game:block/wood/debarked/larch",
-		"oak": "game:block/wood/debarked/oak",
+		"shoulder-sling-plain-wood": "game:block/wood/debarked/oak",
 		"feather1": "game:item/tool/material/feather1"
 	},
 	"elements": [
@@ -86,12 +86,12 @@
 							"rotationOrigin": [ 2.2, 7.0, 0.2 ],
 							"rotationZ": -6.0,
 							"faces": {
-								"north": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
-								"east": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
-								"south": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
-								"west": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
-								"up": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
-								"down": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+								"north": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
+								"east": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
+								"south": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
+								"west": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
+								"up": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+								"down": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
 							},
 							"children": [
 								{
@@ -123,12 +123,12 @@
 							"rotationY": 9.0,
 							"rotationZ": -3.0,
 							"faces": {
-								"north": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
-								"east": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
-								"south": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
-								"west": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
-								"up": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
-								"down": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+								"north": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
+								"east": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
+								"south": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
+								"west": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
+								"up": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+								"down": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
 							},
 							"children": [
 								{
@@ -160,12 +160,12 @@
 							"rotationY": -8.0,
 							"rotationZ": 3.0,
 							"faces": {
-								"north": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
-								"east": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
-								"south": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
-								"west": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
-								"up": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
-								"down": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+								"north": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
+								"east": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
+								"south": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
+								"west": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
+								"up": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+								"down": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
 							},
 							"children": [
 								{
@@ -197,12 +197,12 @@
 							"rotationY": 4.0,
 							"rotationZ": 9.0,
 							"faces": {
-								"north": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
-								"east": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
-								"south": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
-								"west": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
-								"up": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
-								"down": { "texture": "#oak", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+								"north": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
+								"east": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
+								"south": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
+								"west": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 4.0 ] },
+								"up": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+								"down": { "texture": "#shoulder-sling-plain-wood", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
 							},
 							"children": [
 								{

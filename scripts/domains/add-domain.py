@@ -37,4 +37,6 @@ def replace_in_folder(folder_pattern, pattern, replacement):
 
 
 if __name__ == "__main__":
-    replace_in_folder("../resources/assets/*/shapes/**/*", '"game:', '"')
+    replace_in_folder("../../resources/assets/*/shapes/**/*", '"block/', '"game:block/')
+    replace_in_folder("../../resources/assets/*/shapes/**/*", '"item/', '"game:item/')
+    replace_in_folder("../../resources/assets/*/shapes/**/*", '"entity/', '"game:entity/')

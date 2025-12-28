@@ -1,0 +1,35 @@
+﻿[
+  { "side": "Server", "file": "game:itemtypes/tool/knife", "op": "add", "path": "/tags/-", "value": "knife" },
+  {
+    "side": "Server",
+    "file": "game:itemtypes/tool/knife",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": {
+      "*-generic-*bronze": "knife-metal",
+      "*-generic-*iron": "knife-metal",
+      "*-generic-silver": "knife-metal",
+      "*-generic-gold": "knife-metal",
+      "*-generic-copper": "knife-metal",
+      "*-generic-steel": "knife-metal",
+      "*-generic-*": "knife-stone",
+      "*": "knife-metal"
+    }
+  },
+  {
+    "side": "Server",
+    "file": "game:itemtypes/tool/knife",
+    "op": "add",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": {
+      "*-generic-*bronze": "{material}",
+      "*-generic-*iron": "{material}",
+      "*-generic-silver": "{material}",
+      "*-generic-gold": "{material}",
+      "*-generic-copper": "{material}",
+      "*-generic-steel": "{material}",
+      "*-generic-*": "{material}",
+      "*": "iron"
+    }
+  }
+]

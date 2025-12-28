@@ -15,6 +15,6 @@
       ]
     ],
     "name": "buckle",
-    "output": {"type": "item", "code": "part-buckle-{metal}"}
+    "output": {"type": "item", "code": "part-buckle-{metal}", "quantity":  2}
   }
 ]

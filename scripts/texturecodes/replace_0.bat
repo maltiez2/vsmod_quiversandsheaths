@@ -1,0 +1,1 @@
+python "%~dp0regex_replace_folder.py" "%~dp0..\..\resources\assets\*\shapes\slings\**\*" "%~dp0replacements_0.txt"

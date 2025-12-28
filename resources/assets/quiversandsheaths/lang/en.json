@@ -6,6 +6,7 @@
   "game:slotcategory-tool": "Tools",
   "game:slotcategory-ammunition": "Ammunition",
   "game:slotcategory-takeout": "Temporary storage",
+  "game:slotcategory-misc": "Miscellaneous",
 
   "item-belt-*": "Bags belt",
   "item-beltbag-*-pouch-firearms": "Ammo pouch",
@@ -18,6 +19,7 @@
   "item-beltbag-*-sheath-pistols": "Pistol sheath",
   "item-beltbag-*-sheath-pistolsoffhand": "Pistol sheath (offhand)",
   "item-beltbag-*-sheath-knifes": "Knife sheath",
+  "item-beltbag-*-sheathpouch-knifes": "Knife sheath with pouch for gears",
   "item-shoulderbag-*-sling-firearms": "Weapon sling",
 
   "item-part-buckle-*": "Buckle",
@@ -33,6 +35,7 @@
   "itemdesc-beltbag-*-sheath-pistols": "Can store pistol. Press 'R' or 'F' to draw pistol from sheath or put it back.<br/><br/>One of the slots is for temporary storage in case of inventory being full.",
   "itemdesc-beltbag-*-sheath-pistolsoffhand": "Can store pistol. Press 'R' or 'F' to draw pistol into offhand from sheath or put it back.<br/><br/>One of the slots is for temporary storage in case of inventory being full.",
   "itemdesc-beltbag-*-sheath-knifes": "Can store knife. Press 'R' or 'F' to draw knife into main hand from sheath or put it back.<br/><br/>One of the slots is for temporary storage in case of inventory being full.",
+  "itemdesc-beltbag-*-sheathpouch-knifes": "Can store knife, rusty and temporal gears. Press 'R' or 'F' to draw knife into main hand from sheath or put it back.<br/><br/>One of the slots is for temporary storage in case of inventory being full.",
   "itemdesc-shoulderbag-*-sling-firearms": "Can store firearms and crossbows. Press 'R' or 'F' to draw firearm from sling or put it back.<br/>This item does not work like IRL sling, and works like a sheath, yes, but it does not need a whole new system because of this.<br/><br/>One of the slots is for temporary storage in case of inventory being full.",
 
   "setting-title-hotkeys": "Hotkeys",

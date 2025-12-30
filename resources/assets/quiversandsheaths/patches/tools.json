@@ -31,5 +31,6 @@
       "*-generic-*": "{material}",
       "*": "iron"
     }
-  }
+  },
+  { "side": "Server", "file": "game:itemtypes/utility/instrument", "op": "add", "path": "/attributes/InSheathVariantCodeByType", "value": { "*-flute1": "flute", "*": "" } }
 ]

@@ -18,5 +18,7 @@
   { "side": "Server", "dependsOn": [{ "modid": "maltiezfirearms" }], "file": "quiversandsheaths:recipes/grid/sling-firearms", "op": "replace", "path": "/0/enabled", "value": true },
   { "side": "Server", "dependsOn": [{ "modid": "maltiezfirearms" }], "file": "quiversandsheaths:recipes/grid/sling-firearms", "op": "replace", "path": "/1/enabled", "value": true },
   { "side": "Server", "dependsOn": [{ "modid": "maltiezcrossbows" }], "file": "quiversandsheaths:recipes/grid/sling-firearms", "op": "replace", "path": "/2/enabled", "value": true },
-  { "side": "Server", "dependsOn": [{ "modid": "maltiezcrossbows" }], "file": "quiversandsheaths:recipes/grid/sling-firearms", "op": "replace", "path": "/3/enabled", "value": true }
+  { "side": "Server", "dependsOn": [{ "modid": "maltiezcrossbows" }], "file": "quiversandsheaths:recipes/grid/sling-firearms", "op": "replace", "path": "/3/enabled", "value": true },
+  { "side": "Server", "dependsOn": [{ "modid": "mannyextrafirearms" }], "file": "quiversandsheaths:recipes/grid/compat/extrafirearms", "op": "replace", "path": "/0/enabled", "value": true },
+  { "side": "Server", "dependsOn": [{ "modid": "mannyextrafirearms" }], "file": "quiversandsheaths:recipes/grid/compat/extrafirearms", "op": "replace", "path": "/1/enabled", "value": true }
 ]

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ModName>Quivers And Sheaths</ModName>
     <ModType>code</ModType>
-    <ModVersion>0.6.9</ModVersion>
+    <ModVersion>0.6.11</ModVersion>
     <ModId>quiversandsheaths</ModId>
     <Description></Description>
     <Side>universal</Side>
@@ -77,6 +77,7 @@
     <Reference Include="$(ExternalLibDir)/**/*.dll" Private="false" Condition="'$(ExternalLibDir)' != ''" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="resources\assets\quiversandsheaths\shapes\flutecase\" />
     <Folder Include="resources\assets\quiversandsheaths\shapes\sheaths\shoulder\" />
     <Folder Include="resources\assets\quiversandsheaths\shapes\slings\shields\" />
   </ItemGroup>

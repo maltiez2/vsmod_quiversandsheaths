@@ -1,6 +1,7 @@
 ﻿{
   "code": "part",
   "class": "Item",
+  "maxstacksize": 4,
   "variantgroups": [{ "code": "type", "states": ["buckle"] }, { "code": "material", "states": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"] }],
   "shape": { "base": "parts/part-{type}" },
   "textures": { "metal": { "base": "game:block/metal/plate/{material}" } },

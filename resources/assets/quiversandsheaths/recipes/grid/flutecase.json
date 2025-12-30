@@ -1,0 +1,33 @@
+[
+	{
+		"enabled": true,
+		"ingredientPattern": "LNL,LKL",
+		"recipeGroup": 1,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-buckle-iron"},
+			"L": { "type": "item", "code": "game:cloth-plain" },
+			"K": { "type": "item", "code": "game:instrument-flute1", "isTool": true, "toolDurabilityCost": 0  }
+		},
+		"width": 3,
+		"height": 2,
+		"name": "sheath-general",
+		"output": { "type": "item", "code": "frontbag-front-pouch-flute" }
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "LNL,LKL",
+		"recipeGroup": 2,
+		"ingredients": {
+			"N": {"type": "item", "code": "part-buckle-{metal}"},
+			"L": { "type": "item", "code": "game:cloth-{cloth}" },
+			"K": { "type": "item", "code": "game:instrument-flute1", "isTool": true, "toolDurabilityCost": 0  }
+		},
+		"allowedVariants": {
+			"metal": ["brass", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"]
+		},
+		"width": 3,
+		"height": 2,
+		"name": "sheath-general",
+		"output": { "type": "item", "code": "frontbag-front-pouch-flute",  "attributes": {"types": {"cloth": "{cloth}", "metal": "{metal}"}} }
+	}
+]

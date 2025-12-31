@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ModName>Quivers And Sheaths</ModName>
     <ModType>code</ModType>
-    <ModVersion>0.6.11</ModVersion>
+    <ModVersion>0.6.12</ModVersion>
     <ModId>quiversandsheaths</ModId>
     <Description></Description>
     <Side>universal</Side>
@@ -18,7 +18,7 @@
 
   <!-- Dependencies -->
   <ItemGroup>
-    <Dependencies Include="overhaullib" Version="1.15.7" />
+    <Dependencies Include="overhaullib" Version="1.16.14" />
     <Dependencies Include="attributerenderinglibrary" Version="2.3.0" />
   </ItemGroup>
 

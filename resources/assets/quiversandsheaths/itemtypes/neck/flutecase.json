@@ -11,7 +11,7 @@
     {
       "name": "QuiversAndSheaths:Sheath",
       "properties": {
-        "toolSlot": { "slotColor": "#61c8ff", "canHoldWildcards": ["game:instrument-flute1"], "canHoldItemTags": ["flute"], "slotsIcon": "quiversandsheaths:pistol", "SlotBackpackCategory": "tool" },
+        "toolSlot": { "slotColor": "#61c8ff", "canHoldWildcards": ["game:instrument-flute1"], "canHoldItemTags": ["flute"], "slotsIcon": "quiversandsheaths:flute", "SlotBackpackCategory": "weapon-tool" },
         "takeOutColor": "#999999",
         "hotkey": { "hotkeyCode": "quiversandsheaths-swap-tool", "hotkeyName": "(CO) Swap tool", "hotkeyKey": "R" },
         "takeOutSlotIcon": "quiversandsheaths:takeout"

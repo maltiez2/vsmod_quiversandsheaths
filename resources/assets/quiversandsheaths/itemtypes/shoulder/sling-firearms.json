@@ -16,7 +16,7 @@
           "canHoldWildcards": ["*:firearm-*", "*:crossbow-*"],
           "canHoldItemTags": ["firearm", "crossbow"],
           "slotsIcon": "quiversandsheaths:pistol",
-          "SlotBackpackCategory": "weapon"
+          "SlotBackpackCategory": "weapon-tool"
         },
         "takeOutColor": "#999999",
         "hotkey": { "hotkeyCode": "combatoverhaul-swap-weapon-right-ranged-shoulder", "hotkeyName": "Swap ranged weapon from shoulder (main hand)", "hotkeyKey": "R" },
